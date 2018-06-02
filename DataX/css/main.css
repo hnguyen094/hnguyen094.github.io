@@ -417,7 +417,8 @@ input.input100 {
 }
 
 .g-signin2 {
-  display:flex;
+  display: flex;
+  margin: auto;
   justify-content: center;
   align-items: center;
 }
