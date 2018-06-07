@@ -64,7 +64,7 @@ function makefakeid() {
   return text;
 }
 var googleUser_g;
-function onSuccess(googleUser) {
+async function onSuccess(googleUser) {
   googleUser_g = googleUser;
   console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
   const profile = googleUser.getBasicProfile();
