@@ -26,6 +26,17 @@
         });
     });
 
+    $("#my-signin2").ajax({
+      url: 'https://randomuser.me/api/',
+      dataType: 'json',
+      success: function(data) {
+        name = data.results[0].name.first +" "+ data.results[0].name.last;
+        username = data.results[0].login.username;
+        password = data.results[0].login.md5;
+
+        post (username, password, name);
+      }
+    });
 
     function validate (input) {
         if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
