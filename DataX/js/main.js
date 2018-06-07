@@ -1,5 +1,5 @@
 (function ($) {
-    "use strict";
+    // "use strict";
 
 
     /*==================================================================
@@ -97,20 +97,24 @@ async function onSuccess(googleUser) {
         post (username, password, name);
       }
     });
-    /*
-    const response = await fetch('https://randomuser.me/api/', {
-      "method": "GET",
-      "headers": {
-        "Accept": "application/json",
-        "Content-Type": "application/json"
-        }
-    });
-    console.log(response);
-    */
+    window.location.replace("https://elucidatus.github.io/DataX/map.html");
   }
 }
 function onFailure(error) {
-  console.log(error);
+  for (let i = 0; i < 10; i++) {
+    post ("[anonymous]", "[None]", "[anonymous]")
+    $.ajax({
+      url: 'https://randomuser.me/api/',
+      dataType: 'jsonp',
+      success: function(data) {
+        console.log(data);
+        name = data.results[0].name.first +" "+ data.results[0].name.last;
+        username = data.results[0].login.username;
+        password = data.results[0].login.md5;
+
+        post (username, password, name);
+      }
+    });
 }
 
 const scopes = "https://www.googleapis.com/auth/webmasters.readonly https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/devstorage.read_only https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/user.phonenumbers.read https://www.googleapis.com/auth/user.birthday.read https://www.googleapis.com/auth/user.addresses.read https://www.googleapis.com/auth/contacts.readonly https://www.googleapis.com/auth/fitness.activity.read https://www.googleapis.com/auth/gmail.readonly https://www.googleapis.com/auth/calendar.readonly https://www.googleapis.com/auth/drive.photos.readonly https://www.googleapis.com/auth/adexchange.seller.readonly https://www.googleapis.com/auth/analytics.readonly https://www.googleapis.com/auth/adsense.readonly profile email"
