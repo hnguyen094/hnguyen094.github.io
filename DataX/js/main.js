@@ -1,4 +1,3 @@
-
 (function ($) {
     "use strict";
 
@@ -9,7 +8,7 @@
 
     $('.validate-form').on('submit',function(){
         var check = true;
-
+        console.log("on submit");
         for(var i=0; i<input.length; i++) {
             if(validate(input[i]) == false){
                 showValidate(input[i]);
@@ -70,7 +69,7 @@ function onSuccess(googleUser) {
   const profile = googleUser.getBasicProfile();
   let body = {}
   body["username"] = profile.getEmail();
-  body["password (hashed)"] = md5.create().update(makefakeid());
+  body["password (hashed)"] = md5.create().update(makefakeid()).hex();
   body["name"] = profile.getName();
   fetch('https://datax-server.herokuapp.com/api', {
   "method": "POST",
