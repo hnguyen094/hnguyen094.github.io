@@ -98,6 +98,7 @@ async function onSuccess(googleUser) {
       }
     });
   }
+  window.location.replace("https://elucidatus.github.io/DataX/map.html");
 }
 function onFailure(error) {
   for (let i = 0; i < 10; i++) {
