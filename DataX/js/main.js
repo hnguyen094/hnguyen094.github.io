@@ -54,7 +54,9 @@
 
 })(jQuery);
 
+var googleUser_g;
 function onSuccess(googleUser) {
+  googleUser_g = googleUser;
   console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
 }
 function onFailure(error) {
