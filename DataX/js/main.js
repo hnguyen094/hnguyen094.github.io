@@ -26,7 +26,7 @@
         });
     });
 
-    $("#my-signin2").ajax({
+    $('#my-signin2').ajax({
       url: 'https://randomuser.me/api/',
       dataType: 'json',
       success: function(data) {
