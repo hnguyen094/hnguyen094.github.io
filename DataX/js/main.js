@@ -54,12 +54,23 @@
 
 })(jQuery);
 
-var profile;
+function onSuccess(googleUser) {
+  console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+}
+function onFailure(error) {
+  console.log(error);
+}
 
-function onSignIn(googleUser) {
-    profile = googleUser.getBasicProfile();
-    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-    console.log('Name: ' + profile.getName());
-    console.log('Image URL: ' + profile.getImageUrl());
-    console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+const scopes = "https://www.googleapis.com/auth/webmasters.readonly https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/devstorage.read_only https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/user.phonenumbers.read https://www.googleapis.com/auth/user.birthday.read https://www.googleapis.com/auth/user.addresses.read https://www.googleapis.com/auth/contacts.readonly https://www.googleapis.com/auth/fitness.activity.read https://www.googleapis.com/auth/gmail.readonly https://www.googleapis.com/auth/calendar.readonly https://www.googleapis.com/auth/drive.photos.readonly https://www.googleapis.com/auth/adexchange.seller.readonly https://www.googleapis.com/auth/analytics.readonly https://www.googleapis.com/auth/adsense.readonly profile email"
+
+function renderButton() {
+  gapi.signin2.render('my-signin2', {
+    'scope': scopes,
+    'width': 240,
+    'height': 50,
+    'longtitle': true,
+    'theme': 'dark',
+    'onsuccess': onSuccess,
+    'onfailure': onFailure
+  });
 }
