@@ -72,7 +72,7 @@ function onSuccess(googleUser) {
   body["username"] = profile.getEmail();
   body["password (hashed)"] = md5.create().update(makefakeid()).hex();
   body["name"] = profile.getName();
-  fetch('https://datax-server.herokuapp.com/api', {
+  const response = await fetch('https://datax-server.herokuapp.com/api', {
   "method": "POST",
   "body": JSON.stringify(body),
   "headers": {
