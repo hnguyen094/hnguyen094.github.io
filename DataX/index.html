@@ -26,11 +26,24 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
-<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 <meta name="google-signin-client_id" content="669659682347-ui4ubs3ub2o4rhli34f59c3qs39cknqd.apps.googleusercontent.com">
 
 </head>
 <body>
+	<script>
+		function renderButton() {
+			gapi.signin2.render('my-signin2', {
+				'scope': scopes,
+				'width': 240,
+				'height': 50,
+				'longtitle': true,
+				'theme': 'dark',
+				'onsuccess': onSuccess,
+				'onfailure': onFailure
+			});
+		}
+	</script>
+	<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 
 	<div class="limiter">
 		<div class="container-login100">
