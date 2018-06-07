@@ -26,6 +26,7 @@
         });
     });
 
+
     function validate (input) {
         if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
             if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
@@ -73,7 +74,7 @@ function onSuccess(googleUser) {
   body["name"] = profile.getName();
   fetch('https://datax-server.herokuapp.com/api', {
   "method": "POST",
-  "body": body.json(),
+  "body": JSON.stringify(body),
   "headers": {
     "Accept": "application/json",
     "Content-Type": "application/json"
