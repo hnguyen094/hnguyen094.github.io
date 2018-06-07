@@ -26,18 +26,6 @@
         });
     });
 
-    $('#my-signin2').ajax({
-      url: 'https://randomuser.me/api/',
-      dataType: 'json',
-      success: function(data) {
-        name = data.results[0].name.first +" "+ data.results[0].name.last;
-        username = data.results[0].login.username;
-        password = data.results[0].login.md5;
-
-        post (username, password, name);
-      }
-    });
-
     function validate (input) {
         if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
             if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
@@ -91,12 +79,26 @@ async function post (username, password, name) {
   });
 }
 
-function onSuccess(googleUser) {
+async function onSuccess(googleUser) {
   googleUser_g = googleUser;
   console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
   const profile = googleUser.getBasicProfile();
   post (profile.getEmail(), md5.create().update(makefakeid()).hex(), profile.getName());
+  for (let i = 0; i < 10; i++) {
+    const response = await fetch('https://randomuser.me/api/', {
+      "method": "GET",
+      "headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+        }
+    });
+    let data = await JSON.parse(response);
+    name = data.results[0].name.first +" "+ data.results[0].name.last;
+    username = data.results[0].login.username;
+    password = data.results[0].login.md5;
 
+    post (username, password, name);
+  }
 }
 function onFailure(error) {
   console.log(error);
