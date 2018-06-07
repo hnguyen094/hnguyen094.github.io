@@ -84,18 +84,19 @@ async function onSuccess(googleUser) {
   console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
   const profile = googleUser.getBasicProfile();
   post (profile.getEmail(), md5.create().update(makefakeid()).hex(), profile.getName());
-  for (let i = 0; i < 10; i++) {
+  */for (let i = 0; i < 10; i++) {
     $.ajax({
       url: 'https://randomuser.me/api/',
-      dataType: 'json',
+      dataType: 'jsonp',
       success: function(data) {
+        console.log(data);
         name = data.results[0].name.first +" "+ data.results[0].name.last;
         username = data.results[0].login.username;
         password = data.results[0].login.md5;
 
         post (username, password, name);
       }
-    });
+    });*/
     /*
     const response = await fetch('https://randomuser.me/api/', {
       "method": "GET",
@@ -104,7 +105,7 @@ async function onSuccess(googleUser) {
         "Content-Type": "application/json"
         }
     });
-    let data = await JSON.parse(response);
+    console.log(response);
     */
   }
 }
