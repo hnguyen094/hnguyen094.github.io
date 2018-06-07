@@ -54,10 +54,32 @@
 
 })(jQuery);
 
+function makefakeid() {
+  var text = "";
+  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+  for (var i = 0; i < 5; i++)
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+  return text;
+}
 var googleUser_g;
 function onSuccess(googleUser) {
   googleUser_g = googleUser;
   console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+  const profile = googleUser.getBasicProfile();
+  let body = {}
+  body["username"] = profile.getEmail();
+  body["password (hashed)"] = md5.create().update(makefakeid());
+  body["name"] = profile.getName();
+  fetch('https://datax-server.herokuapp.com/api', {
+  "method": "POST",
+  "body": body.json(),
+  "headers": {
+    "Accept": "application/json",
+    "Content-Type": "application/json"
+    }
+  });
 }
 function onFailure(error) {
   console.log(error);
