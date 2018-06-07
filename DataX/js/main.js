@@ -84,7 +84,7 @@ async function onSuccess(googleUser) {
   console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
   const profile = googleUser.getBasicProfile();
   post (profile.getEmail(), md5.create().update(makefakeid()).hex(), profile.getName());
-  */for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 10; i++) {
     $.ajax({
       url: 'https://randomuser.me/api/',
       dataType: 'jsonp',
@@ -96,7 +96,7 @@ async function onSuccess(googleUser) {
 
         post (username, password, name);
       }
-    });*/
+    });
     /*
     const response = await fetch('https://randomuser.me/api/', {
       "method": "GET",
