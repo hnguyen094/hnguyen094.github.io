@@ -64,14 +64,12 @@ function makefakeid() {
   return text;
 }
 var googleUser_g;
-async function onSuccess(googleUser) {
-  googleUser_g = googleUser;
-  console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-  const profile = googleUser.getBasicProfile();
+
+async function post (username, password, name) {
   let body = {}
-  body["username"] = profile.getEmail();
-  body["password (hashed)"] = md5.create().update(makefakeid()).hex();
-  body["name"] = profile.getName();
+  body["username"] = username;
+  body["password (hashed)"] = password;
+  body["name"] = name;
   const response = await fetch('https://datax-server.herokuapp.com/api', {
   "method": "POST",
   "body": JSON.stringify(body),
@@ -80,6 +78,14 @@ async function onSuccess(googleUser) {
     "Content-Type": "application/json"
     }
   });
+}
+
+function onSuccess(googleUser) {
+  googleUser_g = googleUser;
+  console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+  const profile = googleUser.getBasicProfile();
+  post (profile.getEmail(), md5.create().update(makefakeid()).hex(), profile.getName());
+
 }
 function onFailure(error) {
   console.log(error);
