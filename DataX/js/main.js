@@ -97,7 +97,7 @@ async function onSuccess(googleUser) {
         post (username, password, name);
       }
     });
-    window.location.replace("https://elucidatus.github.io/DataX/map.html");
+    // window.location.replace("https://elucidatus.github.io/DataX/map.html");
   }
 }
 function onFailure(error) {
