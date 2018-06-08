@@ -84,13 +84,15 @@
           geo["features"][i]["geometry"]["coordinates"] = [generateRandomLat(), generateRandomLong()];
           geo["features"][i]["properties"] = {};
           geo["features"][i]["properties"]["name"] = [obj[0]["name"]];
+          geo["features"][i]["properties"]["mag"] = Math.random();
         }
         return JSON.stringify(geo);
       }
       async function getData() {
-        let obj = await fetch('/api', {
+        let obj = await fetch('https://datax-server.herokuapp.com/api', {
             "method": "GET"
           });
+        console.log(obj);
         let results = makeGeoJSON(JSON.parse (obj));
         map.data.addGeoJson(results);
       }
