@@ -89,10 +89,11 @@
         return JSON.stringify(geo);
       }
       async function getData() {
-        let obj = await fetch('https://datax-server.herokuapp.com/api', {
+        fetch('https://datax-server.herokuapp.com/api', {
             "method": "GET"
-          });
-        console.log(obj);
+          }).then(function(myJson) {
+    console.log(myJson);
+  });
         //let results = makeGeoJSON(JSON.parse (obj));
         //map.data.addGeoJson(results);
       }
