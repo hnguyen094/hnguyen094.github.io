@@ -3,7 +3,7 @@ body {
 }
 
 html {
-    //background-color: lightSlateGray;
+    background-color: tomato;
 }
 
 a {
@@ -11,20 +11,35 @@ a {
     font-size: 24px;
     color: white;
     padding: 30px 15px;
-    border-radius: 5px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-align: center;
 }
 
 nav#menu {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: grey;
-    align-items: stretch;
+    align-items: center;
+    height: 100vh;
 }
 
 div#content {
-    background-color: tomato;
     flex-grow: 1;
+    align-items: center;
+}
+
+p {
+    font-weight: bold;
+    color: white;
+    font-size: 20;
+    padding: 50px;
+
 }
 
 body {
