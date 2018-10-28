@@ -1,6 +1,9 @@
 class App {
   constructor() {
     const menu = document.querySelectorAll('.menu-item');
+    const startpage = "about-me";
+    this.openPage(startpage);
+
     for (let menu_item of menu) {
       menu_item.addEventListener("mouseover", () => {
         menu_item.classList.add('hover');
@@ -17,14 +20,16 @@ class App {
         }
         menu_item.classList.add('selected');
         menu_item.classList.remove('unselected');
-        this.openPage();
+        this.openPage(menu_item.id);
       });
     }
   }
-  openPage() {
-    let content = document.querySelector('#content');
-    content.querySelector('h1').innerHTML = "potatoes";
-    content.querySelector('span').innerHTML = "<p>text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum text lorum ipsum</p>";
+  openPage(id) {
+    // TODO: put the selected and unselected here.
+    const content = document.querySelector('#content');
+    const title = pages[id][0];
+    content.querySelector('h1').innerHTML = title;
+    content.querySelector('span').innerHTML = pages[id][1];
   }
 }
 
