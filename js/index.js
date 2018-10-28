@@ -20,7 +20,6 @@ class App {
         this.openPage();
       });
     }
-    // This.thing = new class(init, init2);
   }
   openPage() {
     let content = document.querySelector('#content');

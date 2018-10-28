@@ -30,7 +30,11 @@ a {
     cursor:pointer;
 }
 
-@keyframes hoverAnim {
+a:hover {
+    color: var(--highlight-color);
+}
+
+/* @keyframes hoverAnim {
   from { color:var(--secondary-color); }
   to { color:var(--highlight-color); }
 }
@@ -38,16 +42,6 @@ a {
 @keyframes unhoverAnim {
   from { color:var(--highlight-color); }
   to { color:var(--secondary-color); }
-}
-
-@keyframes selectedAnim {
-  from { font-size: 24px; }
-  to { font-size: 30px; }
-}
-
-@keyframes unselectedAnim {
-  from { font-size: 30px; }
-  to { font-size: 24px; }
 }
 
 a.hover {
@@ -60,6 +54,16 @@ a.unhover {
   animation-name: unhoverAnim;
   animation-duration: 0.5s;
   color:var(--secondary-color);
+} */
+
+@keyframes selectedAnim {
+  from { font-size: 24px; }
+  to { font-size: 30px; }
+}
+
+@keyframes unselectedAnim {
+  from { font-size: 30px; }
+  to { font-size: 24px; }
 }
 
 a.selected {
