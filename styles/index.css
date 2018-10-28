@@ -1,44 +1,118 @@
+:root {
+  --main-color: #939598;
+  --secondary-color: white;
+  --highlight-color: gold;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
 body {
     margin:0;
 }
 
 html {
-    background-color: white;
+    background-color: var(--secondary-color);
 }
 
 a {
     font-weight: bold;
     font-size: 24px;
-    color: white;
+    color: var(--secondary-color);
     padding: 30px 15px;
+    cursor:pointer;
+}
+
+@keyframes hoverAnim {
+  from { color:var(--secondary-color); }
+  to { color:var(--highlight-color); }
+}
+
+@keyframes unhoverAnim {
+  from { color:var(--highlight-color); }
+  to { color:var(--secondary-color); }
+}
+
+@keyframes selectedAnim {
+  from { font-size: 24px; }
+  to { font-size: 30px; }
+}
+
+@keyframes unselectedAnim {
+  from { font-size: 30px; }
+  to { font-size: 24px; }
+}
+
+a.hover {
+  animation-name: hoverAnim;
+  animation-duration: 0.5s;
+  color:var(--highlight-color);
+}
+
+a.unhover {
+  animation-name: unhoverAnim;
+  animation-duration: 0.5s;
+  color:var(--secondary-color);
+}
+
+a.selected {
+  animation-name: selectedAnim;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  font-size: 30px;
+  color:var(--highlight-color);
+}
+
+a.unselected {
+  animation-name: unselectedAnim;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  font-size: 24px;
+  color:var(--secondary-color);
 }
 
 h1 {
     font-weight: bold;
     font-size: 30px;
-    color: grey;
+    color: var(--main-color);
     text-align: center;
+    padding-bottom: 50px;
 }
 
 nav#menu {
     display: flex;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    white-space: nowrap;
     flex-direction: column;
     justify-content: center;
-    background-color: grey;
+    background-color: var(--main-color);
     align-items: center;
     height: 100vh;
 }
 
 div#content {
-    flex-grow: 1;
+    flex-grow: 2;
+    z-index: -1;
+    /* overflow: hidden visible; */
+    line-height: 1.6;
     align-items: center;
 }
 
 p {
     font-weight: bold;
-    color: grey;
+    color: var(--main-color);
     font-size: 20;
-    padding: 50px;
+    padding-left: 60;
+    padding-right: 60;
 
 }
 
@@ -48,7 +122,7 @@ body {
     margin: 0;
     /* font-family: 'Space Mono', monospace; */
     /* font-family: 'Oxygen', sans-serif; */
-    font-family: 'Krub', sans-serif;    
+    font-family: 'Krub', sans-serif;
 
 
 }
