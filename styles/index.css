@@ -2,6 +2,11 @@
   --main-color: #939598;
   --secondary-color: white;
   --highlight-color: gold;
+  --tertiary-color: #4A464F;
+  --b-text: 30px;
+  --s-text: 24px;
+  --m-text: 25px;
+  --ss-text: 20px;
 }
 
 .noselect {
@@ -22,16 +27,31 @@ html {
     background-color: var(--secondary-color);
 }
 
+#background {
+  background-image: url("img/bg.jpg");
+  z-index: -10;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
 a {
+  font-weight: bold;
+  color: var(--tertiary-color);
+}
+
+a.sub-title {
+  font-weight: bold;
+  font-size: var(--ss-text);
+}
+
+a.menu-item {
     font-weight: bold;
-    font-size: 24px;
+    font-size: var(--s-text);
     color: var(--secondary-color);
     padding: 30px 15px;
     cursor:pointer;
-}
-
-a:hover {
-    color: var(--highlight-color);
 }
 
 /* @keyframes hoverAnim {
@@ -57,20 +77,20 @@ a.unhover {
 } */
 
 @keyframes selectedAnim {
-  from { font-size: 24px; }
-  to { font-size: 30px; }
+  from { font-size: var(--s-text); }
+  to { font-size: var(--b-text); }
 }
 
 @keyframes unselectedAnim {
-  from { font-size: 30px; }
-  to { font-size: 24px; }
+  from { font-size: var(--b-text); }
+  to { font-size: var(--s-text); }
 }
 
 a.selected {
   animation-name: selectedAnim;
   animation-timing-function: ease;
   animation-duration: 0.5s;
-  font-size: 30px;
+  font-size: var(--b-text);;
   color:var(--highlight-color);
 }
 
@@ -78,16 +98,22 @@ a.unselected {
   animation-name: unselectedAnim;
   animation-timing-function: ease;
   animation-duration: 0.5s;
-  font-size: 24px;
+  font-size: var(--s-text);
   color:var(--secondary-color);
 }
 
 h1 {
     font-weight: bold;
-    font-size: 30px;
-    color: var(--main-color);
+    font-size: var(--b-text);
+    color: var(--tertiary-color);
     text-align: center;
     padding-bottom: 50px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: var(--s-text);
+    color: var(--tertiary-color);
 }
 
 nav#menu {
@@ -105,18 +131,20 @@ nav#menu {
 
 div#content {
     flex-grow: 2;
-    z-index: -1;
     /* overflow: hidden visible; */
     line-height: 1.6;
     align-items: center;
-}
-
-p {
-    font-weight: bold;
-    color: var(--main-color);
-    font-size: 20;
     padding-left: 60;
     padding-right: 60;
+    max-width: 1080px;
+    background-color: var(--secondary-color);
+}
+
+p, ol, ul, li{
+    font-weight: bold;
+    color: var(--tertiary-color);
+    font-size: 20;
+    margin: 5px;
 
 }
 

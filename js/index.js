@@ -1,7 +1,7 @@
 class App {
   constructor() {
     const menu = document.querySelectorAll('.menu-item');
-    const startpage = "about-me";
+    const startpage = "welcome";
     this.openPage(startpage);
 
     for (let menu_item of menu) {
