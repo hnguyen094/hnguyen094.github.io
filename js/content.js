@@ -15,7 +15,7 @@ const pages = {
 
 "<h2><a href=\"https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1321586249&mt=8\" target=\"_blank\">FamiliAR | Software Engineer, Designer</a>" +
 "<br><a class=\"sub-title\">11.2017 - 12.2017</a></h2>" +
-"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/o0UHfR5vzJI\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>" +
+"<iframe width=\"336\" height=\"189\" src=\"https://www.youtube-nocookie.com/embed/o0UHfR5vzJI\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>" +
 "<p>Responsibilities<ul><li>Deployed the first Escape Room VR experience on the App Store with a limited time frame</li> <li>Organized and led team meetings when the team lead dropped the project</li> <li>Solved unique spatial AR challenges through mechanics and story</li></ul></p> <p></p><br>"
 ],
 

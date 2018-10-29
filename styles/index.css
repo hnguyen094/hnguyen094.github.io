@@ -19,10 +19,6 @@
                                   supported by Chrome and Opera */
 }
 
-body {
-    margin:0;
-}
-
 html {
     background-color: var(--secondary-color);
 }
