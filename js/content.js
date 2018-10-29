@@ -20,7 +20,8 @@ const pages = {
 ],
 
 "welcome": ["Howdy~",
-"<p>Welcome! My name is Hung, and I'm glad you found this website.  </p><p>Hopefully, you're where you expect to be! Through this site, you can learn a little bit more about me and what I do. "
+"<p>Welcome! My name is Hung, and I'm glad you found this website.  </p><p>Hopefully, you're where you expect to be! Through this site, you can learn a little bit more about me and what I do. </p>" +
+"<p>It's definitely under construction, so there isn't a lot here yet. Do check back periodically in the next couple weeks!</p>"
 ],
 
 "contact" : ["contact",
