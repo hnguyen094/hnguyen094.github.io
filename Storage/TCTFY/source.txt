@@ -55,7 +55,7 @@ When play begins:
 	now the command prompt is "What do you do this moment? >";
 	now the time of day is 6:30 PM;
 	Say "[italic type]Is this the real life?[line break]Is this just fantasy?[line break]Caught in a landslide[line break]No escape from reality...[roman type]";
-	Say "[line break]cw: suicide/euthanasia, depression".
+	Say "[line break]cw: euthanasia, depression".
 
 [Update]
 Every turn:
