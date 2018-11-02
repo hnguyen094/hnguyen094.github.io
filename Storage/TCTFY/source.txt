@@ -46,7 +46,7 @@ Understand "close eyes", "breathe", "wait here", and "close  your eyes" as waiti
 Understand "look around" as looking.
 Understand "view [something]" as examining.
 Understand the command "read" as something new. Understand "read [something]" as reading. Reading is an action applying to one thing. 
-Understand the command "tear" as something new. Understand "tear [something]" as tearing. Tearing is an action applying to one thing.
+Understand the command "tear" as something new. Understand "tear [something]" as tearing. Tearing is an action applying to one thing. Understand "shred [something]" as tearing.
 Understand "tap [something]" as touching.
 Understand the command "kill" as something new. Understand "kill [something]" as killing. Killing is an action applying to one thing.
 
@@ -81,7 +81,7 @@ The Space of Reflection is a room. "You shouldn't be here. Your head hurts." It 
 
 [Items/Instance objects]
 The description of a thing is usually "[The noun] looks just the way you remembered it.".
-A bed is a thing in Bedroom. It is an enterable supporter and fixed in place. The description is "Tidy and perfect; you probably could sink into it."[Verb: sinking into] [TODO: change fake doors to real doors]
+A bed is a thing in Bedroom. It is an enterable supporter and fixed in place. The description is "Tidy and perfect; you probably could sink into it. [if introspection counter is 5]A good place to end, you think."[Verb: sinking into] [TODO: change fake doors to real doors]
 The bedroom window is a window in Bedroom. [Enables photoframe]
 The living room window is a window in Living Room. [Enables photoframe]
 The armchair is a thing in the Living Room. The armchair is an enterable supporter and fixed in place. The description is "It's a perfect replica of the same one your grandfather owned. It even smells of old cigarette smoke."
@@ -112,7 +112,7 @@ Before entering the bed:
 		otherwise if happiness > 30:
 			say "crying. You miss them so much. Everyone you loved, dying one by one. [italic type]Everyone dies.[roman type] It[']s your turn. [run paragraph on]";
 		otherwise if happiness > 0:
-			say "but only for a brief moment to imagine a large syringe of pentobarbital. You reach for it and plunged it into your heart. You close your eyes, and made sure the full dose of pentobarbital enters your bloodstream.";
+			say "but only for a brief moment to imagine a large syringe of pentobarbital. You reach for it and plunged it into your heart. You close your eyes while making sure the full dose enters your bloodstream.";
 		end the story;
 		say "You won[']t wake again.";
 	otherwise:
@@ -139,7 +139,7 @@ Before waiting:
 		Increase introspection counter by 1; [should now be 3]
 		Now the clock is in the Living Room;
 	otherwise:
-		say "You wait, patiently.".
+		say "You wait, patiently. [if introspection counter is 5]The bed is in the next room.".
 Examining the clock is checking the time. Reading the clock is checking the time.
 Before checking the time:
 	Increase clock counter by 1;
@@ -154,7 +154,7 @@ Before checking the time:
 	If seen clock is false:
 		Increase introspection counter by 1; [should now be 4]
 		Now seen clock is true;
-		say "Your mother taught you how to read an analog clock; [italic type]how 21st century she was. [roman type]Do you remember how to read an analog clock?[run paragraph on]";
+		say "Your mother taught you how to read an analog clock; [italic type]how 21st century she was. [roman type]Do you remember how to read an analog clock? >[run paragraph on]";
 		if player consents:
 			say "She was a good teacher, despite not being a good mother.
 				[line break]You take a deep breath. Still, you miss her. Her laughter was contagious. Her love, although conditional, was abundant. She wouldn’t want to see you like this.
@@ -190,7 +190,7 @@ Check reading:
 				say "Your legs give out beneath you, and you break down in tears. You just need a moment to be okay.";
 				You regain composure in 1 turn from now;
 				break;
-			say " Continue?  [run paragraph on]";
+			say " Continue?  >[run paragraph on]";
 			if player consents:
 				next;
 			otherwise:
@@ -201,7 +201,7 @@ Check reading:
 		Now viewed laptop is true;
 		say "August 10th, 2057 [line break]Dear friend, welcome to the future. My name is Steven Musk, founder of Elon Tech. If you are here, you know we have mastered death.  [line break]I[']m proud to announce that today, Elon Tech will open up this technology to the public, allowing anyone to be able to extend their lives indefinitely.  Join the human evolution with me. Subscribe below.[paragraph break][bold type]Sign Up Now".
 At the time when you regain composure:
-	if introspection counter is less than 6:
+	if introspection counter is less than 5:
 		say "[italic type]Breathe,[roman type] you tell yourself. You wipe away the tears, regain control of your legs and arms, and pull yourself up. You look at the letter in your hand.";
 		now regained composure is true.
 Tearing the letter is destroying the momento. Inserting letter into the shredder is destroying the momento. 
@@ -209,7 +209,7 @@ Before destroying the momento:
 	if shredded is true:
 		say the description;
 		stop the action;
-	say "Are you sure you want to shred the [noun]?";
+	say "Are you sure you want to shred the [noun]? >[run paragraph on]";
 	if player consents:
 		remove letter from play;
 		Now shredded is true;
@@ -220,7 +220,7 @@ Before destroying the momento:
 		say "[italic type]How could she?[roman type] You thought to yourself back then. She didn't even fight it; she just accepted her death, and let the illness take her. You turn to the laptop, and you remembered how you found yourself here.";
 	stop the action.
 Instead of touching laptop:
-	say "There's only one button to tap, and it reads 'Sign Up Now.' [if viewed laptop is false]You should probably read what's on the laptop first, though.[end if]Tap it?";
+	say "There's only one button to tap, and it reads [bold type]'Sign Up Now.'[roman type] [if viewed laptop is false]You should probably read what's on the laptop first, though.[end if]Tap it? >[run paragraph on]";
 	if player consents:
 		Increase introspection counter by 1; [should be 5]
 		say "This is what you wanted. To live forever, so you can love forever, and never leave anyone behind. Your child, your grandchild, and your great-grandchild will never have to know loss. [line break][line break]How wrong you were. [italic type]Why did I click it? [roman type]Here you are now, waiting out the last few moments of life. Intentionally waiting for someone to put you down, like a dog. You chuckle in the silence.";
@@ -233,13 +233,14 @@ Instead of touching laptop:
 		if stopped reading is true, increase life dissatisfaction by 1;
 		say "(EN: This is what I've made so far - there is a specific action left, which can end the game. You can also wait around until the game ends, up to you. - Hung)".
 Before going to the Hallway:
-	say "You're not supposed to leave. Are you sure you want to?";
+	say "You're not supposed to leave. Are you sure you want to?  >[run paragraph on]";
 	if player consents:
 		continue the action;
 	otherwise:
 		stop the action.
 
-Before killing yourself:
+Sleeping is wanting to die. Killing yourself is wanting to die.
+Before wanting to die:
 	if introspection counter < 5:
 		say "You don[']t quite think it[']s time yet.";
 	otherwise:
