@@ -1,3 +1,7 @@
+/* Current Features and Limitations
+ * \n = <p></p>
+ * [text](link) = hyperlink text, but only 1 per string
+ * */
 const pages = {
 "about-me": ["Hung T Nguyen",
 "I am a 3rd year Computer Science student at Stanford, on the Systems track.",
@@ -24,8 +28,8 @@ const pages = {
 "Welcome! My name is Hung, and I'm glad you found this website.",
 "Hopefully, you're where you expect to be! Through this site, you can learn a little bit more about me and what I do.",
 "It's definitely under construction, so there isn't a lot here yet. Do check back periodically in the next couple weeks!",
-"LinkedIn: <a href=\"https://www.linkedin.com/in/hung-the-nguyen\" target=\"_blank\"> https://www.linkedin.com/in/hung-the-nguyen </a>",
-"Github: <a href=\"https://github.com/hnguyen094\" target=\"_blank\"> https://github.com/hnguyen094 </a>"
+"LinkedIn: [](https://www.linkedin.com/in/hung-the-nguyen)",
+"Github: [](https://github.com/hnguyen094)"
 ],
 
 "contact" : ["contact",

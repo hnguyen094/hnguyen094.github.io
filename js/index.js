@@ -24,6 +24,7 @@ class App {
             });
         }
     }
+
     openPage(id) {
         // TODO: put the selected and unselected here.
         const content = document.querySelector('#content');
@@ -31,12 +32,21 @@ class App {
         content.querySelector('h1').innerHTML = title;
         let body = '';
         for (let i = 1; i < pages[id].length; i++)
-            body += '<p>' + pages[id][i] + '</p>';
-        content.querySelector('span').innerHTML = this.formatText(body);
+            body += '<p>' + this.formatText(pages[id][i]) + '</p>';
+        content.querySelector('span').innerHTML = body;
     }
+
     formatText(str) {
-        return str.replace(/\n/g, '</p><p>');
+        let newstr = str.replace(/\n/g, '</p><p>'); // \n as new <p>
+        const regex = /\[.*\]\(.*\)/g; // match []() link
+        newstr = newstr.replace(regex, function(st) {
+            console.log(st);
+            const url = st.substr(st.indexOf('(') + 1, st.indexOf(')') - st.indexOf('(') -1);
+            const txt = st.substr(st.indexOf('[') + 1, st.indexOf(']') - st.indexOf('[') -1);
+            console.log("url:" + url, "txt:" + txt);
+            return '<a href=\"' + url + '\" target=\"_blank\"> ' + (txt.length == 0? url:txt) + '</a>';
+        });
+        return newstr;
     }
 }
-
 const app = new App();
