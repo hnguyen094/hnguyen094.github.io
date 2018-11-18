@@ -1,22 +1,23 @@
 :root {
-  --main-color: #939598;
-  --secondary-color: white;
-  --highlight-color: gold;
-  --tertiary-color: #4A464F;
-  --b-text: 30px;
-  --s-text: 24px;
-  --m-text: 25px;
-  --ss-text: 20px;
+    --main-color: #939598;
+    --secondary-color: white;
+    --highlight-color: gold;
+    --highlight-second-color: #babec4;
+    --tertiary-color: #4A464F;
+    --b-text: 30px;
+    --s-text: 24px;
+    --m-text: 25px;
+    --ss-text: 20px;
 }
 
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+    supported by Chrome and Opera */
 }
 
 html {
@@ -24,22 +25,24 @@ html {
 }
 
 #background {
-  background-image: url("img/bg.jpg");
-  z-index: -10;
-  position: fixed;
-  top: 0;
-  height: 100vh;
-  width: 100vw;
+    background-image: url("img/bg.jpg");
+    z-index: -10;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
 }
 
+/******* Menu Formatting ******/
+
 a {
-  font-weight: bold;
-  color: var(--tertiary-color);
+    font-weight: bold;
+    color: var(--tertiary-color);
 }
 
 a.sub-title {
-  font-weight: bold;
-  font-size: var(--ss-text);
+    font-weight: bold;
+    font-size: var(--ss-text);
 }
 
 a.menu-item {
@@ -50,53 +53,53 @@ a.menu-item {
     cursor:pointer;
 }
 
-/* @keyframes hoverAnim {
-  from { color:var(--secondary-color); }
-  to { color:var(--highlight-color); }
+@keyframes hoverAnim {
+    from { color:var(--secondary-color); }
+    to { color:var(--highlight-color); }
 }
 
 @keyframes unhoverAnim {
-  from { color:var(--highlight-color); }
-  to { color:var(--secondary-color); }
+    from { color:var(--highlight-color); }
+    to { color:var(--secondary-color); }
 }
 
-a.hover {
-  animation-name: hoverAnim;
-  animation-duration: 0.5s;
-  color:var(--highlight-color);
+@-webkit-keyframes selectedAnim {
+    from { font-size: var(--s-text); }
+    to { font-size: var(--b-text); }
 }
 
-a.unhover {
-  animation-name: unhoverAnim;
-  animation-duration: 0.5s;
-  color:var(--secondary-color);
-} */
+@-webkit-keyframes unselectedAnim {
+    from { font-size: var(--b-text); }
+    to { font-size: var(--s-text); }
+}
 
 @keyframes selectedAnim {
-  from { font-size: var(--s-text); }
-  to { font-size: var(--b-text); }
+    from { font-size: var(--s-text); }
+    to { font-size: var(--b-text); }
 }
 
 @keyframes unselectedAnim {
-  from { font-size: var(--b-text); }
-  to { font-size: var(--s-text); }
+    from { font-size: var(--b-text); }
+    to { font-size: var(--s-text); }
 }
 
 a.selected {
-  animation-name: selectedAnim;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  font-size: var(--b-text);;
-  color:var(--highlight-color);
+    animation-name: selectedAnim;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+    font-size: var(--b-text);;
+    color:var(--highlight-color);
 }
 
 a.unselected {
-  animation-name: unselectedAnim;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  font-size: var(--s-text);
-  color:var(--secondary-color);
+    animation-name: unselectedAnim;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+    font-size: var(--s-text);
+    color:var(--secondary-color);
 }
+
+/******* Content Formatting ******/
 
 h1 {
     font-weight: bold;
@@ -132,7 +135,7 @@ div#content {
     align-items: center;
     padding-left: 60;
     padding-right: 60;
-    max-width: 1080px;
+    max-width: 1920px;
     background-color: var(--secondary-color);
 }
 
@@ -151,6 +154,59 @@ body {
     /* font-family: 'Space Mono', monospace; */
     /* font-family: 'Oxygen', sans-serif; */
     font-family: 'Krub', sans-serif;
+}
 
+.popup {
+    position: relative;
+    display: inline-block;
+    /* background-color: var(--highlight-second-color); */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -200px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--main-color) transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; } 
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity:1 ; }
 }

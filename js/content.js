@@ -22,12 +22,19 @@ const pages = {
 ""
 ],
 
-"welcome": ["Howdy~",
+"welcome": ["~Howdy~",
 "Welcome! My name is Hung, and I'm glad you found this website.",
 "Hopefully, you're where you expect to be! Through this site, you can learn a little bit more about me and what I do.",
 "It's definitely under construction, so there isn't a lot here yet. Do check back periodically in the next couple weeks!",
 "LinkedIn: [](https://www.linkedin.com/in/hung-the-nguyen)",
 "Github: [](https://github.com/hnguyen094)"
+],
+
+"education": ["Education",
+"Below are some of the relevant classes I've taken.",
+"#Systems",
+"[Computer Abstractions in C++ (Accelerated)]{cs106x covers advanced programming topics such as recursion, algorithmic analysis, and data abstraction using the C++ language.}",
+"[Computer Organization and Systems]{cs107 works from the C programming language down to the microprocessor to de-mystify the machine; topics include data representation and optimization of memory and runtime performance.}"
 ],
 
 "contact" : ["contact",
