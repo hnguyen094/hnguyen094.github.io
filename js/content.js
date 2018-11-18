@@ -1,6 +1,7 @@
 /* Current Features and Limitations
  * \n = <p></p>
- * [text](link) = hyperlink text, but only 1 per string
+ * [text](link) = hyperlink text, but only 1 per string; text optional
+ * #text ##subtitle= <h2>text <subtitle></h2>, but only 1 subtitle per string
  * */
 const pages = {
 "about-me": ["Hung T Nguyen",
@@ -9,18 +10,15 @@ const pages = {
 ],
 
 "experience": ["what I've done",
-"<h2><a href=\"https://crypto.stanford.edu/fidelius/\" target=\"_blank\">Fidelius | Software Engineer Researcher</a>" +
-"<br><a class=\"sub-title\">03.2018 - 07.2018</a></h2>",
+"#[Fidelius | Software Engineer Researcher](https://crypto.stanford.edu/fidelius) ## 03.2018 - 07.2018",
 "Responsibilities<ul><li>Utilized the Intel SGX enclave system to create a trusted display output on untrusted computers</li> <li>Implemented a robust API for transferring data securely to and from the trusted origin server, through the untrusted browser, to the trusted monitor</li></ul>",
 "",
-"<h2><a href=\"http://www.oneweb.world/\" target=\"_blank\">OneWeb | Software Engineer Intern</a>" +
-"<br><a class=\"sub-title\">06.2017 - 09.2017</a></h2>",
+"#[OneWeb | Software Engineer Intern](http://www.oneweb.world/) ## 06.2017 - 09.2017",
 "Responsibilities<ul><li>Designed and deployed an AR mobile attitude indicator as a user-facing product for offline, low-power use</li> <li>Led weekly meetings and presentations; collaborated with other teams to deliver metrics</li></ul>",
 "",
-"<h2><a href=\"https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1321586249&mt=8\" target=\"_blank\">FamiliAR | Software Engineer, Designer</a>" +
-"<br><a class=\"sub-title\">11.2017 - 12.2017</a></h2>",
+"#[FamiliAR | Software Engineer, Designer](https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1321586249&mt=8) ## 11.2017 - 12.2017",
 "<iframe width=\"336\" height=\"189\" src=\"https://www.youtube-nocookie.com/embed/o0UHfR5vzJI\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>",
-"<p>Responsibilities<ul><li>Deployed the first Escape Room VR experience on the App Store with a limited time frame</li> <li>Organized and led team meetings when the team lead dropped the project</li> <li>Solved unique spatial AR challenges through mechanics and story</li></ul><br>",
+"Responsibilities<ul><li>Deployed the first Escape Room VR experience on the App Store with a limited time frame</li> <li>Organized and led team meetings when the team lead dropped the project</li> <li>Solved unique spatial AR challenges through mechanics and story</li></ul><br>",
 ""
 ],
 
@@ -33,5 +31,5 @@ const pages = {
 ],
 
 "contact" : ["contact",
-"You can reach me through email: <a href=\"mailto:hungn2@stanford.edu\">hungn2@stanford.edu</a>"
+"You can reach me through email: [hungn2@stanford.edu](mailto:hungn2@stanford.edu)"
 ]};

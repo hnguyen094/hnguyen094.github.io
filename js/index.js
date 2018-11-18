@@ -32,21 +32,27 @@ class App {
         content.querySelector('h1').innerHTML = title;
         let body = '';
         for (let i = 1; i < pages[id].length; i++)
-            body += '<p>' + this.formatText(pages[id][i]) + '</p>';
+            body += this.formatText(pages[id][i]);
         content.querySelector('span').innerHTML = body;
     }
 
     formatText(str) {
         let newstr = str.replace(/\n/g, '</p><p>'); // \n as new <p>
         const regex = /\[.*\]\(.*\)/g; // match []() link
-        newstr = newstr.replace(regex, function(st) {
-            console.log(st);
-            const url = st.substr(st.indexOf('(') + 1, st.indexOf(')') - st.indexOf('(') -1);
-            const txt = st.substr(st.indexOf('[') + 1, st.indexOf(']') - st.indexOf('[') -1);
-            console.log("url:" + url, "txt:" + txt);
+        newstr = newstr.replace(regex, function(st) { // replace first instance of []()
+            const url = st.substr(st.indexOf('(') + 1, st.indexOf(')') - st.indexOf('(') -1).trim();
+            const txt = st.substr(st.indexOf('[') + 1, st.indexOf(']') - st.indexOf('[') -1).trim();
             return '<a href=\"' + url + '\" target=\"_blank\"> ' + (txt.length == 0? url:txt) + '</a>';
         });
-        return newstr;
+        if (newstr[0] == '#') {
+            newstr = '<h2>' + newstr.substr(1, newstr.length-1) + '</h2>';
+            const subIndex = newstr.indexOf('##');
+            if (subIndex > -1) {
+                const subtitle = newstr.substr(subIndex + 2).trim();
+                newstr = newstr.substr(0, newstr.indexOf('##')) + '<br><a class=\"sub-title\">' + subtitle + '</a>';
+            }
+        }
+        return '<p>' + newstr + '</p>';
     }
 }
 const app = new App();
