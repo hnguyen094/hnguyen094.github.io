@@ -71,7 +71,7 @@ class App {
     createPopup(text, popup) {
         return '<a class=\"popup\" onmouseleave=\"togglePopup(event)\" ' +
                'onmouseenter=\"togglePopup(event)\">' +
-               text + '  &#9432;<span class=\"popuptext\">' + popup + '</span></a>';
+               text + ' &#x1F6C8;<span class=\"popuptext\">' + popup + '</span></a>';
     }
 
     createHyperlink(txt, url) {
