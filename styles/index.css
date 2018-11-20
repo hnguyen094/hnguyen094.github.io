@@ -2,7 +2,7 @@
     --main-color: #939598;
     --secondary-color: white;
     --highlight-color: gold;
-    --highlight-second-color: #babec4;
+    --highlight-second-color: #808284;
     --tertiary-color: #4A464F;
     --b-text: 30px;
     --s-text: 24px;
@@ -113,6 +113,7 @@ h2 {
     font-weight: bold;
     font-size: var(--s-text);
     color: var(--tertiary-color);
+    margin-bottom: 1;
 }
 
 nav#menu {
@@ -160,16 +161,12 @@ body {
     position: relative;
     display: inline-block;
     /* background-color: var(--highlight-second-color); */
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 /* The actual popup */
 .popup .popuptext {
     visibility: hidden;
-    background-color: var(--main-color);
+    background-color: var(--highlight-second-color);
     color: var(--secondary-color);
     text-align: center;
     border-radius: 6px;
@@ -178,7 +175,7 @@ body {
     z-index: 1;
     bottom: 125%;
     left: 50%;
-    margin-left: -200px;
+    margin-left: -260px;
 }
 
 /* Popup arrow */
@@ -190,14 +187,14 @@ body {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: var(--main-color) transparent transparent transparent;
+    border-color: var(--highlight-second-color) transparent transparent transparent;
 }
 
 /* Toggle this class - hide and show the popup */
 .popup .show {
     visibility: visible;
-    -webkit-animation: fadeIn 0.5s;
-    animation: fadeIn 0.5s;
+    -webkit-animation: fadeIn 0.3s;
+    animation: fadeIn 0.3s;
 }
 
 /* Add animation (fade in the popup) */
