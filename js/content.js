@@ -2,6 +2,7 @@
  * \n = <br>, new item = <p>, \t = "    "
  * [text](link) = hyperlink text; text optional
  * #text ##subtitle= <h2>text <subtitle></h2>, but only 1 subtitle per string
+ * currently nothing for <h1>
  * */
 const pages = {
 "about-me": ["Hung T Nguyen",
@@ -11,7 +12,7 @@ const pages = {
 
 "experience": ["what I've done",
 "#[Fidelius | Software Engineer Researcher](https://crypto.stanford.edu/fidelius) ## 03.2018 - 07.2018",
-"Responsibilities<ul><li>Utilized the Intel SGX enclave system to create a trusted display output on untrusted computers</li> <li>Implemented a robust API for transferring data securely to and from the trusted origin server, through the untrusted browser, to the trusted monitor</li></ul>",
+"Responsibilities<ul><li>Utilized the Intel SGX enclave system to create a trusted display output on untrusted computers</li> <li>Implemented a robust API for transferring data securely to and from the trusted origin server, through the untrusted browser</li></ul>",
 "",
 "#[OneWeb | Software Engineer Intern](http://www.oneweb.world/) ## 06.2017 - 09.2017",
 "Responsibilities<ul><li>Designed and deployed an AR mobile attitude indicator as a user-facing product for offline, low-power use</li> <li>Led weekly meetings and presentations; collaborated with other teams to deliver metrics</li></ul>",

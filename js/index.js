@@ -1,3 +1,6 @@
+var md = new Remarkable();
+console.log(md.render('# Remarkable rulezz!'));
+
 class Website {
     constructor() {
         const menu = document.querySelectorAll('.menu-item');
@@ -29,7 +32,7 @@ class Website {
         // TODO: put the selected and unselected here.
         const content = document.querySelector('#content');
         const title = pages[id][0];
-        content.querySelector('h1').innerHTML = title;
+        content.querySelector('h1#title').innerHTML = title;
         let body = '';
         for (let i = 1; i < pages[id].length; i++)
             body += this.formatText(pages[id][i]);
@@ -38,7 +41,7 @@ class Website {
 
     formatText(str) {
         let newstr = str.replace(/\n/g, '<br>'); // \n as new <br>
-        newstr = newstr.replace(/\t/g, '&nbsp;&nbsp;&nbsp;&nbsp;'); // \t
+        newstr = newstr.replace(/\t/g, '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'); // \t
         let regex = /\[[^\[\]]+\]\([^\(\)]+\)/g;
         newstr = newstr.replace(regex, function(st) { // match []()
             console.log(st);

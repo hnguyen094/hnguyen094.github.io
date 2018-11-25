@@ -106,6 +106,9 @@ h1 {
     font-size: var(--b-text);
     color: var(--tertiary-color);
     text-align: center;
+}
+
+h1#title {
     padding-bottom: 50px;
 }
 
