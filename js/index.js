@@ -1,5 +1,5 @@
-var md = new Remarkable();
-console.log(md.render('# Remarkable rulezz!'));
+const md = new Remarkable();
+// console.log(md.render('# Remarkable rulezz!'));
 
 class Website {
     constructor() {
@@ -31,14 +31,34 @@ class Website {
     openPage(id) {
         // TODO: put the selected and unselected here.
         const content = document.querySelector('#content');
+        console.log(this.readTextFile("md/"+id+".md"));
+        //content.innerHTML = md.render();
+        /*
         const title = pages[id][0];
         content.querySelector('h1#title').innerHTML = title;
         let body = '';
         for (let i = 1; i < pages[id].length; i++)
             body += this.formatText(pages[id][i]);
         content.querySelector('span').innerHTML = body;
+        */
     }
-
+    readTextFile(file)
+    {
+        var rawFile = new XMLHttpRequest();
+        rawFile.open("GET", file, false);
+        rawFile.onreadystatechange = function ()
+        {
+            if(rawFile.readyState === 4)
+            {
+                if(rawFile.status === 200 || rawFile.status == 0)
+                {
+                    var allText = rawFile.responseText;
+                    alert(allText);
+                }
+            }
+        }
+        rawFile.send(null);
+    }
     formatText(str) {
         let newstr = str.replace(/\n/g, '<br>'); // \n as new <br>
         newstr = newstr.replace(/\t/g, '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'); // \t
