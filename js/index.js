@@ -1,11 +1,11 @@
 
 class Website {
     constructor() {
-        this.md = new Remarkable({
+        this.md = new Remarkable('commonmark', {
             html :  true,
             breaks: true
         });
-
+        // this.md = new showdown.Converter();
         const menu = document.querySelectorAll('.menu-item');
         const startpage = "welcome";
         this.openPage(startpage);
@@ -34,13 +34,13 @@ class Website {
     openPage(id) {
         // TODO: put the selected and unselected here.
         const content = document.querySelector('#content');
-        fetch("md/"+id+".md")
+        fetch("md/" + id + ".md")
             .then(function(response) {
                 return response.text();
             })
             .then(function(text) {
-                const contentText = this.md.render(text);
-                console.log(contentText);
+                const contentText = this.md.render(text); // uses remarkable
+                // const contentText = this.md.makeHtml(text); // uses showdown
                 content.innerHTML = this.formatText(contentText);
             }.bind(this));
     }
