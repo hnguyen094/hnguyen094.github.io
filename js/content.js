@@ -4,7 +4,8 @@
  * #text ##subtitle= <h2>text <subtitle></h2>, but only 1 subtitle per string
  * currently nothing for <h1>
  * */
-const pages = {
+let pages = {};
+const pagesOld = {
 "about-me": ["Hung T Nguyen",
 "I am a 3rd year Computer Science student at Stanford, on the Systems track.",
 "I've always been interested in computers and technology, ever since I started playing/tinkering with Nintendo DS's and jailbroken iPhones. I believe that computer science can help people on a large scale by solving difficult problems and creating impactful products (and it's fun to do both!)"
