@@ -44,6 +44,7 @@ class Website {
                 content.innerHTML = this.formatText(contentText);
             }.bind(this));
     }
+
     formatText(str) {
         let newstr = str.replace(/\\t/g, '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'); // \t
         let regex = /\[[^\[\]]+\]\{[^\{\}]+\}/g;

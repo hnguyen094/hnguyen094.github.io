@@ -16,7 +16,7 @@ Responsibilities
 
 <br>
 # other projects 
-
+These are some of the projects I'm proud of. I'll add more as I find more! 
 ## [**Fidelius | Software Engineer Researcher**](https://crypto.stanford.edu/fidelius)<br><a class="sub-title">03.2018 - 07.2018</a>
 
 Responsibilities
