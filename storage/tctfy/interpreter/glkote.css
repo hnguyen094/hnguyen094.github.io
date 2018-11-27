@@ -42,7 +42,7 @@
 }
 
 .BufferWindow {
-  overflow: scroll;   /* vertical scrollbar is mandatory */
+  overflow: hidden; /*scroll;*/   /* vertical scrollbar is mandatory */
   overflow-x: hidden; /* but horizontal scrollbar is forbidden */
   font-family: monaco, andale mono, lucidatypewriter, courier, courier new, monospace; /* Georgia, "Times New Roman", Times, serif; */
   font-size: 15px;
