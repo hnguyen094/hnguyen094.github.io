@@ -8,7 +8,9 @@ Standard CSS file for use with Standard.html and Standard-Source.html.
 body
 {
 	font-family: Georgia, Palatino, "Times New Roman", Times, serif;
-	font-size: 100%;
+	color: white;
+    text-align: center;
+    font-size: 100%;
 	-webkit-text-size-adjust: none;
 }
 
@@ -407,7 +409,8 @@ Styles for play.html
 
 .interpretercredit
 {
-	bottom: 1em;
+	color: white;
+    bottom: 1em;
 	font-size: 80%;
 	position: fixed;
 }
@@ -419,7 +422,6 @@ Styles for play.html
 	left: 15.4em;
 	line-height: 1.4;
 	margin: 0px;
-	position: absolute;
 	right: 0px;
 	top: 0px;
 }
