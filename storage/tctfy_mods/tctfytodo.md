@@ -20,5 +20,5 @@
 ## Other
 * spacing between 'cw'  // done
 * instructions using help  // done
-* change "the clock ticks to stick"
-* change "and it was a simple decision really" to not stick
+* change "the clock ticks to stick" //done
+* change "and it was a simple decision really" to not stick  //done
