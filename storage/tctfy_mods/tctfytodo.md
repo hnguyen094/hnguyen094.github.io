@@ -1,7 +1,7 @@
 # Visual Changes
 ## Color
 * What is the "color" of the scene?
-* Changes dynamically based on story? Depends on how the js works 
+* Changes dynamically based on story? Depends on how the js works
 ** would be cool it changes bases on day v. night at least
 ** animations for certain actions (lag)
 
@@ -12,11 +12,13 @@
 
 # Logic changes
 ## Verbs
-* smell chair
-* jump into bed
-* jump in bed
-* sink in bed
-* sink into bed
+* smell chair       // done
+* jump into bed     // done
+* jump in bed       // done
+* sink in bed       // done
+* sink into bed     // done
 ## Other
-* spacing between 'cw'
-* instructions before Queens
+* spacing between 'cw'  // done
+* instructions using help  // done
+* change "the clock ticks to stick"
+* change "and it was a simple decision really" to not stick
