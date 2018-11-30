@@ -2,7 +2,7 @@
  * Designed by Andrew Plotkin <erkyrath@eblong.com>
  * <http://eblong.com/zarf/glk/glkote.html>
  * <http://eblong.com/zarf/glulx/quixe/>
- * 
+ *
  * This CSS stylesheet is in the public domain. Do whatever you want
  * with it.
  */
@@ -44,7 +44,10 @@
 .BufferWindow {
   overflow: hidden; /*scroll;*/   /* vertical scrollbar is mandatory */
   overflow-x: hidden; /* but horizontal scrollbar is forbidden */
-  font-family: monaco, andale mono, lucidatypewriter, courier, courier new, monospace; /* Georgia, "Times New Roman", Times, serif; */
+
+
+      font-family: 'Scope One', serif;
+
   font-size: 15px;
   line-height: 1.4;
   padding: 6px 10px 6px 10px;
@@ -86,7 +89,7 @@
 }
 
 .Input {
-  /* This class mimicks the Style_input class. It also eliminates the 
+  /* This class mimicks the Style_input class. It also eliminates the
      usual decoration of an <input> field, as much as possible. */
   color: white;
   border: none;
