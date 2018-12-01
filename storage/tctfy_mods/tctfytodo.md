@@ -31,4 +31,10 @@
 * change the result to acknowledge that you didn't read
 * "how wrong you were" to dependent (to also have "you were right, but...")
 * Have the "it's time" text to be warned 2 hours ahead
+* Fall onto [something]
+* After printing a parser error: 
+** say "If you are new to interactive fiction, you may like to try typing HELP."
+* http://inform7.com/learn/man/WI_18_35.html
+* Understand "I don't know" as helping
+* breathe -> inhale, then exhale
 ## Other
