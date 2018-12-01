@@ -42,10 +42,10 @@
 }
 
 .BufferWindow {
-  overflow: hidden; /*scroll;*/   /* vertical scrollbar is mandatory */
+  overflow: scroll;  /* vertical scrollbar is mandatory */
   overflow-x: hidden; /* but horizontal scrollbar is forbidden */
   font-family: 'Scope One', serif;
-  font-size: 3vh;
+  font-size: 140%;
   line-height: 1.4;
   padding: 6px 10px 6px 10px;
 }
@@ -100,7 +100,7 @@
 
 .BufferWindow .Input {
   font-family: 'Scope One', serif;
-  font-size: 3vh;
+  font-size: 100%;
 }
 
 .GridWindow .Input {

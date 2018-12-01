@@ -37,4 +37,9 @@
 * http://inform7.com/learn/man/WI_18_35.html
 * Understand "I don't know" as helping
 * breathe -> inhale, then exhale
+* go to living room
+* wait as an alternative to triggering everything
+* Change double line breaks to paragraph break
 ## Other
+* Balance time and game story as needed
+* make it mobile friendly, then link to it
