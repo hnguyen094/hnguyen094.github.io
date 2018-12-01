@@ -33,21 +33,21 @@
 * jump in bed       // done
 * sink in bed       // done
 * sink into bed     // done
-* close my eyes
-* indent and unitalicize How 21st century she was
-* line break after simple decision, really
-* change full name to first name/nickname only
-* check condition for "Because you want it to end like this"
-* and change it to "Because you want your end to be like this. perfectly" maybe?
-* "tap it?" to "don't read and tap it anyway?"
+* close my eyes     // done
+* indent and unitalicize How 21st century she was   // done
+* line break after simple decision, really  // done
+* change full name to first name/nickname only  // done
+* check condition for "Because you want it to end like this"  // done
+* and change it to "Because you want your end to be like this. perfectly" maybe?  // done
+* "tap it?" to "don't read and tap it anyway?"  // done
 * change the result to acknowledge that you didn't read
-* have "read what's on the laptop" as "read laptop"
-* check leaving letter when rereading
-* objects of your life -> to something else
+* have "read what's on the laptop" as "read laptop" // done
+* check leaving letter when rereading // done
+* objects of your life -> to something else // done
 * "how wrong you were" to dependent (to also have "you were right, but...")
 * Have the "it's time" text to be warned 2 hours ahead
-* say, "it must be 7am" depending on whether or not the clock is there
-* your strength suddenly fades. you collapse.
+* say, "it must be 7am" depending on whether or not the clock is there  // done
+* your strength suddenly fades. you collapse. // done
 ## Other
 * spacing between 'cw'  // done
 * instructions using help  // done
