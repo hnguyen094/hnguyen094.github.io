@@ -6,6 +6,7 @@ class Mods {
         const inputField = document.querySelector('.Input');
         inputField.style.position= "relative";
         inputField.style.width = "50vw";
+        inputField.style.animation = "slide 1s";
     }
 }
 const mods = new Mods();

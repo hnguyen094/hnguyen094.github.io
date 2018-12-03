@@ -40,6 +40,7 @@
 * go to living room
 * wait as an alternative to triggering everything
 * Change double line breaks to paragraph break
+* Change the time to cap at 7:00 exactly (or change the wording so ~7)
 ## Other
 * Balance time and game story as needed
 * make it mobile friendly, then link to it

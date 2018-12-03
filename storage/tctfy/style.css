@@ -4,6 +4,14 @@ Standard CSS file for use with Standard.html and Standard-Source.html.
 
 */
 
+@keyframes slide {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50vw;
+    }
+}
 
 body
 {
