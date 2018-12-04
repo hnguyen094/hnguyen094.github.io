@@ -4,10 +4,12 @@
 2. Interview with friends
 
 ## Cram mode
-
+Taken from Steve Yegge's rants: https://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions 
+and other places (Google's)
 ### Coding
 * Print from I/O
 * Text formatting (printf or str.format) 
+* Convert between hex, bin, oct
 #### OOP
 * class, object (and diff)
 * instantiation
@@ -33,7 +35,11 @@
 * method signatures (what's included)
 * method visibility (public, private, other)
 
+### Regex and Scripting
+* \...-...-....\g ... or whatever for phone #'s 
+
 ### Big-O complexity analysis
+* constant, log, polynomial (^n), exponential (n^), factorial (n!)
 
 ### Sort (quicksort, mergesort)
 
