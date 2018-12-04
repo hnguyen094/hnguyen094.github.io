@@ -15,10 +15,12 @@ class Mods {
             }
         }
     }
+
     pullKeyboard() {
         const inputField = document.querySelector('.Input');
         inputField.focus();
     }
+
     changeInputStyle() {
         console.log(document.getScroll());
         const inputField = document.querySelector('.Input');

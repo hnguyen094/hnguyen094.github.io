@@ -5,6 +5,34 @@
 
 ## Cram mode
 
+### Coding
+* Print from I/O
+* Text formatting (printf or str.format) 
+#### OOP
+* class, object (and diff)
+* instantiation
+* method (vs C function)
+* virtual method, pure virtual method
+* class/static method
+* static/class initializer
+* constructor
+* destructor/finalizer
+* superclass, base class
+* subclass, derived class
+* inheritance
+* encapsulation
+* multiple inheritance (& give example)
+* delegation/forwarding
+* composition, aggregation
+* abstract class
+* interface/protocol (& diff from abstract)
+* method overriding
+* method overloading (and diff from override)
+* polymorphism (w/o examples)
+* is-a vs. has-a relationship (w/ examples)
+* method signatures (what's included)
+* method visibility (public, private, other)
+
 ### Big-O complexity analysis
 
 ### Sort (quicksort, mergesort)
