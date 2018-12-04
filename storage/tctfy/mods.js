@@ -8,6 +8,8 @@ class Mods {
         inputField.style.width = "50vw";
         inputField.style.animation = "slide 1s";
         inputField.style.webkitAnimation = "slide 1s";
+        inputField.style.OAnimation = "slide 1s";
+        inputField.style.MozAnimation = "slide 1s";
     }
 }
 const mods = new Mods();

@@ -5,21 +5,20 @@ Standard CSS file for use with Standard.html and Standard-Source.html.
 */
 
 @keyframes slide {
-    from {
-        width: 0;
-    }
-    to {
-        width: 50vw;
-    }
+    from { width: 0; }
+    to { width: 50vw; }
 }
-
 @-webkit-keyframes slide {
-    from {
-        width: 0;
-    }
-    to {
-        width: 50vw;
-    }
+    from { width: 0; }
+    to { width: 50vw; }
+}
+@-moz-keyframes slide {
+    from { width: 0; }
+    to { width: 50vw; }
+}
+@-o-keyframes slide {
+    from { width: 0; }
+    to { width: 50vw; }
 }
 
 body
