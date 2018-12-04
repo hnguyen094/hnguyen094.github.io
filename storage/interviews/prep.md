@@ -4,19 +4,27 @@
 2. Interview with friends
 
 ## Cram mode
-1. Big-O complexity analysis
-2. Sort (quicksort, mergesort)
-3. Hashtables and Maps (and their O in ur language)
-4. Trees (binary, n-ary, trie); Min/Max Heaps
-** Traversal (inorder, preorder, postorder), manipulation, construction
-** At least 1 balanced (red/black, AVL, or splay)
-5. Graphs
-** representation in memory
-** BFS/DFS, Dijkstra, A*
-6. NP-complete
-** travelling salesman, knapsack, etc.
-7. Math
-** Combinations/Permutations/Counting
-8. OSes
-** Locks, mutexes, semaphores, monitors
-** Processes, threads, concurrency, context switching
+
+### Big-O complexity analysis
+
+### Sort (quicksort, mergesort)
+
+### Hashtables and Maps (and their O in ur language)
+
+### Trees (binary, n-ary, trie); Min/Max Heaps
+* Traversal (inorder, preorder, postorder), manipulation, construction
+* At least 1 balanced (red/black, AVL, or splay)
+
+### Graphs
+* representation in memory
+* BFS/DFS, Dijkstra, A*
+
+### NP-complete
+* travelling salesman, knapsack, etc.
+
+### Math
+* Combinations/Permutations/Counting
+
+### OSes
+* Locks, mutexes, semaphores, monitors
+* Processes, threads, concurrency, context switching
