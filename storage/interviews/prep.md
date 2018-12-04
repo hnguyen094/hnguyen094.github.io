@@ -6,8 +6,8 @@
 ## Cram mode
 1. Big-O complexity analysis
 2. Sort (quicksort, mergesort)
-3. Hashtables
-4. Trees (binary, n-ary, trie)
+3. Hashtables and Maps (and their O in ur language)
+4. Trees (binary, n-ary, trie); Min/Max Heaps
 ** Traversal (inorder, preorder, postorder), manipulation, construction
 ** At least 1 balanced (red/black, AVL, or splay)
 5. Graphs
@@ -18,5 +18,5 @@
 7. Math
 ** Combinations/Permutations/Counting
 8. OSes
-** Mutexes, semaphores, monitors
+** Locks, mutexes, semaphores, monitors
 ** Processes, threads, concurrency, context switching
