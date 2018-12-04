@@ -20,7 +20,9 @@ Standard CSS file for use with Standard.html and Standard-Source.html.
     from { width: 0; }
     to { width: 50vw; }
 } */
-
+html {
+  background-color: black;
+}
 @keyframes fade {
     from { color: white; }
     to { color: black; }
@@ -39,9 +41,10 @@ Standard CSS file for use with Standard.html and Standard-Source.html.
 }
 
 .end {
-  animation: fade 5s;
-  -webkit-animation: fade 5s;
-  -moz-animation: fade 5s;
+  color: black;
+  animation: fade 18s;
+  -webkit-animation: fade 18s;
+  -moz-animation: fade 18s;
 }
 
 body

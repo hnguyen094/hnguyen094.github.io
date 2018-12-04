@@ -14,6 +14,11 @@ class Mods {
                 return [sx, sy];
             }
         }
+        this.clockTicking = new Audio('clock-ticking.wav');
+        this.clockTicking.addEventListener('ended', function() {
+          this.currentTime = 0;
+          this.play();
+        }, false);
     }
 
     pullKeyboard() {
@@ -44,8 +49,9 @@ class Mods {
       const alerts = document.querySelectorAll("span.Style_alert");
       for (const alert of alerts) {
         const endText = "*** The End ***";
-        if (alert.indexOf(endText) !== -1) {
-          document.querySelector(".play").classList.add("end"); //TODO: not working
+        if (alert.innerText.indexOf(endText) !== -1) {
+          const body = document.querySelector(".play");
+          body.classList.add("end"); //TODO: not working
         }
       }
 
@@ -54,6 +60,10 @@ class Mods {
         const prompt = "What do you do this moment?";
         if(lines[i].innerText.indexOf(prompt) !== -1) {
           lines[i].innerText = lines[i].innerText.replace(prompt,"");
+        }
+        const clockTicks = "In the silence, the clock ticks.";
+        if (lines[i].innerText.indexOf(clockTicks) !== -1) {
+          this.clockTicking.play();
         }
       }
 
