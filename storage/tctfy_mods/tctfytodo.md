@@ -42,6 +42,7 @@
 * Change double line breaks to paragraph break
 * Change the time to cap at 7:00 exactly (or change the wording so ~7)
 * Move Queens lyrics after cw and help
+* Prefer that the prompt changes width (somehow)
 ## Other
 * Balance time and game story as needed
 * make it mobile friendly, then link to it
