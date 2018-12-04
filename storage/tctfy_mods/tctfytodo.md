@@ -13,6 +13,7 @@
 * https://fonts.google.com/specimen/Dosis
 * https://fonts.google.com/specimen/Hind+Siliguri
 * https://fonts.google.com/specimen/Scope+One
+* Change the font for alerts and every instance
 # Story changes
 ## If there's time
 * Add more rooms
@@ -24,25 +25,15 @@
     - if you can't, you "decided" and they pass
     - if you can, they're saved (but the story hints they die some other way anyway, lol)
 * Maybe, but it's still an experience--your success or failure continues the Story
-* Bigger fonts (150% feels good)
 * Have the text be bounded such that text doesn't reach too long to the sides
+* Change it so the prompt disappears after you're done
 # Logic changes
 ## Verbs
 * change the result to acknowledge that you didn't read
 * "how wrong you were" to dependent (to also have "you were right, but...")
 * Have the "it's time" text to be warned 2 hours ahead
-* Fall onto [something]
-* After printing a parser error: 
-** say "If you are new to interactive fiction, you may like to try typing HELP."
-* http://inform7.com/learn/man/WI_18_35.html
-* Understand "I don't know" as helping
-* breathe -> inhale, then exhale
 * go to living room
-* wait as an alternative to triggering everything
-* Change double line breaks to paragraph break
-* Change the time to cap at 7:00 exactly (or change the wording so ~7)
-* Move Queens lyrics after cw and help
 * Prefer that the prompt changes width (somehow)
 ## Other
 * Balance time and game story as needed
-* make it mobile friendly, then link to it
+* make it mobile friendly, then link to it (link: https://goo.gl/jDmbJo)
