@@ -29,17 +29,17 @@ Table of Letter
 Line (indexed text)	EOF (truth state)
 "'Babe, I love you.
 [line break]The words ‘I[’]m sorry’ was scribbled out, but you can still see it underneath the ink marks. ‘Thank you. For everything. For all the loving moments.’"	False
-"‘I[’]m sorry that I must leave you early. I’m sorry I must leave our child motherless early. [if use analog is true]But I know he will grow up to be amazing regardless; you certainly did.'[otherwise]'I can only hope I was a better mother to him, than yours was to you.'"	False
+"‘I[’]m sorry that I must leave you early. I’m sorry I must leave our child motherless early. [if use analog is true]But I know he will grow up to be amazing regardless; you certainly did. I love him, as your mom did you.'[otherwise]'I can only hope I was a better mother to him, than yours was to you.'"	False
 "'Still, Be his friend and his dad. Take him to the baseball games or buy him makeup; whatever he’s into.'"	False
 "'Love him. Love him again. Love him twice, so he can feel my love, too.’[line break]The text becomes a blur as your eyes water and your hands shake.[line break][italic type]Breathe.[roman type] You don't want to keep reading."	False
 "Still, you wipe away the tears, and read on. ‘Lastly, mourn for me. Cry, punch, scream, write; whatever you need. [line break]Then move on.'"	False
-"'I will always love you; but please, move on. For yourself, for me, for our child. [line break]Forever yours. [line break]Your wife, [paragraph break]Kate.'[line break]"	True [Kate In-young Dessalegn]
+"'I will always love you; but please, move on. For yourself, for me, for our child. [line break]Forever yours. [line break]Your wife, Kate.'[line break]"	True [Kate In-young Dessalegn]
 
 [Prefabs]
 Nighttime is a scene. Nighttime begins when the time of day is after sunset. Nighttime ends when the time of day is sunrise.
 A window is a kind of thing that is fixed in place. The description of a window is "Outside, Manhattan
 [if nighttime is happening]looks like a sea of fireflies, blinking[otherwise]glitters gold[end if] beneath you.
-Everything is perfect. [if introspection counter is greater than 5][line break]Because you want it to end like this.".
+Everything is perfect. [if introspection counter is greater than 4][line break]Because you want it to end like this.".
 
 [Verbs/ synonyms]
 Helping is an action applying to nothing. Understand "help" and "I don't know" as helping.
@@ -52,8 +52,8 @@ Understand "view [something]" as examining.
 Understand the command "read" as something new. Understand "read [something]" and "read what's on [something]" as reading. Reading is an action applying to one thing. 
 Understand the command "tear" as something new. Understand "tear [something]" as tearing. Tearing is an action applying to one thing. Understand "shred [something]" as tearing.
 Understand "tap [something]" as touching.
-Understand the command "kill" as something new. Understand "kill [something]" as killing. Killing is an action applying to one thing.
-
+Understand the command "kill" as something new. Understand "kill [someone]" as killing. Killing is an action applying to one thing.
+Understand "die" as sleeping.
 [Start]
 When play begins:
 	now the command prompt is "What do you do this moment? >";
@@ -76,24 +76,24 @@ Every turn:
 		you die in 0 turns from now.
 
 [Rooms]
-Bedroom is a room.  The description is "Your bed is perfectly made[if introspection counter is greater than 5] for you[end if]. Outside the window, you can see
+Bedroom is a room.  The description is "Your bed is perfectly made[if introspection counter is greater than 4] for you[end if]. Outside the window, you can see
 [if nighttime is happening]the beautiful Manhattan skyline at night like a million stars[otherwise]the sun setting on the Manhattan skyline, bleeding orange onto you[end if].
 The living room lies to the north of your bedroom." [TODO Change the backdrop scenery]
-Living Room is a room. The description is "[if introspection counter < 3]Mostly bare, just the way you wanted it yesterday.[otherwise if introspection counter is 3]Mostly bare, but it's beginning to remind you of something.[otherwise]Looking around again, the room is filled with the mementos of your life.[end if] An armchair sits dead center, facing the window. [if seen clock is true]The clock ticks, signaling the passage of time.[end if] The bedroom lies to the south[if will to leave is true], and a door lies to the east[end if]." It is north of the Bedroom.
+Living Room is a room. The description is "[if introspection counter < 3]Mostly bare, just the way you wanted it yesterday.[otherwise if introspection counter < 5]Mostly bare, but it's beginning to remind you of something.[otherwise]Looking around again, the room is filled with the mementos of your life.[end if] An armchair sits dead center, facing the window. [if seen clock is true]The clock ticks, signaling the passage of time.[end if] The bedroom lies to the south[if will to leave is true], and a door lies to the east[end if]." It is north of the Bedroom.
 Hallway is a room. "It's pitch black. The light from the living room behind you isn't doing anything at all.". [It is east of the Living Room.]
 The Space of Reflection is a room. "You shouldn't be here. Your head hurts." It is east of the Hallway.
 
 [Items/Instance objects]
-The description of a thing is usually "[The noun] looks just the way you remembered it.".
-A bed is a thing in Bedroom. It is an enterable supporter and fixed in place. The description is "Tidy and perfect; you probably could sink into it. [if introspection counter is 6]A good place to end, you think."[Verb: sinking into] [TODO: change fake doors to real doors]
+The description of a thing is usually "[The noun] looks just the way you remember it.".
+A bed is a thing in Bedroom. It is an enterable supporter and fixed in place. The description is "Tidy and perfect; you probably could sink into it. [if introspection counter > 4]A good place to end, you think."[Verb: sinking into] [TODO: change fake doors to real doors]
 The bedroom window is a window in Bedroom. [Enables photoframe]
 The living room window is a window in Living Room. [Enables photoframe]
 The armchair is a thing in the Living Room. The armchair is an enterable supporter and fixed in place. The description is "It's a perfect replica of the same one your grandfather owned. It even smells of old cigarette smoke."
 The clock is a thing and fixed in place. The description is "Well, time sure flies. The clock reads [if use analog is true][time of day in words][otherwise][time of day][end if].". The clock is nowhere.
-The desk is a supporter and fixed in place. The desk is nowhere. The description is "A clear, wooden desk, popular back in the 2030[']s.  You picked it out when you first got your own place. It brings back so many memories."
+The desk is a supporter and fixed in place. The desk is nowhere. The description is "A clear, wooden desk, popular back in the 2030[']s.  You picked it out when you first got your own place. It brings back memories."
 The shredder is a container on the desk and fixed in place. The description is "Despite its small size, this shredder will blend almost anything into dust."
 The laptop is a thing on the desk and fixed in place.  The description is "An old laptop. It's a perfect replica of your university's Surface Air, and you're reminded how old you are when you realized it doesn't support air touch; instead, you can only tap it."
-The letter is a thing on the desk. The description is "Your wife[’]s cursive handwriting is difficult to read. Despite having read it a million times, you want to read it again.".
+The letter is a thing on the desk. The description is "Your wife[’]s cursive handwriting is difficult to read. Despite having read it a million times, you want to read it again[if done reading is true] and again[end if].".
 The shredded letter is a thing. The description is "This is what[']s left of your letter."
 
 [Interactions/Rules]
@@ -119,16 +119,16 @@ Before looking:
 				[line break][italic type]It's old and overplayed,[roman type] you thought to yourself and get out of bed.".
 Before entering the bed:
 	say "You fall onto the bed, as it engulfs you. [line break]Ah. It's soft. You could stay here forever.";
-	if introspection counter is greater than 5:
-		say "You close your eyes, [run paragraph on]";
+	if introspection counter is greater than 4:
+		say "You climb under the sheets, and tuck yourself in. You close your eyes, [run paragraph on]";
 		if happiness > 70:
-			say "and enter a peaceful slumber. You had been loved, you had loved. Death comes naturally, and it just happens to be your turn. [run paragraph on]";
+			say "and enter a peaceful slumber. You have been loved, you have loved. Death comes naturally, and it just happens to be your turn. And maybe that's okay. [run paragraph on]";
 		otherwise if happiness > 49:
 			say "realizing you didn't amount to much in your life. [italic type]Just a victim of circumstance, [roman type]you thought to yourself. [run paragraph on]";
 		otherwise if happiness > 30:
 			say "crying. You miss them so much. Everyone you loved, dying one by one. [italic type]Everyone dies.[roman type] It[']s your turn. [run paragraph on]";
 		otherwise if happiness > 0:
-			say "but only for a brief moment to imagine a large syringe of pentobarbital. You reach for it and plunged it into your heart. You close your eyes while making sure the full dose enters your bloodstream. [run paragraph on]";
+			say "but only for a brief moment. You open your eyes to a large syringe of pentobarbital next to you. You reach for it and plunge it into your heart. You close your eyes while making sure the full dose enters your bloodstream. [run paragraph on]";
 		end the story;
 		say "You won't wake again.";
 	otherwise:
@@ -142,8 +142,9 @@ Before being reminiscient: [TODO: make gendered memories or choices]
 	if introspection counter is 0:
 		say "You touch the fabric of the chair, and memories of being with your family flood back to you. You sit down. The smoky smell reminds you of your grandfather, and the way he always smiled at you when you walked by. You lean back and close your eyes to take in a deep breath. Your grandfather passed when you were fifteen. It'll be your turn soon. [line break]You open your eyes and turn towards your room, wanting to look around."; [TODO: add something that changes base on nighttime]
 		Increase introspection counter by 1;[should now be 1]
-		move the player to the armchair;
+		move the player to the armchair, without printing a room description;
 		stop the action.
+
 Before looking in the Living Room:
 	if introspection counter is 1:
 		Say "You wanted this room like this. It reminds you of the emptiness of life, and your impending death.
@@ -157,7 +158,7 @@ Before waiting:
 		Now the clock is in the Living Room;
 	otherwise:
 		say "You inhale. Then exhale. [line break]You wait, patiently. [if introspection counter is 6]You look around for the bed.";
-	if introspection counter is 4:
+	if introspection counter is 4 and done reading is true:
 		Now regained composure is true.
 
 Examining the clock is checking the time. Reading the clock is checking the time.
@@ -214,7 +215,7 @@ Check reading:
 				You regain composure in 1 turn from now;
 				Now done reading is true;
 				break;
-			say " Continue?  >[run paragraph on]";
+			say "[line break]Continue?  >[run paragraph on]";
 			if player consents:
 				next;
 			otherwise:
@@ -228,8 +229,7 @@ Check reading:
 		say "Just the shredded handwriting of your wife.".
 At the time when you regain composure:
 	if introspection counter is 4 and regained composure is true:
-		say "[italic type]Breathe,[roman type] you tell yourself. You wipe away the tears, regain control of your legs and arms, and pull yourself up. You look at the letter in your hand.";
-	increase introspection counter by 1. [should now be 5]
+		say "[italic type]Breathe,[roman type] you tell yourself. You wipe away the tears, regain control of your legs and arms, and pull yourself up. You look at the letter in your hand.".
 
 Tearing the letter is destroying the momento. Inserting letter into the shredder is destroying the momento. 
 Before destroying the momento:
@@ -244,13 +244,12 @@ Before destroying the momento:
 		Now the description of the shredder is "You turn towards the shredder, and is reminded that it had already destroyed your letter.";
 		say "Feeling betrayed, you [if use analog is true]shove[otherwise]put[end if] the [noun] into the shredder. 
 			[line break]'Bbbbbbbbbshhhhhhzzzzzzzzzzzzzzzzzzzz,' the shredder hummed.[paragraph break]The [noun] is now completely destroyed, just like it was before, when you first read it years ago.";
-		say "[italic type]How could she?[roman type] You thought to yourself back then. She didn't even fight it; she just accepted her death, and let the illness take her. You turn to the laptop, and you remembered how you found yourself here.";
+		say "[italic type]How could she?[roman type] You thought to yourself back then. She didn't even fight it; she just accepted her death, and let the illness take her. You turn to the laptop, and you remember how you found yourself here.";
 	stop the action.
 Instead of touching laptop:
 	say "There's only one button to tap, and it reads [bold type]'Sign Up Now.'[roman type] [if viewed laptop is false]You should probably read what's on the laptop first, though. Sign up anyway? [otherwise]Sign up? [end if]>[run paragraph on]";
 	if player consents:
-		Increase introspection counter by 1; [should now be 6]
-		say "This is what you wanted. To live forever, so you can love forever, and never leave anyone behind. Your child, your grandchild, and your great-grandchild will never have to know loss. [paragraph break]How wrong you were. [italic type]Why did I click it? [roman type]Here you are now, waiting out the last few moments of life. Intentionally waiting for someone to put you down, like a dog. You chuckle in the silence as tears stream down your face. [line break][italic type]This is the end. There's only one thing left for me to do here[roman type]. It's already [if use analog is true][time of day in words][otherwise][time of day][end if].";
+		Increase introspection counter by 1; [should now be 5]
 		remove laptop from play;
 		remove shredder from play;
 		if shredded is true: 
@@ -258,7 +257,8 @@ Instead of touching laptop:
 		Otherwise: 
 			increase life satisfaction by 2;
 		If regained composure is true, increase life satisfaction by 3;
-		if stopped reading is true and done reading is false, increase life dissatisfaction by 1.
+		if stopped reading is true and done reading is false, increase life dissatisfaction by 1;
+		say "This is what you wanted. To live forever, so you can love forever, and never leave anyone behind. Your child, your grandchild, and your great-grandchild will never have to know loss. [paragraph break]How wrong you were. [if happiness < 40]You experienced loss. All they saw when they looked at you, was loss. Of a mother. Of a grandfather. Of a normal life.[otherwise]They have to experience loss, because that makes them love more passionately. They have to experience loss, to appreciate what's around them. [line break]For you to appreciate what's around [italic type]you.[roman type][end if][italic type]Why did I click it? [roman type]Here you are now, waiting out the last few moments of life. Intentionally waiting for someone to put you down, like a dog. You chuckle in the silence as tears stream down your face. [line break][italic type]This is the end. There's only one thing left for me to do here[roman type]. It's already [if use analog is true][time of day in words][otherwise][time of day][end if].".
 
 At the time when you die:
 	say "Your strength suddenly fades. You collapse. [if seen clock is true and use analog is true]It must be [time of death in words] in the morning. [otherwise if seen clock is true and use analog is false]It must be [time of death]. [end if] [run paragraph on]";
@@ -275,11 +275,11 @@ At the time when you die:
 	
 Sleeping is wanting to die. Killing yourself is wanting to die.
 Before wanting to die:
-	if introspection counter < 6:
+	if introspection counter < 5:
 		say "You don[']t quite think it[']s time yet.";
 	otherwise:
 		say "You[']re getting rather tired. The bed must be nearby.";
-	if bed is visible and introspection counter is 6:
+	if bed is visible and introspection counter is 5:
 		say "You just want to get in bed...";
 	stop the action;
 

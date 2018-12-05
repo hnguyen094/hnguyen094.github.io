@@ -14,7 +14,7 @@ class Mods {
                 return [sx, sy];
             }
         }
-        this.clockTicking = new Audio('clock-ticking.wav');
+        this.clockTicking = new Audio('clock-ticking-slow.wav');
         this.clockTicking.addEventListener('ended', function() {
           this.currentTime = 0;
           this.play();
@@ -51,19 +51,41 @@ class Mods {
         const endText = "*** The End ***";
         if (alert.innerText.indexOf(endText) !== -1) {
           const body = document.querySelector(".play");
-          body.classList.add("end"); //TODO: not working
+          body.classList.add("noselect");
+          body.classList.add("end");
+          setTimeout(function(){
+            this.clockTicking.pause();
+          }.bind(this), 16000);
+          const input = document.querySelector(".Input");
+          input.remove();
         }
       }
 
       const lines = document.querySelectorAll("span.Style_normal");
-      for (let i = 0; i < lines.length -1; i++) { // everything but the last
-        const prompt = "What do you do this moment?";
+      for (let i = 0; i < lines.length; i++) { // everything but the last
+        let prompt = "What do you do this moment?";
         if(lines[i].innerText.indexOf(prompt) !== -1) {
-          lines[i].innerText = lines[i].innerText.replace(prompt,"");
+          if (i!== lines.length-1) {
+            lines[i].innerText = lines[i].innerText.replace(prompt,"");
+          } else {
+            lines[i].style.color = "grey";
+          }
+        }
+        prompt = "Continue?";
+        if(lines[i].innerText.indexOf(prompt) !== -1) {
+          if (i!== lines.length-1) {
+            lines[i].innerText = lines[i].innerText.replace(prompt,"");
+          } else {
+            lines[i].style.color = "grey";
+          }
         }
         const clockTicks = "In the silence, the clock ticks.";
         if (lines[i].innerText.indexOf(clockTicks) !== -1) {
           this.clockTicking.play();
+        }
+        const endText = "Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?";
+        if (lines[i].innerText.indexOf(endText) !== -1) {
+          lines[i].innerText = "";
         }
       }
 

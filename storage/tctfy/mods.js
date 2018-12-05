@@ -63,7 +63,15 @@ class Mods {
 
       const lines = document.querySelectorAll("span.Style_normal");
       for (let i = 0; i < lines.length; i++) { // everything but the last
-        const prompt = "What do you do this moment?";
+        let prompt = "What do you do this moment?";
+        if(lines[i].innerText.indexOf(prompt) !== -1) {
+          if (i!== lines.length-1) {
+            lines[i].innerText = lines[i].innerText.replace(prompt,"");
+          } else {
+            lines[i].style.color = "grey";
+          }
+        }
+        prompt = "Continue?";
         if(lines[i].innerText.indexOf(prompt) !== -1) {
           if (i!== lines.length-1) {
             lines[i].innerText = lines[i].innerText.replace(prompt,"");
