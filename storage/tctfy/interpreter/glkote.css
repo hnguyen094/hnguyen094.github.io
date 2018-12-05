@@ -54,11 +54,14 @@
 }
 
 .BufferLine {
-  animation: slideIn 3s;
   -webkit-animation: slideIn 3s;
-
-  transform: translateX(0%);
+  -moz-animation: slideIn 3s;
+  -o-animation: slideIn 3s;
+  animation: slideIn 3s;
   -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transform: translateX(0%);
   max-width: 800px;
   text-align: center;
 }

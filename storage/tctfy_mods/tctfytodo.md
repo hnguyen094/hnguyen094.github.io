@@ -36,6 +36,8 @@
 * go to living room
 * Prefer that the prompt changes width (somehow)
 * Continue next line,
+* Die as kill myself
+* CHANGE INTROSPECTION CoUNTER, IT'S BROKEN
 ## Other
 * Balance time and game story as needed
 * make it mobile friendly, then link to it (link: https://goo.gl/jDmbJo)
