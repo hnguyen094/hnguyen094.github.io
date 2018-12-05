@@ -5,6 +5,7 @@
 ** would be cool it changes bases on day v. night at least
 ** animations for certain actions (lag); maybe this can just be pure css hopefully?
 ** maybe literally remove all other text besides the result of the current action? <-- would help reading
+** Left and right padding (even on mobile!)
 ## Fonts
 * https://fonts.google.com/specimen/Raleway
 * https://fonts.google.com/specimen/Slabo+27px
@@ -34,6 +35,7 @@
 * Have the "it's time" text to be warned 2 hours ahead
 * go to living room
 * Prefer that the prompt changes width (somehow)
+* Continue next line,
 ## Other
 * Balance time and game story as needed
 * make it mobile friendly, then link to it (link: https://goo.gl/jDmbJo)

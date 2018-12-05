@@ -42,6 +42,9 @@
 }
 
 .BufferWindow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   overflow: scroll;  /* vertical scrollbar is mandatory */
   overflow-x: hidden; /* but horizontal scrollbar is forbidden */
   font-family: 'Scope One', serif;
@@ -51,6 +54,13 @@
 }
 
 .BufferLine {
+  animation: slideIn 3s;
+  -webkit-animation: slideIn 3s;
+
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  max-width: 800px;
+  text-align: center;
 }
 
 .GridWindow {
@@ -77,9 +87,9 @@
      of a window when it needs paging. */
   font-weight: bold;
   position: absolute;
-  background: #603010;
-  color: #FFFFCC;
-  opacity: 0.5;
+  background: dimgrey;
+  color: white;
+  opacity: 0.6;
   padding: 2px 6px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;

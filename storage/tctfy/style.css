@@ -4,22 +4,40 @@ Standard CSS file for use with Standard.html and Standard-Source.html.
 
 */
 
-/* @keyframes slide {
-    from { width: 0; }
-    to { width: 50vw; }
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    color: black;
+  }
+  100% { transform: translateX(0%); }
 }
-@-webkit-keyframes slide {
-    from { width: 0; }
-    to { width: 50vw; }
+@-webkit-keyframes slideIn {
+  0% { transform: translateX(-100%);
+  color: black; }
+  100% { transform: translateX(0%); }
 }
-@-moz-keyframes slide {
-    from { width: 0; }
-    to { width: 50vw; }
+
+@-moz-keyframes slideIn {
+  0% { transform: translateX(-100%);
+  color: black; }
+  100% { transform: translateX(0%); }
 }
-@-o-keyframes slide {
-    from { width: 0; }
-    to { width: 50vw; }
-} */
+@-o-keyframes slideIn {
+  0% { transform: translateX(-100%);
+  color: black; }
+  100% { transform: translateX(0%); }
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+    supported by Chrome and Opera */
+}
+
 html {
   background-color: black;
 }
@@ -51,8 +69,8 @@ body
 {
   font-family: 'Scope One', serif;
 	color: white;
-    text-align: center;
-    font-size: 100%;
+  text-align: center;
+  font-size: 100%;
 	-webkit-text-size-adjust: none;
 }
 
