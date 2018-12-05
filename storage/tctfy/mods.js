@@ -14,7 +14,7 @@ class Mods {
                 return [sx, sy];
             }
         }
-        this.clockTicking = new Audio('clock-ticking.wav');
+        this.clockTicking = new Audio('clock-ticking-slow.wav');
         this.clockTicking.addEventListener('ended', function() {
           this.currentTime = 0;
           this.play();
