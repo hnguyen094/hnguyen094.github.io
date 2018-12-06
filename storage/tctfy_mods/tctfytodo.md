@@ -23,9 +23,6 @@
 * Maybe, but it's still an experience--your success or failure continues the Story
 # Logic changes
 ## Verbs
-* change the result to acknowledge that you didn't read
-* "how wrong you were" to dependent (to also have "you were right, but...")
-* go to living room
 ## Other
 * Balance time and game story as needed
 * make it mobile friendly, then link to it (link: https://goo.gl/jDmbJo)
