@@ -34,14 +34,14 @@ class Mods {
 
         // for (const thing of document.querySelectorAll('.Style_normal'))
         //   thing.style.display = "inline-block";
-        inputField.style.position= "relative";
-        inputField.style.width = "auto";
-        inputField.style.display = "inline-block";
-        inputField.style.width = "50vw";
-        inputField.style.animation = "slide 1s";
-        inputField.style.webkitAnimation = "slide 1s";
-        inputField.style.OAnimation = "slide 1s";
-        inputField.style.MozAnimation = "slide 1s";
+        // inputField.style.position= "relative";
+        // inputField.style.width = "auto";
+        // inputField.style.display = "inline-block";
+        // inputField.style.width = "50vw";
+        // inputField.style.animation = "slide 1s";
+        // inputField.style.webkitAnimation = "slide 1s";
+        // inputField.style.OAnimation = "slide 1s";
+        // inputField.style.MozAnimation = "slide 1s";
     }
 
     changeOnEnter() { // can be called where the console.log is
