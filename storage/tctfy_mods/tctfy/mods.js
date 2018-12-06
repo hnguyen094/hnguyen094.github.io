@@ -1,6 +1,5 @@
 class Mods {
     constructor() {
-        document.addEventListener("keypress", this.changeInputStyle);
         document.addEventListener("click", this.pullKeyboard);
         document.getScroll = function() {
             if (window.pageYOffset != undefined) {
@@ -26,26 +25,24 @@ class Mods {
         inputField.focus();
     }
 
-    changeInputStyle(event) {
+    changeInputStyle() {
         const inputField = document.querySelector('.Input');
-
-        // if (event.keycode == 13)
-        //   console.log("you pressed enter!");
-
-        // for (const thing of document.querySelectorAll('.Style_normal'))
-        //   thing.style.display = "inline-block";
-        // inputField.style.position= "relative";
-        // inputField.style.width = "auto";
-        // inputField.style.display = "inline-block";
-        // inputField.style.width = "50vw";
-        // inputField.style.animation = "slide 1s";
-        // inputField.style.webkitAnimation = "slide 1s";
-        // inputField.style.OAnimation = "slide 1s";
-        // inputField.style.MozAnimation = "slide 1s";
+        console.log(parseInt(inputField.style.width,10));
+        if (parseInt(inputField.style.width,10) < 300) {
+          inputField.style.position= "relative";
+          inputField.style.width = "auto";
+          inputField.style.display = "inline-block";
+          inputField.style.width = "50vw";
+          inputField.style.animation = "slide 1s";
+          inputField.style.webkitAnimation = "slide 1s";
+          inputField.style.OAnimation = "slide 1s";
+          inputField.style.MozAnimation = "slide 1s";
+        }
     }
 
     changeOnEnter() { // can be called where the console.log is
       // *** The End *** .Style_alert
+      this.changeInputStyle();
       const alerts = document.querySelectorAll("span.Style_alert");
       for (const alert of alerts) {
         const endText = "*** The End ***";
@@ -88,7 +85,6 @@ class Mods {
           lines[i].innerText = "";
         }
       }
-
     }
 }
 const mods = new Mods();
