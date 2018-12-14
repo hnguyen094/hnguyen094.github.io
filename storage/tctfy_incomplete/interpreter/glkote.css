@@ -2,7 +2,7 @@
  * Designed by Andrew Plotkin <erkyrath@eblong.com>
  * <http://eblong.com/zarf/glk/glkote.html>
  * <http://eblong.com/zarf/glulx/quixe/>
- *
+ * 
  * This CSS stylesheet is in the public domain. Do whatever you want
  * with it.
  */
@@ -38,37 +38,25 @@
      can change that, but don't touch the position or margin. */
   position: absolute;
   margin: 0px;
-  background: black;
+  background: white;
 }
 
 .BufferWindow {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: scroll;  /* vertical scrollbar is mandatory */
+  overflow: scroll;   /* vertical scrollbar is mandatory */
   overflow-x: hidden; /* but horizontal scrollbar is forbidden */
-  font-family: 'Scope One', serif;
-  font-size: 120%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
   line-height: 1.4;
   padding: 6px 10px 6px 10px;
 }
 
 .BufferLine {
-  -webkit-animation: slideIn 3s;
-  -moz-animation: slideIn 3s;
-  -o-animation: slideIn 3s;
-  animation: slideIn 3s;
-  -webkit-transform: translateX(0%);
-  -moz-transform: translateX(0%);
-  -o-transform: translateX(0%);
-  transform: translateX(0%);
-  max-width: 800px;
-  text-align: center;
 }
 
 .GridWindow {
+  background: #D0D0C0;
   overflow: hidden;
-  font-family: 'Scope One', serif;
+  font-family: monaco, andale mono, lucidatypewriter, courier, courier new, monospace; /* necessary! */
   font-size: 14px;
   padding: 6px 10px 6px 10px;
 }
@@ -90,18 +78,17 @@
      of a window when it needs paging. */
   font-weight: bold;
   position: absolute;
-  background: dimgrey;
-  color: white;
-  opacity: 0.6;
+  background: #603010;
+  color: #FFFFCC;
+  opacity: 0.5;
   padding: 2px 6px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
 }
 
 .Input {
-  /* This class mimicks the Style_input class. It also eliminates the
+  /* This class mimicks the Style_input class. It also eliminates the 
      usual decoration of an <input> field, as much as possible. */
-  color: white;
   border: none;
   margin: 0px;
   padding: 0px;
@@ -112,12 +99,12 @@
 }
 
 .BufferWindow .Input {
-  font-family: 'Scope One', serif;
-  font-size: 100%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
 }
 
 .GridWindow .Input {
-  font-family: 'Scope One', serif;
+  font-family: monaco, andale mono, lucidatypewriter, courier, courier new, monospace; /* necessary! */
   font-size: 14px;
 }
 
@@ -163,7 +150,7 @@
 }
 
 .Style_preformatted {
-  font-family: 'Scope One', serif;
+  font-family: monaco, andale mono, lucidatypewriter, courier, courier new, monospace;
 }
 
 .Style_header {
@@ -171,7 +158,7 @@
 }
 
 .BufferWindow .Style_header {
-  font-size: 120%;
+  font-size: 17px;
 }
 
 .Style_subheader {
@@ -192,7 +179,7 @@
 
 .Style_input {
   font-weight: bold;
-  color: grey;
+  color: #300000;
 }
 
 .Style_user1 {

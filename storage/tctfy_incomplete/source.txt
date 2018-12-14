@@ -84,7 +84,7 @@ Bedroom is a room.  The description is "Your bed is perfectly made[if introspect
 [if photo count is 1]You can feel your mom's presence, but it feels empty.[otherwise if photo count is 2]Everything feels right. The bed invites you.[otherwise if photo count is 3]You don't want to be here. It's not the end for you yet.[end if]
 The living room lies to the [if easy mode is true][bold type][end if]north[if easy mode is true][roman type][end if] of your bedroom. ". [TODO Change the backdrop scenery]
 Living Room is a room. The description is "[if introspection counter < 3]Mostly bare, just the way you wanted it yesterday.[otherwise if introspection counter < 5]Mostly bare, but it's beginning to remind you of something.[otherwise]Looking around again, the room is filled with the mementos of your life.[end if] An armchair sits dead center, facing the window. [if seen clock is true]The clock ticks, signaling the passage of time.[end if] The bedroom lies to the [if easy mode is true][bold type][end if]south[if easy mode is true][roman type][end if][if will to leave is true], and a door lies to the east[end if]." It is north of the Bedroom.
-Hallway is a room. "It's pitch black. The light from the living room behind you isn't doing anything at all.". [It is east of the Living Room.]
+Hallway is a room. "It's pitch black. The light from the living room behind you isn't doing anything at all.". It is east of the Living Room.
 The Space of Reflection is a room. "You shouldn't be here. Your head hurts." It is east of the Hallway.
 
 [Items/Instance objects]
@@ -125,7 +125,7 @@ After examining the photo album:
 		say "'I hope you can move on. I don't want to be clich[unicode 233], but I think life is like a flower: beautiful [italic type]because[roman type] it is fleeting,' she continues quietly.";
 		say "Continue holding her hand? >";
 		if player consents:
-			say "You hold on tight, as if you were still five and you were crossing the street with her. [line break]'I love you, mom. [if use analog is true]I didn't say it enough[end if]. Thank you for giving me life.'";
+			say "You hold on tight, as if you were still five and you were crossing the street with her. [line break]'I love you, mom. [if use analog is true]I didn't say it enough.[otherwise]I don't even remember ever saying that.[end if] Thank you for giving me life.'";
 		otherwise:
 			say "You know. [italic type]I know.[roman type] You look into her eyes. Your sight's blurring a little.[line break]You let go. [line break]'[if use analog is true]Thank you[otherwise]I forgive you[end if].'";
 		say "She left last time, when you were young. The [if nighttime is happening]stars reflected through her [end if]tears rolls down her crinkled cheeks. [italic type]Breathe,[roman type] you tell yourself. With your fists clenched, eyes shut tight, head tilted up to heaven, you turn away."; [great place to play music]
@@ -137,7 +137,7 @@ After examining the photo album:
 		increase photo count by 1;
 	otherwise if photo count is 2 and player consents:
 		say "You turn to the last page.";
-		say "Your kids, rolling around the the sand. They're not even looking at the camera.";
+		say "Your kids, rolling around the the sand. They're not even looking at the camera.[line break]You love them so much.";
 		increase photo count by 1;
 		now the photo album is nowhere;
 		now will to leave is true;
@@ -346,6 +346,6 @@ Before going to the Hallway:
 		stop the action.
 
 Before going to the The Space of Reflection:
-	if introspection counter is less than 2:
+	if introspection counter is less than 5:
 		say "It's pitch black.";
 		stop the action.
