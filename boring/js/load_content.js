@@ -22,7 +22,9 @@ class Webpages {
      */
     async load(filename) {
         let temp = "";
-        await fetch(this.path + filename).then(
+        await fetch(this.path + filename, {
+            mode: 'cors'
+        }).then(
             function(response) {
                 return response.text();
             },
@@ -30,6 +32,7 @@ class Webpages {
         ).then(
             function(text) {
                 temp = this.md.render(text);
+                console.log(temp);
             }.bind(this),
             error => console.log(error)
         );
@@ -38,4 +41,4 @@ class Webpages {
     }
 }
 
-instance = new Webpages("md", true);
+instance = new Webpages("../md", true);
