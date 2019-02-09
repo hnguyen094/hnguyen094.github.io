@@ -22,9 +22,7 @@ class Webpages {
      */
     async load(filename) {
         let temp = "";
-        await fetch(this.path + filename, {
-            mode: 'cors'
-        }).then(
+        await fetch(this.path + filename).then(
             function(response) {
                 return response.text();
             },
@@ -32,7 +30,6 @@ class Webpages {
         ).then(
             function(text) {
                 temp = this.md.render(text);
-                console.log(temp);
             }.bind(this),
             error => console.log(error)
         );
