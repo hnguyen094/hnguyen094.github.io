@@ -39,7 +39,7 @@ class Webpages {
     async loadAll(elem) {
         for (let file of this.files) {
             console.log(file)
-            elem.innerHTML = await this.load(file + ".md");
+            elem.innerHTML += await this.load(file + ".md");
         }
     }
 }
