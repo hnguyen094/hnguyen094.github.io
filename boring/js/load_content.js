@@ -34,11 +34,11 @@ class Webpages {
             }.bind(this),
             error => console.log(error)
         );
-        console.log(temp);
         return temp;
     }
     async loadAll(elem) {
-        for (let file in this.files) {
+        for (let file of this.files) {
+            console.log(file)
             elem.innerHTML = await this.load(file + ".md");
         }
     }
