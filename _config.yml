@@ -1,20 +1,20 @@
 # Site settings
-name: Edwin E. Exemplar
-email: edwin+contactme@someemail.com
-#canonical_url: https://edwinexemplar.com
-keywords: "Software Engineer, Python, Ruby, Machine Learning, Deep Learning, Startups, Agile, Pair Programming"
-skills: "Senior Software Engineer in Seattle, WA (Fictitious)"
+name: Hung T Nguyen 
+email: hungn2@stanford.edu 
+canonical_url: https://hnguyen094.github.io 
+keywords: "Software Engineer, Game Developer, Cyber Security"
+skills: "Software Engineer Intern in Sunnyvale, CA"
 baseurl:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 # You should replace these with your social networks, of course. :)
 social:
   - title: linkedin
-    url: https://www.linkedin.com/in/cgroom/
+    url: https://www.linkedin.com/in/hung-the-nguyen/
+  - title: github 
+    url: https://github.com/hnguyen094
   - title: medium
-    url: https://medium.com/@cgroom
-  - title: twitter
-    url: https://twitter.com/chuck_groom
+    url: https://medium.com/@hungnguyen094
     
 # Google webmaster tools
 google_verify:
