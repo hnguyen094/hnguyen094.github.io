@@ -16,6 +16,8 @@ class Webpages {
         if (preload) {
             this.load("about-me.md");
         }
+        this.fs = require('fs')
+
     }
     /* This function will load a file from the directory. assumes starting from
      * the path given in the constructor
@@ -36,6 +38,10 @@ class Webpages {
         console.log(temp);
         return temp;
     }
+    async loadAll() {
+        let files = this.fs.readdirSync(this.path);
+        console.log(files)
+    }
 }
-
-instance = new Webpages("../md", true);
+instance = new Webpages("../md", false);
+instance.loadAll();

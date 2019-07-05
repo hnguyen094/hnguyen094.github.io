@@ -5,4 +5,9 @@
 
 html {
     font-family: 'Roboto', sans-serif;
+    background-color: pink;
+}
+
+.profile {
+    position: relative;
 }
