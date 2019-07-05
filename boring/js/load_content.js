@@ -13,7 +13,7 @@ class Webpages {
             breaks: true
         });
         this.path = path + "/";
-        this.files= ["about-me", "adventures", "contact", "education", "experience", "welcome"]
+        this.files= ["welcome", "about-me", "education", "experience", "contact"]
         if (preload) {
             this.load(this.files[0] + ".md");
         }
