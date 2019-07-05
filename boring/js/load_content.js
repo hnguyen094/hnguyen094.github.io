@@ -13,11 +13,10 @@ class Webpages {
             breaks: true
         });
         this.path = path + "/";
+        this.files= ["about-me", "adventures", "contact", "education", "experience", "welcome"]
         if (preload) {
-            this.load("about-me.md");
+            this.load(this.files[0] + ".md");
         }
-        this.fs = require('fs')
-
     }
     /* This function will load a file from the directory. assumes starting from
      * the path given in the constructor
@@ -38,10 +37,11 @@ class Webpages {
         console.log(temp);
         return temp;
     }
-    async loadAll() {
-        let files = this.fs.readdirSync(this.path);
-        console.log(files)
+    async loadAll(elem) {
+        for (let file in this.files) {
+            elem.innerHTML = this.load(file + ".md");
+        }
     }
 }
 instance = new Webpages("../md", false);
-instance.loadAll();
+instance.loadAll(document.getElementById("allContents"));
