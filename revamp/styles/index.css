@@ -23,24 +23,19 @@ body {
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--dark-grey);
-    padding: 7px 14px;
+    padding: 2px 14px 7px 14px;
     border-radius: 0 0 14px 14px;
     font-size: larger;
 }
 #menu a {
-    color: var(--white);
     border-radius: 6px;
     padding: 3px;
+    transition: 0.2s;
+    color: var(--white);
+    text-decoration: none;
 }
 
 #menu a:hover {
     color: var(--light-blue);
-    animation-name: menu-highlight;
-    animation-timing-function: linear;
-    animation-duration: 0.09s;
-}
-
-@keyframes menu-highlight {
-    from { color: var(--white); }
-    to { color: var(--light-blue); }
+    font-size: 115%;
 }
