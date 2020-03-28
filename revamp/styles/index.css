@@ -1,0 +1,36 @@
+:root {
+    --main-color: #18B0B0;
+    --secondary-color: white; 
+    --highlight-color: #DE7119;
+    --highlight-second-color: #808284;
+    --tertiary-color: #116979;
+}
+
+html {
+    background-color: var(--highlight-second-color);
+    font-family: 'Krub', sans-serif;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: larger;
+}
+#menu a {
+    color: var(--secondary-color);
+    border-radius: 6px;
+    padding: 3px;
+}
+
+#menu a:hover {
+    color: var(--main-color);
+    animation-name: menu-highlight;
+    animation-timing-function: linear;
+    animation-duration: 0.09s;
+}
+
+@keyframes menu-highlight {
+    from { color: var(--secondary-color); }
+    to { color: var(--main-color); }
+}

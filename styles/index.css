@@ -1,36 +1,208 @@
 :root {
-    --main-color: #18B0B0;
-    --secondary-color: white; 
-    --highlight-color: #DE7119;
+    --main-color: #939598;
+    --secondary-color: white;
+    --highlight-color: gold;
     --highlight-second-color: #808284;
-    --tertiary-color: #116979;
+    --tertiary-color: #4A464F;
+    --b-text: 30px;
+    --s-text: 24px;
+    --m-text: 25px;
+    --ss-text: 20px;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+    supported by Chrome and Opera */
 }
 
 html {
-    background-color: var(--highlight-second-color);
+    background-color: var(--secondary-color);
+}
+
+#background {
+    background-image: url("img/bg.jpg");
+    z-index: -10;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+/******* Menu Formatting ******/
+
+a {
+    font-weight: bold;
+    color: var(--tertiary-color);
+}
+
+a.sub-title {
+    font-weight: bold;
+    font-size: var(--ss-text);
+}
+
+a.menu-item {
+    font-weight: bold;
+    font-size: var(--s-text);
+    color: var(--secondary-color);
+    padding: 30px 15px;
+    cursor:pointer;
+}
+
+@keyframes hoverAnim {
+    from { color:var(--secondary-color); }
+    to { color:var(--highlight-color); }
+}
+
+@keyframes unhoverAnim {
+    from { color:var(--highlight-color); }
+    to { color:var(--secondary-color); }
+}
+
+@-webkit-keyframes selectedAnim {
+    from { font-size: var(--s-text); }
+    to { font-size: var(--b-text); }
+}
+
+@-webkit-keyframes unselectedAnim {
+    from { font-size: var(--b-text); }
+    to { font-size: var(--s-text); }
+}
+
+@keyframes selectedAnim {
+    from { font-size: var(--s-text); }
+    to { font-size: var(--b-text); }
+}
+
+@keyframes unselectedAnim {
+    from { font-size: var(--b-text); }
+    to { font-size: var(--s-text); }
+}
+
+a.selected {
+    animation-name: selectedAnim;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+    font-size: var(--b-text);;
+    color:var(--highlight-color);
+}
+
+a.unselected {
+    animation-name: unselectedAnim;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+    font-size: var(--s-text);
+    color:var(--secondary-color);
+}
+
+/******* Content Formatting ******/
+
+h1 {
+    font-weight: bold;
+    font-size: var(--b-text);
+    color: var(--tertiary-color);
+    text-align: center;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: var(--s-text);
+    color: var(--tertiary-color);
+    margin-bottom: 1;
+}
+
+nav#menu {
+    display: flex;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    white-space: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--main-color);
+    align-items: center;
+    height: 100vh;
+}
+
+div#content {
+    flex-grow: 2;
+    /* overflow: hidden visible; */
+    line-height: 1.6;
+    align-items: center;
+    padding-left: 60;
+    padding-right: 60;
+    max-width: 1920px;
+    background-color: var(--secondary-color);
+}
+
+p, ol, ul, li{
+    font-weight: bold;
+    color: var(--tertiary-color);
+    font-size: 20;
+    margin: 5px;
+
+}
+
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Space Mono', monospace; */
+    /* font-family: 'Oxygen', sans-serif; */
     font-family: 'Krub', sans-serif;
 }
 
-#menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: larger;
+.popup {
+    position: relative;
+    display: inline-block;
+    /* background-color: var(--highlight-second-color); */
 }
-#menu a {
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    background-color: var(--highlight-second-color);
     color: var(--secondary-color);
+    text-align: center;
     border-radius: 6px;
-    padding: 3px;
+    padding: 8px 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -260px;
 }
 
-#menu a:hover {
-    color: var(--main-color);
-    animation-name: menu-highlight;
-    animation-timing-function: linear;
-    animation-duration: 0.09s;
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--highlight-second-color) transparent transparent transparent;
 }
 
-@keyframes menu-highlight {
-    from { color: var(--secondary-color); }
-    to { color: var(--main-color); }
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 0.3s;
+    animation: fadeIn 0.3s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; } 
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity:1 ; }
 }
