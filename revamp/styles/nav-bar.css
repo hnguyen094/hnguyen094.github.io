@@ -47,7 +47,7 @@ body {
     font-size: 102%;
 }
 
-@media (max-width: 612px) {
+@media only screen and (max-width: 612px) {
     #menu {
         font-size: medium;
         flex-direction: column;
