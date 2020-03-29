@@ -27,6 +27,15 @@ body {
     border-radius: 0 0 14px 14px;
     font-size: larger;
 }
+
+@media (max-width: 600px) {
+    #menu {
+        font-size: medium;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
 #menu a {
     border-radius: 6px;
     padding: 3px;
@@ -37,5 +46,5 @@ body {
 
 #menu a:hover {
     color: var(--light-blue);
-    font-size: 115%;
+    font-size: 105%;
 }
