@@ -31,7 +31,18 @@
     opacity: 1;
 }
 
-@media only screen and (max-width: 612px) {
+@media only screen and (max-width: 440px) {
+    #gallery a img {
+        width: 45vw;
+        height: 45vw;
+    }
+    #gallery a::before {
+        width: 45vw;
+        height: 45vw;
+    }
+}
+
+@media only screen and (max-width: 300px) {
     #gallery a img {
         width: 90vw;
         height: 90vw;
