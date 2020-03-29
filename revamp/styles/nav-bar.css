@@ -47,9 +47,22 @@ body {
     font-size: 102%;
 }
 
-@media only screen and (max-width: 612px) {
+@media only screen and (max-width: 400px) {
     #menu {
         font-size: medium;
         flex-direction: column;
     }
+}
+
+@-o-viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+@viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+@-ms-viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
 }
