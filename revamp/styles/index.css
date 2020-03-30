@@ -12,13 +12,20 @@ a.gallery-item {
     transition: 0.2s;
     width: 30vw;
     height: 30vw;
-    margin : 1%;
+    overflow: hidden;
+    /* margin : 1%; */
 }
 
 a.gallery-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: -10;
+}
+
+a.gallery-item:hover img {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
 }
 
 a.gallery-item div.text-overlay {
@@ -27,7 +34,7 @@ a.gallery-item div.text-overlay {
     height: inherit;
     opacity: 0;
     transition: 0.2s;
-    background-color: rgba(128,128,128,0.5);
+    background-color: rgba(70,70,70,0.5);
     /*Text*/
     display: flex;
     justify-content: center;
@@ -36,7 +43,7 @@ a.gallery-item div.text-overlay {
     color: var(--white);
 }
 
-a.gallery-item div.text-overlay:hover {
+a.gallery-item:hover div.text-overlay {
     opacity: 1;
 }
 
