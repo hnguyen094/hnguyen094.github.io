@@ -32,7 +32,7 @@ a.gallery-item div.text-overlay {
     position: absolute;
     width: inherit;
     height: inherit;
-    opacity: 0;
+    opacity: 1;
     transition: 0.2s;
     background-color: rgba(70,70,70,0.5);
     /*Text*/
@@ -43,8 +43,13 @@ a.gallery-item div.text-overlay {
     color: var(--white);
 }
 
-a.gallery-item:hover div.text-overlay {
-    opacity: 1;
+@media(hover: hover) and (pointer: fine) {
+    a.gallery-item div.text-overlay {
+        opacity: 0;
+    }
+    a.gallery-item:hover div.text-overlay {
+        opacity: 1;
+    }
 }
 
 @media only screen and (max-width: 650px) {
