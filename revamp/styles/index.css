@@ -38,7 +38,9 @@ a.gallery-item div.text-overlay {
     align-items: center;
     font-size: larger;
     color: var(--white);
-    -webkit-transform: translate3d(0,0,0);
+    z-index: 1;
+    transform: translate3d(0,0,1px);
+    -webkit-transform: translate3d(0,0,1px);
 }
 
 @media(hover: hover) and (pointer: fine) {
