@@ -20,9 +20,9 @@ a.gallery-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -10;
     filter: blur(2px);
     -webkit-filter: blur(2px);
+    z-index: -10;
 }
 
 a.gallery-item div.text-overlay {
@@ -38,15 +38,10 @@ a.gallery-item div.text-overlay {
     align-items: center;
     font-size: larger;
     color: var(--white);
+    -webkit-transform: translate3d(0,0,0);
 }
 
 @media(hover: hover) and (pointer: fine) {
-    a.gallery-item div.text-overlay {
-        opacity: 0;
-    }
-    a.gallery-item:hover div.text-overlay {
-        opacity: 1;
-    }
     a.gallery-item img {
         filter: none;
         -webkit-filter: none;
@@ -54,6 +49,12 @@ a.gallery-item div.text-overlay {
     a.gallery-item:hover img {
         filter: blur(2px);
         -webkit-filter: blur(2px);
+    }
+    a.gallery-item div.text-overlay {
+        opacity: 0;
+    }
+    a.gallery-item:hover div.text-overlay {
+        opacity: 1;
     }
 }
 
