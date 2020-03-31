@@ -21,9 +21,6 @@ a.gallery-item img {
     height: 100%;
     object-fit: cover;
     z-index: -10;
-}
-
-a.gallery-item:hover img {
     filter: blur(2px);
     -webkit-filter: blur(2px);
 }
@@ -49,6 +46,14 @@ a.gallery-item div.text-overlay {
     }
     a.gallery-item:hover div.text-overlay {
         opacity: 1;
+    }
+    a.gallery-item img {
+        filter: none;
+        -webkit-filter: none;
+    }
+    a.gallery-item:hover img {
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
     }
 }
 
