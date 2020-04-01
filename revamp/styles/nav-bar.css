@@ -49,6 +49,18 @@ body {
     font-size: 102%;
 }
 
+.section-title {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: saturation;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    margin: 0;
+}
+
 @media only screen and (max-width: 440px) {
     #menu {
         font-size: medium;
