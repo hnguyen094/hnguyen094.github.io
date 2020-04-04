@@ -2,7 +2,7 @@
     --light-blue: #18B0B0;
     --dark-blue: #156979;
     --light-grey: #8b9aa1;
-    --dark-grey: #808284;
+    --dark-grey: #333; /* #808284; */
     --orange: #DE7119;
     --white: white;
 }
