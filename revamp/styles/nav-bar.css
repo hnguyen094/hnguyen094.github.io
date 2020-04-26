@@ -58,7 +58,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30%;
+    height: 20vw;
     margin: 0;
 }
 
@@ -66,6 +66,9 @@ body {
     #menu {
         font-size: medium;
         flex-direction: column;
+    }
+    .section-title {
+        height: 30vw;
     }
 }
 
