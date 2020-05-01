@@ -1,19 +1,5 @@
 .section-title {
-    font-weight: lighter;
     /* background-image: url(../images/gallery_areyouhere.png); */
-    z-index: 1;
-    transform: translate3d(0, 0, 1px);
-    overflow: hidden;
-}
-
-.bg-video {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: -20;
-    transform: translate3d(0, 0, -20px);
-    -webkit-transform: translate3d(0, 0, -20px);
 }
 
 .section-title2 {

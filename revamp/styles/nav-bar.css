@@ -52,6 +52,7 @@ body {
 
 .section-title {
     background-size: cover;
+    background-color: var(--dark-grey);
     background-position: center;
     background-attachment: fixed;
     background-blend-mode: saturation;
@@ -60,6 +61,20 @@ body {
     align-items: center;
     height: 20vw;
     margin: 0;
+    font-weight: lighter;
+    z-index: 1;
+    transform: translate3d(0, 0, 1px);
+    overflow: hidden;
+}
+
+.section-title-bg {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -20;
+    transform: translate3d(0, 0, -20px);
+    -webkit-transform: translate3d(0, 0, -20px);
 }
 
 @media only screen and (max-width: 440px) {
