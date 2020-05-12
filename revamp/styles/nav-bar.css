@@ -77,6 +77,14 @@ body {
     -webkit-transform: translate3d(0, 0, -20px);
 }
 
+.section-body {
+    margin: 2.5vw;
+    padding: 5vw;
+    border-start-end-radius: 5vw;
+    border-radius: 1.5vw;
+    background-color: var(--dark-blue);
+}
+
 @media only screen and (max-width: 440px) {
     #menu {
         font-size: medium;
