@@ -46,6 +46,10 @@ body {
     text-decoration: none;
 }
 
+#menu a:hover {
+    color: var(--light-blue);
+}
+
 .section-title {
     background-size: cover;
     background-color: var(--dark-grey);
