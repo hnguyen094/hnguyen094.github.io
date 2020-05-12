@@ -46,11 +46,6 @@ body {
     text-decoration: none;
 }
 
-#menu a:hover {
-    color: var(--light-blue);
-    font-size: 102%;
-}
-
 .section-title {
     background-size: cover;
     background-color: var(--dark-grey);
@@ -92,6 +87,11 @@ a:visited {
 }
 
 a:hover {
+    color: var(--orange);
+    font-size: 102%;
+}
+
+a.internal:hover {
     color: var(--light-blue);
     font-size: 102%;
 }
