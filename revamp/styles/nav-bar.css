@@ -1,9 +1,10 @@
 :root {
     --light-blue: #18B0B0;
     --dark-blue: #156979;
-    --light-grey: #8b9aa1;
+    --light-grey: #7a7a7a;
     --dark-grey: #333; /* #808284; */
     --orange: #FDA965;
+    --light-orange: rgb(252, 198, 155);
     --white: white;
 }
 
@@ -77,12 +78,27 @@ body {
     -webkit-transform: translate3d(0, 0, -20px);
 }
 
+a:link {
+    background-color: var(--dark-grey);
+    padding: 1px;
+    border-radius: 2px;
+    color: var(--light-orange);
+}
+
+a:visited {
+    color: var(--light-orange);
+}
+
+a:hover {
+    color: var(--orange);
+}
+
 .section-body {
-    margin: 2.5vw;
+    margin: 1.5vw;
     padding: 5vw;
     border-start-end-radius: 5vw;
-    border-radius: 1.5vw;
-    background-color: var(--dark-blue);
+    border-radius: 1vw;
+    background-color: var(--light-grey);
 }
 
 @media only screen and (max-width: 440px) {
