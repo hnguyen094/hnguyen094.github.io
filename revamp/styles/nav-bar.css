@@ -86,12 +86,12 @@ a:visited {
     color: var(--white);
 }
 
-a:hover {
+a.external:hover {
     color: var(--orange);
     font-size: 102%;
 }
 
-a.internal:hover {
+a:hover {
     color: var(--light-blue);
     font-size: 102%;
 }
