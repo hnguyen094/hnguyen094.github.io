@@ -78,19 +78,22 @@ body {
     -webkit-transform: translate3d(0, 0, -20px);
 }
 
-a:link {
+a:link { /* Let's have all external links orange, and internal blue */
     background-color: var(--dark-grey);
     padding: 1px;
-    border-radius: 2px;
-    color: var(--light-orange);
+    border-radius: 2px;    
+    text-decoration: none;
+    transition: 0.2s;
+    color: var(--white);
 }
 
 a:visited {
-    color: var(--light-orange);
+    color: var(--white);
 }
 
 a:hover {
-    color: var(--orange);
+    color: var(--light-blue);
+    font-size: 102%;
 }
 
 .section-body {
