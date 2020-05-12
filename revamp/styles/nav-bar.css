@@ -107,7 +107,7 @@ a:hover {
 @media only screen and (max-width: 440px) {
     #menu {
         font-size: medium;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
     .section-title {
         height: 30vw;
