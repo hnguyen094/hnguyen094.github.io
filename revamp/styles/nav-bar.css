@@ -7,7 +7,7 @@
     --orange: #FDA965;
     --light-orange: rgb(252, 198, 155);
     --white: white;
-    --soft-red: rgba(253, 51, 51, 0.644);
+    --soft-red: rgb(201, 57, 57);
 }
 
 html {
@@ -21,6 +21,8 @@ html {
 body {
     margin: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #menu {
@@ -113,6 +115,8 @@ a:hover {
     border-radius: 1vw;
     background-color: var(--light-grey);
     max-width: 1024px;
+    align-self: center;
+    line-height: 1.6;
 }
 
 @media only screen and (max-width: 440px) {

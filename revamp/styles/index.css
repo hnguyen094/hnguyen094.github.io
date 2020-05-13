@@ -74,15 +74,23 @@ a.gallery-item div.text-overlay {
     -webkit-transform: translate3d(0,0,1px);
 }
 a.gallery-item div.text-overlay.left-corner {
+    align-items: flex-start;
+    background-color: transparent;
+    justify-content: flex-start;
+}
+a.gallery-item div.text-overlay span {
     margin: 1%;
     background-color: var(--soft-red);
     border-radius: 0.5vw;
-    width: initial;
-    height: initial;
     padding: 0 0.5vw;
 }
+
 a.gallery-item div.text-overlay.right-corner {
+    align-items: flex-start;
+    background-color: transparent;
+    justify-content: flex-end;
 }
+
 
 @media(hover: hover) and (pointer: fine) {
     a.gallery-item img {
