@@ -60,6 +60,8 @@ html {
 
 .end {
   color: black;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
   animation: fade 18s;
   -webkit-animation: fade 18s;
   -moz-animation: fade 18s;
