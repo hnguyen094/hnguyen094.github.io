@@ -20,12 +20,12 @@ a.gallery-item {
     background-color: transparent;
     padding: 0;
     border: 0;
-    width: 17.5vw;
-    height: 17.5vw;
+    width: 21vw;
+    height: 21vw;
     overflow: hidden;
     /* margin : 1%; */
 }
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1024px) {
     a.gallery-item {
         width: 24vw;
         height: 24vw;
@@ -72,6 +72,16 @@ a.gallery-item div.text-overlay {
     z-index: 1;
     transform: translate3d(0,0,1px);
     -webkit-transform: translate3d(0,0,1px);
+}
+a.gallery-item div.text-overlay.left-corner {
+    margin: 1%;
+    background-color: var(--soft-red);
+    border-radius: 0.5vw;
+    width: initial;
+    height: initial;
+    padding: 0 0.5vw;
+}
+a.gallery-item div.text-overlay.right-corner {
 }
 
 @media(hover: hover) and (pointer: fine) {
