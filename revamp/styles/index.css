@@ -51,7 +51,7 @@ a.gallery-item {
     }
 }
 
-a.gallery-item img {
+a.gallery-item .gallery-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -76,8 +76,8 @@ a.gallery-item div.text-overlay {
     font-size: larger;
     color: var(--white);
     z-index: 1;
-    transform: translate3d(0,0,1px);
-    -webkit-transform: translate3d(0,0,1px);
+    transform: translate3d(0,0,1px), scale(1);
+    -webkit-transform: translate3d(0,0,1px), scale(1);
 }
 a.gallery-item div.text-overlay.left-corner {
     align-items: flex-start;
@@ -100,11 +100,11 @@ a.gallery-item div.text-overlay.right-corner {
 
 
 @media(hover: hover) and (pointer: fine) {
-    a.gallery-item img {
+    a.gallery-item .gallery-image {
         filter: none;
         -webkit-filter: none;
     }
-    a.gallery-item:hover img {
+    a.gallery-item:hover .gallery-image {
         filter: blur(2px);
         -webkit-filter: blur(2px);
     }
