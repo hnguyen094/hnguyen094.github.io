@@ -68,7 +68,8 @@ a.gallery-item div.text-overlay {
     height: inherit;
     opacity: 1;
     transition: 0.2s;
-    background-color: rgba(70,70,70,0.5);
+    background-image: var(--linear-grad-bg);
+    /* background-color: var(--half-orange); rgba(70,70,70,0.5); */
     /*Text*/
     display: flex;
     justify-content: center;
@@ -81,6 +82,7 @@ a.gallery-item div.text-overlay {
 }
 a.gallery-item div.text-overlay.left-corner {
     align-items: flex-start;
+    background-image: none;
     background-color: transparent;
     justify-content: flex-start;
 }
@@ -90,28 +92,31 @@ a.gallery-item div.text-overlay span {
     font-size: smaller;
     border-radius: 0.5vw;
     padding: 0 0.5vw;
+    z-index: 2;
+    transform: translate3d(0,0,2px), scale(2);
+    -webkit-transform: translate3d(0,0,2px), scale(2);
 }
 
 a.gallery-item div.text-overlay.right-corner {
     align-items: flex-start;
+    background-image: none;
     background-color: transparent;
     justify-content: flex-end;
 }
-
 
 @media(hover: hover) and (pointer: fine) {
     a.gallery-item .gallery-image {
         filter: none;
         -webkit-filter: none;
     }
-    a.gallery-item:hover .gallery-image {
+    a.gallery-item:hover .gallery-image, a.gallery-item:focus .gallery-image {
         filter: blur(2px);
         -webkit-filter: blur(2px);
     }
     a.gallery-item div.text-overlay {
         opacity: 0;
     }
-    a.gallery-item:hover div.text-overlay {
+    a.gallery-item:hover div.text-overlay, a.gallery-item:focus div.text-overlay {
         opacity: 1;
     }
     a.gallery-item div.text-overlay span {

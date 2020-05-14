@@ -1,6 +1,7 @@
 :root {
     --light-blue: #18B0B0;
     --medium-blue: #156979;
+    --half-dark-blue: rgba(13, 53, 72, 0.788);
     --dark-blue: #0D3548;
     --light-grey: #7a7a7a;
     --medium-grey: #595959;
@@ -11,9 +12,11 @@
     --white: white;
     --red: rgb(201, 57, 57);
     --soft-red: rgb(206, 86, 86);
-    
     --black: #1E1E1E;
+    --linear-grad-bg: linear-gradient(var(--half-orange), var(--half-dark-blue), var(--half-orange));
+    --radial-grad-bg: radial-gradient(var(--half-dark-blue), var(--half-orange));
 }
+
 
 html {
     background-color: var(--orange);
@@ -54,7 +57,7 @@ body {
     transition: all 0.2s;
 }
 
-#menu a:hover {
+#menu a:hover, #menu a:focus {
     color: var(--light-blue);
     transform: scale(1.02);
 }
@@ -94,7 +97,8 @@ body {
 
 .text-overlay {
     position: absolute;
-    background-color: var(--half-orange);
+    background-image: var(--radial-grad-bg);
+    /* background-color: var(--half-orange); */
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -114,11 +118,11 @@ a:visited {
     color: var(--white);
 }
 
-a.external:hover {
+a.external:hover, a.external:focus {
     color: var(--orange);
 }
 
-a:hover {
+a:hover, a:focus {
     color: var(--light-blue);
 }
 
@@ -131,6 +135,10 @@ a:hover {
     max-width: 1024px;
     align-self: center;
     line-height: 1.6;
+}
+
+.unfocused {
+    outline: none;
 }
 
 @media only screen and (max-width: 440px) {
