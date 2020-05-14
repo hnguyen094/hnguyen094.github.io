@@ -1,11 +1,13 @@
 :root {
     --light-blue: #18B0B0;
-    --dark-blue: #156979;
+    --medium-blue: #156979;
+    --dark-blue: #0D3548;
     --light-grey: #7a7a7a;
     --medium-grey: #595959;
     --dark-grey: #333; /* #808284; */
     --orange: #FDA965;
     --light-orange: rgb(252, 198, 155);
+    --half-orange: rgba(253, 169, 101, 0.342);
     --white: white;
     --red: rgb(201, 57, 57);
     --soft-red: rgb(206, 86, 86);
@@ -37,7 +39,7 @@ body {
     margin-bottom: 1%;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: var(--dark-grey);
+    background-color: var(--dark-blue);
     padding: 0.2% 0.7% 0.2% 0.7%;
     font-size: larger;
 }
@@ -90,8 +92,17 @@ body {
     -webkit-transform: translate3d(0, 0, -20px);
 }
 
+.text-overlay {
+    position: absolute;
+    background-color: var(--half-orange);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: translate3d(0, 0, -1px);
+}
+
 a:link { /* Let's have all external links orange, and internal blue */
-    background-color: var(--dark-grey);
+    background-color: var(--dark-blue);
     padding: 1px;
     border-radius: 2px;    
     text-decoration: none;
