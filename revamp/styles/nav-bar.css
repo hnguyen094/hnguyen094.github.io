@@ -39,7 +39,6 @@ body {
     justify-content: space-evenly;
     background-color: var(--dark-grey);
     padding: 0.2% 0.7% 0.2% 0.7%;
-    /* border-radius: 0 0 14px 14px; */
     font-size: larger;
 }
 
@@ -51,7 +50,6 @@ body {
     color: var(--white);
     text-decoration: none;
     transition: all 0.2s;
-    /* --webkit-transition: font-size 0.2s linear, color 0.2s linear; */
 }
 
 #menu a:hover {
@@ -97,9 +95,7 @@ a:link { /* Let's have all external links orange, and internal blue */
     padding: 1px;
     border-radius: 2px;    
     text-decoration: none;
-    /* --webkit-transition: font-size 0.2s linear, color 0.2s linear; */
     transition: all 0.2s;
-    /* transform: scale(0.98); */
     color: var(--white);
 }
 
