@@ -57,7 +57,7 @@ a.gallery-item .gallery-image {
     object-fit: cover;
     filter: blur(2px);
     -webkit-filter: blur(2px);
-    z-index: 0;
+    z-index: -10;
     transform: translate3d(0, 0, -10px);
     -webkit-transform: translate3d(0, 0, -10px);
 }
@@ -92,9 +92,9 @@ a.gallery-item div.text-overlay span {
     font-size: smaller;
     border-radius: 0.5vw;
     padding: 0 0.5vw;
-    z-index: 2;
-    transform: translate3d(0,0,2px), scale(2);
-    -webkit-transform: translate3d(0,0,2px), scale(2);
+    z-index: 20;
+    transform: translate3d(0,0,20px), scale(1);
+    -webkit-transform: translate3d(0,0,20px), scale(1);
 }
 
 a.gallery-item div.text-overlay.right-corner {
