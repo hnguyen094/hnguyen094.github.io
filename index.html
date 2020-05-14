@@ -1,29 +1,81 @@
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hung Nguyen</title>
         <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+        <link rel="stylesheet" href="styles/nav-bar.css">
         <link rel="stylesheet" href="styles/index.css">
-        <script src="https://cdn.jsdelivr.net/remarkable/1.7.1/remarkable.min.js"></script>
-        <!-- 
-        <script src="https://cdn.rawgit.com/showdownjs/showdown/1.9.0/dist/showdown.min.js"></script>
-        -->
-        <script src="js/content.js"></script>
-        <script src="js/index.js" defer></script>
     </head>
-    <div id="background"></div>
     <body>
+        <h1 class="section-title">
+            <div class="text-overlay"></div>
+            Hung T Nguyen
+            <video class="section-title-bg" alt-text="a pan of a 3d-scanned tree in VR" playsinline autoplay muted loop>
+                <source src="videos/areyouhere-tree.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </h1>
         <nav id="menu">
-            <a id= "welcome" class="noselect header menu-item selected unhover">[welcome]</a>
-            <a id= "about-me" class="noselect header menu-item unselected unhover">[hi, about me]</a>
-            <a id= "experience" class="noselect header menu-item unselected unhover">[experience]</a>
-            <a id= "education" class="noselect header menu-item unselected unhover">[education]</a>
-            <a id= "contact" class="noselect header menu-item unselected unhover">[contact]</a>
+            <a href="index.html">[projects]</a>
+            <a href="about-me.html">[about me]</a>
+            <!-- <a href="experience.html">[experience]</a> -->
+            <a href="files/resume.pdf">[resume]</a>
         </nav>
-        <div id="content">
-            <h1 id="title" >content</h1>
-            <span>
-            </span>
-        </div>
+        <section id="gallery-container">
+            <div id="gallery">
+                <a id="wall-lab" class="gallery-item social-good cs ongoing" href="https://guesswhat.stanford.edu/" target="_blank">
+                    <div class="text-overlay">Guess What?: A Heads Up Game for Emotion Recognition</div>
+                    <div class="text-overlay left-corner"><span>ongoing</span></div>
+                    <img class="gallery-image" src="images/gallery_guesswhat.png" alt="Guess What: A Wall Lab project">
+                </a>
+                <a id="sumowoodo" class="gallery-item me ee cs" href="https://me210sumowoodo.weebly.com/" target="_blank">
+                    <div class="text-overlay">Sumowoodo: A Pushing Robot</div>
+                    <img class="gallery-image" src="images/gallery_sumowoodo.jpg" alt="A bird's eye view of the robot with most of the electronic parts shown.">
+                </a>
+                <a id="trash-bin" class="gallery-item me" href="https://pcpartpicker.com/b/McZRsY" target="_blank">
+                    <div class="text-overlay">Trash Bin: A 3D-Printed/Laser Cut Hackintosh Computer Case</div>
+                    <img class="gallery-image" src="images/gallery_trashbin.jpg" alt="A picture of the case: the top and side panel were laser cut, and the front was 3d printed.">
+                </a>
+                <a id="r-autota" class="gallery-item social-good cs" href="https://github.com/willcrichton/r-autota" target="_blank">
+                    <div class="text-overlay">AutoTA: Debugging Assistant for R</div>
+                    <img class="gallery-image" src="images/gallery_autota.jpeg" alt="A smiling, cute robot with the word Auto-TA on its chest.">
+                </a>
+                <a id="are-you-here" class="gallery-item vr art cs" href="https://youtu.be/V9qXbP2Tl0A" target="_blank">
+                    <div class="text-overlay">(Are You) Here: A VR Artwork</div>
+                    <img style="object-position: 20% 0%;" class="gallery-image" src="images/gallery_areyouhere.png" alt="A screengrab from my Are You Here experience of a light leaving a tree model.">
+                </a>
+                <a id="tctfy" class="gallery-item game art cs" href="/storage/tctfy/play.html" target="_blank">
+                    <div class="text-overlay">The Clock Ticks For You: An IF Meditative Game On Death</div>
+                    <!-- <img style="transform: scale(3.5) translate(-10%, 15%);" class="gallery-image" src="images/gallery_tctfy.svg" alt="The word FAMILIAR in black but the AR is purple, on a ghostly watercolor paper background."> -->
+                    <img style="object-position: 80% 20%;" class="gallery-image" src="images/gallery_tctfy.png" alt="The word FAMILIAR in black but the AR is purple, on a ghostly watercolor paper background.">
+                </a>
+                <a id="fidelius" class="gallery-item cs ee" href="https://crypto.stanford.edu/fidelius/" target="_blank">
+                    <div class="text-overlay">Fidelius: Protecting Secrets from Compromised Browsers</div>
+                    <img style="object-position: 96% 0%;" class="gallery-image" src="images/gallery_fidelius.png" alt="Diagram of a Raspberry Pi 3 showing encrypted data and video coming in, and overlayed, decrypted video coming out.">
+                </a>
+                <a id="familiar" class="gallery-item game vr art cs" href="https://www.youtube.com/watch?v=o0UHfR5vzJI" target="_blank">
+                    <div class="text-overlay">FamiliAR: A Mobile AR Escape Room</div>
+                    <img class="gallery-image" src="images/gallery_familiar.png" alt="The word FAMILIAR in black but the AR is purple, on a ghostly watercolor paper background.">
+                </a>
+                <a role="note" id="handtracking-asl" class="gallery-item cs ongoing" tabindex="0">
+                    <div class="text-overlay">Oculus Handtracking for Gesture & ASL Recognition</div>
+                    <div class="text-overlay left-corner"><span>ongoing</span></div>
+                    <div class="text-overlay right-corner"><span>no link</span></div>
+                    <img class="gallery-image" src="images/gallery_handtracking.png" alt="Two viewports showing two virtually tracked hands each, with one holding up a peace sign.">
+                </a>
+                <a role="note" id="vietnamese-stories" class="gallery-item cs art ongoing" tabindex="0">
+                    <div class="text-overlay">Collection of Vietnamese Stories in America</div>
+                    <div class="text-overlay left-corner"><span>ongoing</span></div>
+                    <div class="text-overlay right-corner"><span>no link</span></div>
+                    <img class="gallery-image" src="images/gallery_vnstories.png" alt="A red and yellow Asian lantern stall reading: tấn tài tấn lộc (Vietnamese).">
+                </a>
+                <a role="note" id="freelines" class="gallery-item me ee ongoing" tabindex="0">
+                    <div class="text-overlay">Motorized Freelines</div>
+                    <div class="text-overlay left-corner"><span>ongoing</span></div>
+                    <div class="text-overlay right-corner"><span>no link</span></div>
+                    <img class="gallery-image" src="images/gallery_freelines_1.jpg" alt="Freeline skates, with one side having a wooden riser.">
+                </a>
+            </div>
+        </section>
     </body>
-</html>
