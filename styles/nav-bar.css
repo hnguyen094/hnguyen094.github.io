@@ -52,7 +52,8 @@ body {
     margin: 0.3%;
     white-space: nowrap;
     border-radius: 6px;
-    padding: 0.3%;
+    padding: 5px 0.3%;
+    /* min-height: 44px; */
     color: var(--white);
     text-decoration: none;
     transition: all 0.2s;
