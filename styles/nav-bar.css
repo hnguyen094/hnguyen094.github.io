@@ -167,3 +167,7 @@ a:hover, a:focus {
     zoom: 1.0;
     width: extend-to-zoom;
 }
+
+footer {
+    align-self: flex-end;
+}
