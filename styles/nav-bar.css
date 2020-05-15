@@ -171,7 +171,7 @@ a:hover, a:focus {
 }
 
 footer {
-    margin-top: 3vh;
+    margin-top: 1%;
     max-width: 1024px;
     padding: 0 5vw;
     color: var(--dark-blue);
