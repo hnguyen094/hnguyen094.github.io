@@ -1,6 +1,7 @@
-/* .section-title {
-    background-image: url(../images/gallery_areyouhere.png);
-} */
+.section-title {
+    /* background-image: url(../images/gallery_areyouhere.png); */
+    font-size: xxx-large;
+}
 
 .section-title2 {
     margin: 0;
