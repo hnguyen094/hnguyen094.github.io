@@ -184,6 +184,6 @@ footer {
     max-width: 1024px;
     padding: 0 5vw;
     color: var(--white);
-    border-top: 2px solid var(--dark-blue);
+    border-top: 2px solid var(--white);
     align-self: center;
 }
