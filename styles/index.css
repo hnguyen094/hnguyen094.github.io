@@ -54,7 +54,7 @@ a.gallery-item div.text-overlay.left-corner {
     justify-content: flex-start;
 }
 a.gallery-item div.text-overlay span {
-    margin: 1%;
+    margin: 3%;
     background-color: var(--soft-red);
     font-size: smaller;
     border-radius: 0.5vw;
