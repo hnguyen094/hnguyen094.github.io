@@ -111,6 +111,8 @@ a.gallery-item .gallery-image {
     z-index: -10;
     transform: translate3d(0, 0, -10px);
     -webkit-transform: translate3d(0, 0, -10px);
+    transition: 0.2s;
+    border-radius: 0.5vw;
 }
 
 a.gallery-item div.text-overlay.right-corner {
@@ -128,6 +130,8 @@ a.gallery-item div.text-overlay.right-corner {
     a.gallery-item:hover .gallery-image, a.gallery-item:focus .gallery-image {
         filter: blur(2px);
         -webkit-filter: blur(2px);
+        width: 100%;
+        height: 100%;
     }
     a.gallery-item div.text-overlay {
         opacity: 0;
