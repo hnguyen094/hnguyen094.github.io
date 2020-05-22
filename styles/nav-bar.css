@@ -1,5 +1,6 @@
 :root {
     --light-blue: #18B0B0;
+    --half-light-blue: rgba(24, 176, 176, 0.438);
     --medium-blue: #156979;
     --half-dark-blue: rgba(13, 53, 72, 0.384);
     --dark-blue: #0D3548;
