@@ -191,6 +191,9 @@ a:hover, a:focus {
     #menu {
         background-color: var(--dark-blue);
     }
+    a:link {
+        background-color: var(--medium-blue);
+    }
 }
 @media (prefers-color-scheme: light) {
     html { 
@@ -199,6 +202,9 @@ a:hover, a:focus {
     }
     #menu {
         background-color: var(--medium-blue);
+    }
+    a:link {
+        background-color: var(--dark-blue);
     }
 }
 
