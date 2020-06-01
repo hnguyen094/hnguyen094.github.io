@@ -138,8 +138,15 @@ a.gallery-item .gallery-image {
     -webkit-transform: translate3d(0, 0, -10px);
     transition: 0.2s;
     border-radius: 0.5vw;
-    box-shadow: 8px 8px 12px #414141;
+    box-shadow: 6px 6px 20px rgba(4, 29, 29, 0.6), 
+                -3px -3px 40px rgba(201, 241, 241, 0.95);
     overflow: hidden;
+}
+@media (prefers-color-scheme: dark) {
+    a.gallery-item .gallery-image {
+        box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.918), 
+                    -3px -3px 40px rgba(162, 232, 232, 0.230);
+    }
 }
 
 @media(hover: hover) and (pointer: fine) {
