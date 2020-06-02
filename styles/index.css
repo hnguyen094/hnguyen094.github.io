@@ -55,8 +55,8 @@ a.gallery-item div.text-overlay {
     font-size: larger;
     color: var(--white);
     z-index: 1;
-    transform: translate3d(0,0,1px), scale(1);
-    -webkit-transform: translate3d(0,0,1px), scale(1);
+    /* transform: translate3d(0,0,1px), scale(1);
+    -webkit-transform: translate3d(0,0,1px), scale(1); */
     }
 a.gallery-item div.text-overlay.left-corner {
     align-items: flex-start;
@@ -79,8 +79,8 @@ a.gallery-item div.text-overlay span {
     border-radius: 0.5vw;
     padding: 0 0.5vw;
     z-index: 20;
-    transform: translate3d(0,0,20px), scale(1);
-    -webkit-transform: translate3d(0,0,20px), scale(1);
+    /* transform: translate3d(0,0,20px), scale(1);
+    -webkit-transform: translate3d(0,0,20px), scale(1); */
 }
 /* @media only screen and (max-width: 1440px) {
     a.gallery-item {
@@ -135,7 +135,7 @@ a.gallery-item .gallery-image {
     object-fit: cover;
     z-index: -10;
     transform: translate3d(0, 0, -10px);
-    -webkit-transform: translate3d(0, 0, -10px);
+    /* -webkit-transform: translate3d(0, 0, -10px); */
     transition: 0.2s;
     border-radius: 0.5vw;
     box-shadow: 6px 6px 20px rgba(4, 29, 29, 0.6), 
