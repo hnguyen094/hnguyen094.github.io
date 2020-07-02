@@ -25,6 +25,7 @@ a.gallery-item {
     background-color: transparent;
     padding: 0;
     border: 0;
+    position: -webkit-sticky;
     /* overflow: hidden; */
     /* margin : 1%; */
 }
