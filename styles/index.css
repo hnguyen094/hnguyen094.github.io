@@ -12,8 +12,8 @@
     display: grid;
     justify-content: center;
     z-index: 1;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 16.67vw);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, calc(0.66 * 25vw));
     margin: auto;
 }
 
@@ -43,8 +43,8 @@ a.gallery-item div.color-overlay {
 
 a.gallery-item div.text-overlay {
     /* position: absolute; */
-    width: 16.67vw;
-    height: 16.67vw;
+    width: 25vw;
+    height: calc(0.66 * 25vw);
     opacity: 1;
     transition: 0.2s;
     /* background-image: var(--linear-grad-bg); */
@@ -85,35 +85,35 @@ a.gallery-item div.text-overlay span {
 }
 @media only screen and (max-width: 1440px) {
     #gallery {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 25vw);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, calc(33.3vw * 0.66));
     }
     a.gallery-item div.text-overlay {
-        width: 25vw;
-        height: 25vw;
+        width: 33.3vw;
+        height: calc(33.3vw * 0.66);
     }
 } 
 @media only screen and (max-width: 860px) {
     #gallery {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 33.3vw);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, calc(50vw * 0.66));
     }
     a.gallery-item div.text-overlay {
-        width: 33.3vw;
-        height: 33.3vw;
+        width: 50vw;
+        height: calc(50vw * 0.66);
     }
 } 
 @media only screen and (max-width: 650px) {
     #gallery {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 50vw);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, calc(100vw * 0.66));
     }
     a.gallery-item div.text-overlay {
-        width: 50vw;
-        height: 50vw;
+        width: 100vw;
+        height: calc(1vw * 0.66);
     }
 }
-
+/* 
 @media only screen and (max-width: 300px) {
     #gallery {
         grid-template-columns: repeat(1, 1fr);
@@ -123,7 +123,7 @@ a.gallery-item div.text-overlay span {
         width: 100vw;
         height: 100vw;
     }
-}
+} */
 
 a.gallery-item .gallery-image-content {
     margin: auto;
