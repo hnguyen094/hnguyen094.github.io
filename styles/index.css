@@ -30,6 +30,10 @@ a.gallery-item {
     /* margin : 1%; */
 }
 
+a.gallery-item span.link {
+    display: none;
+}
+
 a.gallery-item div.color-overlay {
     position: fixed;
     background-color: var(--half-dark-blue); /* rgba(70,70,70,0.5); */
@@ -41,12 +45,37 @@ a.gallery-item div.color-overlay {
     transition: 0.2s;
 }
 
+a.gallery-item div.color-overlay.color-body {
+    opacity: 0;
+    background-color: rgba(31, 31, 31, 0.692);
+}
+
+a.gallery-item div.color-overlay.color-body .corner-cut {
+    position: absolute;
+    bottom: 0; right: 0;
+    border-top: 4vw solid rgba(255, 45, 17, 0.699);
+    border-right: 4vw solid white;
+    width: 0;
+}
+a.gallery-item div.color-overlay.color-body .corner-cut:before {
+    content: 'more';
+    position: absolute;
+    font-weight: bold;
+    transform: rotate(-45deg);
+    bottom: 1vw; left: 1vw;
+    color: rgba(31, 31, 31, 0.692);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+}
+
 a.gallery-item div.text-overlay {
     /* position: absolute; */
     width: 25vw;
     height: calc(0.66 * 25vw);
     opacity: 1;
-    transition: 0.2s;
+    transition: 0.3s;
     /* background-image: var(--linear-grad-bg); */
  
     /*Text*/
@@ -58,7 +87,26 @@ a.gallery-item div.text-overlay {
     z-index: 1;
     /* transform: translate3d(0,0,1px), scale(1);
     -webkit-transform: translate3d(0,0,1px), scale(1); */
-    }
+}
+
+a.gallery-item div.text-overlay.item-title {
+} 
+
+a.gallery-item div.text-overlay.item-body {
+    flex-direction: column;
+    opacity: 0;
+    font-size: medium;
+    /* text-align: left; */
+}
+
+a.gallery-item div.text-overlay div {
+    padding: 10%;
+}
+
+a.gallery-item div.text-overlay.item-body a {
+    position: fix;
+}
+
 a.gallery-item div.text-overlay.left-corner {
     align-items: flex-start;
     background-image: none;
@@ -92,6 +140,10 @@ a.gallery-item div.text-overlay span {
         width: 33.3vw;
         height: calc(33.3vw * 0.66);
     }
+    a.gallery-item div.color-overlay.color-body .corner-cut {
+        border-top: 4.5vw solid rgba(255, 45, 17, 0.699);
+        border-right: 4.5vw solid var(--white);
+    }
 } 
 @media only screen and (max-width: 860px) {
     #gallery {
@@ -101,6 +153,10 @@ a.gallery-item div.text-overlay span {
     a.gallery-item div.text-overlay {
         width: 50vw;
         height: calc(50vw * 0.66);
+    }
+    a.gallery-item div.color-overlay.color-body .corner-cut {
+        border-top: 6vw solid rgba(255, 45, 17, 0.699);
+        border-right: 6vw solid white;
     }
 } 
 @media only screen and (max-width: 650px) {
@@ -112,6 +168,13 @@ a.gallery-item div.text-overlay span {
         width: 100vw;
         height: calc(100vw * 0.66);
     }
+    a.gallery-item div.color-overlay.color-body .corner-cut {
+        border-top: 8vw solid rgba(255, 45, 17, 0.699);
+        border-right: 8vw solid white;
+    }
+    /* a.gallery-item div.color-overlay.color-body .corner-cut:before {
+        font-size: xx-small;
+    } */
 }
 /* 
 @media only screen and (max-width: 300px) {
@@ -147,6 +210,7 @@ a.gallery-item .gallery-image {
                 -3px -3px 40px rgba(201, 241, 241, 0.95);
     overflow: hidden;
 }
+
 @media (prefers-color-scheme: dark) {
     a.gallery-item .gallery-image {
         box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.918), 
@@ -167,11 +231,12 @@ a.gallery-item .gallery-image {
         width: 100%;
         height: 100%;
     }
-    a.gallery-item div.text-overlay, a.gallery-item div.color-overlay {
+    a.gallery-item div.text-overlay, a.gallery-item div.color-overlay.color-title {
         opacity: 0;
     }
+
     a.gallery-item:hover div.text-overlay, a.gallery-item:focus div.text-overlay,
-    a.gallery-item:hover div.color-overlay, a.gallery-item:focus div.color-overlay {
+    a.gallery-item:hover div.color-overlay.color-title, a.gallery-item:focus div.color-overlay.color-title {
         opacity: 1;
     }
     a.gallery-item div.text-overlay span {
