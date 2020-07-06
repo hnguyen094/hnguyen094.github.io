@@ -53,8 +53,8 @@ a.gallery-item div.color-overlay.color-body {
 a.gallery-item div.color-overlay.color-body .corner-cut {
     position: absolute;
     bottom: 0; right: 0;
-    border-top: 4vw solid rgba(255, 45, 17, 0.699);
-    border-right: 4vw solid white;
+    border-top: 3vw solid var(--soft-red);
+    border-right: 3vw solid white;
     width: 0;
 }
 a.gallery-item div.color-overlay.color-body .corner-cut:before {
@@ -62,8 +62,9 @@ a.gallery-item div.color-overlay.color-body .corner-cut:before {
     position: absolute;
     font-weight: bold;
     transform: rotate(-45deg);
-    bottom: 1vw; left: 1vw;
+    bottom: 0.70vw; left: 0.70vw;
     color: rgba(31, 31, 31, 0.692);
+    font-size: .85vw;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -131,7 +132,7 @@ a.gallery-item div.text-overlay span {
     /* transform: translate3d(0,0,20px), scale(1);
     -webkit-transform: translate3d(0,0,20px), scale(1); */
 }
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1400px) {
     #gallery {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, calc(33.3vw * 0.66));
@@ -141,11 +142,15 @@ a.gallery-item div.text-overlay span {
         height: calc(33.3vw * 0.66);
     }
     a.gallery-item div.color-overlay.color-body .corner-cut {
-        border-top: 4.5vw solid rgba(255, 45, 17, 0.699);
+        border-top-width: 4.5vw;
         border-right: 4.5vw solid var(--white);
     }
+    a.gallery-item div.color-overlay.color-body .corner-cut:before {
+        bottom: 0.9vw; left: 0.9vw;
+        font-size: 1.3vw;
+    }
 } 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1000px) {
     #gallery {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, calc(50vw * 0.66));
@@ -155,8 +160,12 @@ a.gallery-item div.text-overlay span {
         height: calc(50vw * 0.66);
     }
     a.gallery-item div.color-overlay.color-body .corner-cut {
-        border-top: 6vw solid rgba(255, 45, 17, 0.699);
+        border-top-width: 6vw;
         border-right: 6vw solid white;
+    }
+    a.gallery-item div.color-overlay.color-body .corner-cut:before {
+        bottom: 1.2vw; left: 1.2vw;
+        font-size: 1.8vw;
     }
 } 
 @media only screen and (max-width: 650px) {
@@ -169,12 +178,13 @@ a.gallery-item div.text-overlay span {
         height: calc(100vw * 0.66);
     }
     a.gallery-item div.color-overlay.color-body .corner-cut {
-        border-top: 8vw solid rgba(255, 45, 17, 0.699);
-        border-right: 8vw solid white;
+        border-top-width: 9vw;
+        border-right: 9vw solid white;
     }
-    /* a.gallery-item div.color-overlay.color-body .corner-cut:before {
-        font-size: xx-small;
-    } */
+    a.gallery-item div.color-overlay.color-body .corner-cut:before {
+        bottom: 1.4vw; left: 1.4vw;
+        font-size: 3.3vw;
+    }
 }
 /* 
 @media only screen and (max-width: 300px) {
@@ -238,6 +248,9 @@ a.gallery-item .gallery-image {
     a.gallery-item:hover div.text-overlay, a.gallery-item:focus div.text-overlay,
     a.gallery-item:hover div.color-overlay.color-title, a.gallery-item:focus div.color-overlay.color-title {
         opacity: 1;
+    }
+    a.gallery-item div.color-overlay.color-body .corner-cut {
+        border-top-color: var(--red);
     }
     a.gallery-item div.text-overlay span {
         background-color: var(--red);
