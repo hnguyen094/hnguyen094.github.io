@@ -7,7 +7,6 @@
 // }
 
 function initBody(elem) {
-    console.log('initing');
     const title = elem.getElementsByClassName("item-title")[0];
     const computedHeight = window.getComputedStyle(title).getPropertyValue("height");
     const body = elem.getElementsByClassName("item-body")[0];

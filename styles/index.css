@@ -216,15 +216,20 @@ a.gallery-item .gallery-image {
     /* -webkit-transform: translate3d(0, 0, -10px); */
     transition: 0.2s;
     border-radius: 0.5vw;
-    box-shadow: 6px 6px 20px rgba(4, 29, 29, 0.6), 
-                -3px -3px 40px rgba(201, 241, 241, 0.95);
+    /* box-shadow: 6px 6px 20px rgba(4, 29, 29, 0.6), 
+                -3px -3px 40px rgba(201, 241, 241, 0.95); */
+
+    box-shadow: 15px 15px 30px rgb(21, 156, 156), 
+    -15px -15px 30px rgb(27, 196, 196);
     overflow: hidden;
 }
 
 @media (prefers-color-scheme: dark) {
     a.gallery-item .gallery-image {
-        box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.918), 
-                    -3px -3px 40px rgba(162, 232, 232, 0.230);
+        /* box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.918), 
+                    -3px -3px 40px rgba(162, 232, 232, 0.230); */
+        box-shadow: 30px 30px 60px rgb(0, 0, 0), 
+        -15px -15px 30px rgb(56, 56, 56);
     }
 }
 

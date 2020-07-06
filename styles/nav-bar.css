@@ -152,12 +152,12 @@ a:hover, a:focus {
 
 .section-picture {
     border-start-end-radius: 5vw;
-    border-radius: 1vw;
+    border-radius: 40px;
     margin: 1.5vw;
 }
 
 .section-row > .section-body {
-    max-width: 720;
+    max-width: 720px;
 }
 
 .section-body {
@@ -165,7 +165,7 @@ a:hover, a:focus {
     padding: 5vw;
     border-start-end-radius: 5vw;
     border-radius: 1vw;
-    background-color: var(--light-grey);
+    /* background-color: var(--light-grey); */
     max-width: 1440px;
     align-self: center;
     line-height: 1.6;
@@ -173,11 +173,21 @@ a:hover, a:focus {
 }
 
 .section-body, .section-picture {
-    box-shadow: 6px 6px 20px rgba(4, 29, 29, 0.6);
+    box-shadow: 15px 15px 30px rgb(21, 156, 156), 
+                -15px -15px 30px rgb(27, 196, 196);
 }
 
 .unfocused {
     outline: none;
+}
+
+footer {
+    margin-top: 1%;
+    max-width: 1440px;
+    padding: 0 5vw;
+    color: var(--white);
+    border-top: 2px solid var(--white);
+    align-self: center;
 }
 
 @media only screen and (max-width: 440px) {
@@ -217,7 +227,8 @@ a:hover, a:focus {
         background-color: var(--medium-blue);
     }
     .section-body, .section-picture {
-        box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.918);
+        box-shadow: 30px 30px 60px rgb(20, 20, 20), 
+                    -15px -15px 30px rgb(37, 37, 37);
 }
 @media (prefers-color-scheme: light) {
     html { 
@@ -229,13 +240,4 @@ a:hover, a:focus {
     a:link {
         background-color: var(--dark-blue);
     }
-}
-
-footer {
-    margin-top: 1%;
-    max-width: 1024px;
-    padding: 0 5vw;
-    color: var(--white);
-    border-top: 2px solid var(--white);
-    align-self: center;
 }
