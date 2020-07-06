@@ -17,13 +17,11 @@ function includeHTML() {
           elmnt.removeAttribute("w3-include-html");
           includeHTML();
           if (elmnt.tagName === "FOOTER") {
-            const span = document.createElement("SPAN");
             const date = new Date(document.lastModified);
-            span.appendChild(document.createTextNode(date.toLocaleDateString(
+            elmnt.appendChild(document.createTextNode(date.toLocaleDateString(
               undefined, 
               { year: 'numeric', month: 'long', day: 'numeric' }
             )));
-            elmnt.appendChild(span);
           }
         }
       }
