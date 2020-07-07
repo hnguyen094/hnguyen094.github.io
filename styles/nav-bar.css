@@ -39,6 +39,7 @@ body {
 
 h2, h3 {
     font-weight: bolder;
+    /* border-top: 3px dotted; */
 }
 
 #menu {
@@ -152,34 +153,56 @@ a:hover, a:focus {
     align-self: center;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 }
 
 .section-picture {
+    position: relative;
+    margin: 1.5vw;
+    align-self: center;
+}
+
+.section-picture > img {
     border-start-end-radius: 5vw;
     border-radius: 40px;
-    margin: 1.5vw;
 }
 
 .section-row > .section-body {
-    max-width: 720px;
+    flex-basis: 0;
+    max-width: 900px;
+    min-width: 300px;
 }
 
 .section-body {
-    margin: 1.5vw;
+    position: relative;
+    margin: 1.5vmax;
     padding: 5vw;
-    border-start-end-radius: 5vw;
-    border-radius: 1vw;
-    /* background-color: var(--light-grey); */
+    border-start-end-radius: 5vmax;
+    border-radius: 1vmax;
     max-width: 1440px;
-    align-self: center;
+    align-self: stretch;
+    text-align: left;
     line-height: 1.6;
+    flex-grow: 1;
     /* font-family: var(--body-font); */
 }
 
-.section-body, .section-picture {
-    box-shadow: 15px 15px 30px rgb(21, 156, 156), 
-                -15px -15px 30px rgb(27, 196, 196);
+.section-body:before, .section-picture:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-start-end-radius: 5vw;
+    border-radius: 1vw;
+    z-index: -1;
+    box-shadow: 15px 15px 30px rgb(19, 108, 108), 
+                -15px -15px 30px rgb(35, 223, 223);
+}
+
+.section-picture:before {
+    border-radius: 40px;
 }
 
 .unfocused {
@@ -231,9 +254,13 @@ footer {
     a:link {
         background-color: var(--medium-blue);
     }
-    .section-body, .section-picture {
-        box-shadow: 30px 30px 60px rgb(20, 20, 20), 
-                    -15px -15px 30px rgb(37, 37, 37);
+    .section-body:before, .section-picture:before {
+        box-shadow: 20px 20px 40px rgb(0, 0, 0), 
+                    -20px -20px 40px rgb(58, 58, 58);
+    }
+    .section-body {
+        background-color: var(--black);
+    }
 }
 @media (prefers-color-scheme: light) {
     html { 
@@ -244,5 +271,8 @@ footer {
     }
     a:link {
         background-color: var(--dark-blue);
+    }
+    .section-body {
+        background-color: var(--light-blue);
     }
 }

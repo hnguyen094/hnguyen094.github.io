@@ -89,6 +89,7 @@ a.gallery-item div.text-overlay {
     z-index: 1;
     /* transform: translate3d(0,0,1px), scale(1);
     -webkit-transform: translate3d(0,0,1px), scale(1); */
+    text-align: left;
 }
 
 a.gallery-item div.text-overlay.item-title {
@@ -220,8 +221,8 @@ a.gallery-item .gallery-image {
     /* box-shadow: 6px 6px 20px rgba(4, 29, 29, 0.6), 
                 -3px -3px 40px rgba(201, 241, 241, 0.95); */
 
-    box-shadow: 15px 15px 30px rgb(21, 156, 156), 
-    -15px -15px 30px rgb(27, 196, 196);
+    box-shadow: 15px 15px 30px rgb(19, 108, 108), 
+                -15px -15px 30px rgb(35, 223, 223);
     overflow: hidden;
 }
 
@@ -229,8 +230,8 @@ a.gallery-item .gallery-image {
     a.gallery-item .gallery-image {
         /* box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.918), 
                     -3px -3px 40px rgba(162, 232, 232, 0.230); */
-        box-shadow: 30px 30px 60px rgb(0, 0, 0), 
-        -15px -15px 30px rgb(56, 56, 56);
+        box-shadow: 30px 30px 60px rgb(21, 21, 21), 
+        -15px -15px 30px rgb(43, 43, 43);
     }
 }
 
