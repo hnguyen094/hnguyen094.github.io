@@ -209,8 +209,8 @@ a.gallery-item .gallery-image-content {
     -webkit-filter: blur(2px);
 }
 a.gallery-item .gallery-image {
-    width: 70%;
-    height: 80%;
+    width: 85%;
+    height: 85%;
     margin: auto;
     object-fit: cover;
     z-index: -10;
@@ -250,14 +250,14 @@ a.gallery-item .gallery-image {
         filter: blur(2px);
         -webkit-filter: blur(2px);
     }
+    a.gallery-item .gallery-image {
+        width: 70%;
+        height: 80%;
+    }
     a.gallery-item:hover .gallery-image, a.gallery-item:focus .gallery-image {
-        width: 99%;
+        width: 93%;
         height: 85%;
     }
-    /* a.gallery-item .gallery-image, a.gallery-item .gallery-image {
-        width: 85%;
-        height: 85%;
-    } */
     a.gallery-item div.text-overlay, a.gallery-item div.color-overlay.color-title {
         opacity: 0;
     }

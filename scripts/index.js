@@ -30,6 +30,7 @@ function showBody(elem) {
     const body = elem.getElementsByClassName("item-body")[0];
     const title = elem.getElementsByClassName("item-title")[0];
     const body_overlay = elem.getElementsByClassName("color-body")[0];
+    const img = elem.getElementsByClassName("gallery-image")[0];
 
     const computedHeight = window.getComputedStyle(title).getPropertyValue("height");
     title.style.transform = "translateY(" + (parseInt(computedHeight) / 4) + "px)";
@@ -39,6 +40,8 @@ function showBody(elem) {
     body_overlay.style.opacity = 1;
     body_overlay.style.borderTop = "4vw";
     body_overlay.style.borderRight = "4vw";
+    img.style.width = "95%";
+    img.style.height = "95%";
     // title.style.alignItems = "flex-start";
 
     const left = elem.getElementsByClassName("left-corner")[0];
@@ -55,6 +58,7 @@ function hideBody(elem) {
     const body = elem.getElementsByClassName("item-body")[0];
     const title = elem.getElementsByClassName("item-title")[0];
     const body_overlay = elem.getElementsByClassName("color-body")[0];
+    const img = elem.getElementsByClassName("gallery-image")[0];
     if (body.style.opacity !== "0") {
         const computedHeight = window.getComputedStyle(title).getPropertyValue("height");
         title.style.transform = "";    
@@ -65,6 +69,8 @@ function hideBody(elem) {
         body_overlay.style.borderTop = "";
         body_overlay.style.borderRight = "";
         // title.style.alignItems = "";
+        img.style.width = "";
+        img.style.height = "";
     }
 
     const left = elem.getElementsByClassName("left-corner")[0];
