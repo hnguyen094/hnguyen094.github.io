@@ -209,8 +209,8 @@ a.gallery-item .gallery-image-content {
     -webkit-filter: blur(2px);
 }
 a.gallery-item .gallery-image {
-    width: 85%;
-    height: 85%;
+    width: 70%;
+    height: 80%;
     margin: auto;
     object-fit: cover;
     z-index: -10;
@@ -238,6 +238,10 @@ a.gallery-item .gallery-image {
 }
 
 @media(hover: hover) and (pointer: fine) {
+    #gallery {
+        padding: 0 10vw 0;
+    }
+
     a.gallery-item .gallery-image-content {
         filter: none;
         -webkit-filter: none;
@@ -247,8 +251,8 @@ a.gallery-item .gallery-image {
         -webkit-filter: blur(2px);
     }
     a.gallery-item:hover .gallery-image, a.gallery-item:focus .gallery-image {
-        width: 100%;
-        height: 100%;
+        width: 99%;
+        height: 85%;
     }
     /* a.gallery-item .gallery-image, a.gallery-item .gallery-image {
         width: 85%;
@@ -268,5 +272,8 @@ a.gallery-item .gallery-image {
     a.gallery-item div.text-overlay span {
         background-color: var(--red);
         font-size: inherit;
+    }
+    a.gallery-item div.text-overlay div {
+        padding: 14%;
     }
 }
