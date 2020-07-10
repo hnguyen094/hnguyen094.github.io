@@ -40,8 +40,8 @@ function showBody(elem) {
     body_overlay.style.opacity = 1;
     body_overlay.style.borderTop = "4vw";
     body_overlay.style.borderRight = "4vw";
-    img.style.width = "95%";
-    img.style.height = "95%";
+    // img.style.width = "95%";
+    // img.style.height = "95%";
     // title.style.alignItems = "flex-start";
 
     const left = elem.getElementsByClassName("left-corner")[0];
@@ -69,8 +69,8 @@ function hideBody(elem) {
         body_overlay.style.borderTop = "";
         body_overlay.style.borderRight = "";
         // title.style.alignItems = "";
-        img.style.width = "";
-        img.style.height = "";
+        // img.style.width = "";
+        // img.style.height = "";
     }
 
     const left = elem.getElementsByClassName("left-corner")[0];
