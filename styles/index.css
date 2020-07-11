@@ -1,7 +1,6 @@
 .section-title {
     /* background-image: url(../images/gallery_areyouhere.png); */
     font-size: xxx-large;
-    font-weight: lighter;
 }
 
 .section-title2 {
@@ -74,15 +73,15 @@ a.gallery-item div.color-overlay.color-body .corner-cut:before {
 
 a.gallery-item div.text-overlay {
     /* position: absolute; */
-    width: 25vw;
+    width: calc(80vw * 0.95 / 4);
     height: calc(0.66 * 25vw);
     opacity: 1;
     transition: 0.3s;
     /* background-image: var(--linear-grad-bg); */
- 
     /*Text*/
     display: flex;
     justify-content: center;
+    align-self: center;
     align-items: center;
     font-size: larger;
     color: var(--white);
@@ -140,7 +139,7 @@ a.gallery-item div.text-overlay span {
         grid-template-rows: repeat(4, calc(33.3vw * 0.66));
     }
     a.gallery-item div.text-overlay {
-        width: 33.3vw;
+        width: calc(80vw * 0.95 / 3);
         height: calc(33.3vw * 0.66);
     }
     a.gallery-item div.color-overlay.color-body .corner-cut {
@@ -158,7 +157,7 @@ a.gallery-item div.text-overlay span {
         grid-template-rows: repeat(6, calc(50vw * 0.66));
     }
     a.gallery-item div.text-overlay {
-        width: 50vw;
+        width: calc(80vw * 0.95 / 2);
         height: calc(50vw * 0.66);
     }
     a.gallery-item div.color-overlay.color-body .corner-cut {
@@ -176,7 +175,7 @@ a.gallery-item div.text-overlay span {
         grid-template-rows: repeat(12, calc(100vw * 0.66));
     }
     a.gallery-item div.text-overlay {
-        width: 100vw;
+        width: calc(80vw * 0.95);
         height: calc(100vw * 0.66);
     }
     a.gallery-item div.color-overlay.color-body .corner-cut {
@@ -252,9 +251,10 @@ a.gallery-item .gallery-image {
         height: 80%;
     }
     a.gallery-item:hover .gallery-image, a.gallery-item:focus .gallery-image {
-        width: 93%;
+        width: 95%;
         height: 85%;
     }
+
     a.gallery-item div.text-overlay, a.gallery-item div.color-overlay.color-title {
         opacity: 0;
     }
@@ -271,6 +271,6 @@ a.gallery-item .gallery-image {
         font-size: inherit;
     }
     a.gallery-item div.text-overlay div {
-        padding: 16%;
+        padding: 7%;
     }
 }

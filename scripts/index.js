@@ -40,8 +40,10 @@ function showBody(elem) {
     body_overlay.style.opacity = 1;
     body_overlay.style.borderTop = "4vw";
     body_overlay.style.borderRight = "4vw";
-    // img.style.width = "95%";
-    // img.style.height = "95%";
+    if(matchMedia('(pointer:fine)').matches) {
+        img.style.width = "95%";
+        img.style.height = "95%";
+    }
     // title.style.alignItems = "flex-start";
 
     const left = elem.getElementsByClassName("left-corner")[0];
@@ -60,7 +62,7 @@ function hideBody(elem) {
     const body_overlay = elem.getElementsByClassName("color-body")[0];
     const img = elem.getElementsByClassName("gallery-image")[0];
     if (body.style.opacity !== "0") {
-        const computedHeight = window.getComputedStyle(title).getPropertyValue("height");
+        // const computedHeight = window.getComputedStyle(title).getPropertyValue("height");
         title.style.transform = "";    
         body.style.transform = "";//"translateY(" + (-parseInt(computedHeight) / 4) + "px)";
         body.style.opacity = 0;
@@ -68,9 +70,11 @@ function hideBody(elem) {
         body_overlay.style.opacity = "";
         body_overlay.style.borderTop = "";
         body_overlay.style.borderRight = "";
+        if(matchMedia('(pointer:fine)').matches) {
+            img.style.width = "";
+            img.style.height = "";
+        }
         // title.style.alignItems = "";
-        // img.style.width = "";
-        // img.style.height = "";
     }
 
     const left = elem.getElementsByClassName("left-corner")[0];
