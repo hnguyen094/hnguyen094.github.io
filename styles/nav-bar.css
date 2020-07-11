@@ -83,7 +83,7 @@ h2, h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 20vw;
+    height: 20vmax;
     margin: 0;
     z-index: 1;
     transform: translate3d(0, 0, 1px);
@@ -102,7 +102,7 @@ h2, h3 {
 }
 
 .section-title.small {
-    height: 10vw;
+    height: 10vmax;
 }
 
 .section-title-bg {
@@ -163,44 +163,76 @@ a:hover, a:focus {
 }
 
 .section-row {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    max-width: 1440px;
+    max-width: calc(1440px + 3vmax);
     align-self: center;
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
 }
 
+.section-col {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    min-width: 250px;
+    flex-wrap: nowrap;
+    align-self: center;
+    justify-content: center;
+    align-items: stretch;
+}
+
 .section-picture {
     position: relative;
-    margin: 1.5vw;
+    margin: 1.5vmax;
     align-self: center;
 }
 
 .section-picture > img {
     border-start-end-radius: 5vw;
     border-radius: 40px;
-}
-
-.section-row > .section-body {
-    flex-basis: 0;
-    max-width: 900px;
-    min-width: 300px;
+    max-width: 85vw;
+    height: auto;
 }
 
 .section-body {
+    box-sizing: border-box;
     position: relative;
     margin: 1.5vmax;
     padding: 5vw;
     border-start-end-radius: 5vmax;
     border-radius: 1vmax;
     max-width: 1440px;
-    align-self: stretch;
+    min-width: 250px;
+    align-self: center;
+    /* align-self: stretch; */
     text-align: left;
     line-height: 1.6;
-    flex-grow: 1;
+    /* width: 100%; */
+    /* flex-grow: 1; */
     /* font-family: var(--body-font); */
+}
+
+.section-row > .section-body {
+    flex-basis: 0;
+    align-self: stretch;
+    max-width: 900px;
+}
+.section-col > .section-body {
+    flex-basis: 0;
+    align-self: stretch;
+    max-width: 900px;
+}
+
+.section-body > .section-body {
+    padding: 0;
+}
+
+.section-body > .section-picture {
+    padding: 0;
 }
 
 .section-body:before, .section-picture:before {
@@ -240,10 +272,10 @@ footer {
         /* flex-direction: column; */
     }
     .section-title {
-        height: 30vw;
+        height: 30vmax;
     }
     .section-title.small {
-        height: 20vw;
+        height: 20vmax;
     }
 }
 
