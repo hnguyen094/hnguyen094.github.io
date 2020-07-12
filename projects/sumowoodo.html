@@ -39,40 +39,60 @@
         </h1>
         <nav id="menu" w3-include-html="/nav-bar.html"></nav>
         <script src="/scripts/nav-bar.js"></script>
+        <div class="section-row section-body">
+            <div class="section-body" style="flex-grow: 1;">
+                <h2>The Project</h2>
+                The Sumowoodo Project is our final for Intro to Mechatronics (ME210) at Stanford. Each team is to build an autonomous robot, which will compete against two other robots. Each robot will be positioned in a sector of a circular playing field, sectioned off by walls. The objective is to push on these walls to claim a larger slice of the circle. The team occupying the largest slice of the circle when time runs out wins.
+                <h3>
+                    I'll detail my responsibilities on this site. Find our full write-up 
+                    <a class="external" href="https://me210sumowoodo.weebly.com/" target="_blank">here</a>. 
+                </h3>
+            </div>
+            <div class="section-picture">
+                <img src="/images/projects/sumowoodo-pi-sumo.png" alt="A circle divided into 3 equal parts, with words describing pi sumo." width="300">
+            </div>
+        </div>
         <div class="section-row">
             <div class="section-picture">
                 <img src="/images/projects/sumowoodo-squad.jpg" alt="The three people in the picture, photoshopped with the Pokemon Sudowoodo and Squirtle Squad sunglasses." width="600">
             </div>
             <div class="section-body" style="flex-grow: 1;">
                 <h2>The Sumowoodo Squad</h2>
-                (left to right) <br/>
+                (from left to right) <br>
                 Hung Nguyen, Carissa Cirelli, & Melody Yang 
                 <h2>Responsibility</h2>
             I was tasked with designing the software architecture, and helped with both the mechanical and electrical implementations (drilling holes, building circuits, soldering, wiring, etc.) 
-
-            Find the full write-up 
-                <a class="external" href="https://me210sumowoodo.weebly.com/" target="_blank">here</a>.
             </div>
         </div>
-        <div class="section-body">
-            <h2>Responsibility</h2>
-            I was tasked with designing the software architecture, and helped with both the mechanical and electrical implementations (drilling holes, building circuits, soldering, wiring, etc.) 
-
-            Find the full write-up 
-                <a class="external" href="https://me210sumowoodo.weebly.com/" target="_blank">here</a>.
-        </div>
-        <div class="section-row section-body">
-            <div class="section-body" style="flex-grow: 1;">
-                
-                <h2>The Project</h2>
-                To complete the Intro to Mechatronics class (ME210) at Stanford, we have to compete in an annual robotics design challenge. This year's competition is "pi sumo." Each team is to build an autonomous robot, which will compete against two other robots. Each robot will be positioned in a sector of a circular playing field, sectioned off by walls. The objective is to push on these walls to claim a larger slice of the circle. The team occupying the largest slice of the circle when time runs out wins. 
+        <div class="section-row">
+            <div class="section-body" style="flex-grow: 2;">
+                <h2>The State Machine</h2>
+                With any software engineering endeavor, clear and concise code is important for understanding and debugging. That's why we first made sure that our state machine is theoretically sound, base on a rough mechanical design before ever touching code. <br>
+                Specifically, this gives 7 functional states (not including the start state/the black circle.)
             </div>
             <div class="section-picture">
-                <img src="/images/projects/sumowoodo-pi-sumo.png" alt="A circle divided into 3 equal parts, with words describing pi sumo." width="300">
+                <img src="/images/projects/sumowoodo-state-diag.png" alt="A graph connecting 7 states together, along with conditions on the edges connecting the states." width="400" style="background-color: white;">
             </div>
         </div>
-        <div class="section-body">
-            <h2>Software Architecture</h2>
+        <div class="section-row">
+            <div class="section-picture">
+                <img src="/images/projects/sumowoodo-code2.png" alt="A screenshot of the code, showing the main loop checking and changing state." width="500">
+            </div>
+            <div class="section-body">
+                <h2>The Code</h2>
+                We noticed that the incoming edges to a state always did the same function, so instead of 2 lists (for edges and nodes), we associate the functions directly with the state itself. This is important in microcontroller applications, where memory and processing power are limited.<br>
+                So, the code consists of 2 main loops: one to switch state, and one to act on the switched state. Of course, everything is event-driven (simulated, not through actual interrupts), with custom classes to handle motors, sensors, and timers. That way, we would only need to edit the constants.cpp file while setting up.
+                <h3>Download the complete source code <a href="/files/projects/sumowoodo-code.zip" target="_blank">here</a>.</h3>
+            </div>
+        </div>
+        <div class="section-row">
+            <div class="section-body" style="align-self: center;">
+                <h2>The final product!</h2>
+                Excuse the tape.
+            </div>
+            <div class="section-picture">
+                <img src="/images/projects/sumowoodo.jpg" alt="A bird's eye view of the completed mechatron." width="700">
+            </div>
         </div>
     </body>
 </html>
