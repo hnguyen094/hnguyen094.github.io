@@ -193,6 +193,7 @@ a:hover, a:focus {
     position: relative;
     margin: 1.5vmax;
     align-self: center;
+    width: min-content;
 }
 
 .section-picture > img, .section-picture > video {
@@ -210,7 +211,7 @@ a:hover, a:focus {
     border-start-end-radius: 5vmax;
     border-radius: 1vmax;
     max-width: 1440px;
-    min-width: 250px;
+    min-width: 350px;
     align-self: center;
     /* align-self: stretch; */
     text-align: left;
@@ -237,11 +238,16 @@ a:hover, a:focus {
 
 .section-body > .section-picture {
     padding: 0;
+    margin: auto;
 }
 
-.section-body.caption {
+.section-picture.with-caption > img, .section-picture.with-caption > video {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.section-picture .caption {
     padding: 1vw;
-    width: min-content;
 }
 
 .section-body:before, .section-picture:before {

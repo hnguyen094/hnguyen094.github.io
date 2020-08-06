@@ -32,7 +32,7 @@
         <link rel="stylesheet" href="/styles/nav-bar.css">
     </head>
     <body>
-        <h1 class="section-title small">
+        <h1 class="section-title ">
             <div class="text-overlay"></div>
             <span class="section-title-text">Guess What?: A Wall Lab Project</span>
             <img class="section-title-bg blur" src="/images/gallery/guesswhat.jpg" alt="A cloud with the letters GW and a question mark">
@@ -53,15 +53,23 @@
             </div>
         </div>
         <div class="section-row">
-            <div class="section-body" style="flex-grow: 1;">
+            <div class="section-body" style="flex-grow: 2;">
                 <h2>Role: Research Assistant / iOS Mobile Developer</h2>
                 <h3>Responsibilities</h3>
-                I was tasked with aiding the mobile developer on the iOS side to implement whatever we needed.
+                I was tasked with aiding the mobile developer on the iOS side to implement whatever we needed and report them back to team meetings. Most of the work became remote starting April 2020.
                 <h3>Accomplishments</h3>
             I fixed 1 bug and added 1 released features to the game; I also tested 2 additional game modes to expand the capabilities of the app.
             </div>
-            <div class="section-picture">
-                <img src="/images/projects/sumowoodo-squad.jpg" alt="The three people in the picture, photoshopped with the Pokemon Sudowoodo and Squirtle Squad sunglasses." width="600">
+            <div class="section-body">
+                <h2>Technologies Involved</h2>
+                <ul>
+                    <li>AWS/S3/Cognito</li>
+                    <li>ARKit APIs</li>
+                    <li>Swift (with Storyboard)</li>
+                    <li>Figma (for prototyping)</li>
+                    <li>SwiftyGif APIs</li>
+                    <li>Other WFH tools (Slack, Zoom, etc.)</li>
+                </ul>
             </div>
         </div>
         <div class="section-row">
@@ -85,44 +93,88 @@
                 I was able to utilize the various AWS buckets that the lab was already using and incorporate it into the app. Now, users can dynamically download decks for the buckets as they play without seeing any difference in performance.
             </div>
         </div>
+        <h1 class="section-title small">
+            <span class="section-title-text">Game Mode #1: Gather & Scatter - AR Treasure Hunt</span>
+            <video class="section-title-bg blur" src="/videos/projects/guesswhat_ScatteringDemo.MP4" alt="Background video that is blurred out." autoplay muted loop> </video>
+        </h1>
+        <div class="section-row">
+            <div class="section-body">
+                <h2>Context</h2>
+                After each game, the child's reward is an animated gif of a cartoon character. While this is fun, the lab wanted to explore the possibilities of using AR as a more enticing reward system.
+            </div>
+            <div class="section-picture">
+                <img src="/images/projects/guesswhat_reward.jpeg" alt="The old reward screen, with a car in the center and game data information around it." width="700">
+            </div>
+        </div>
         <div class="section-body">
-            <h2>Game Mode #1: Gather & Scatter - An AR Treasure Hunt</h2>
-            <h3>Context</h3>
-            After each game, the child's reward is an animated gif of a cartoon character. While this is fun, the lab wanted to explore the possibilities of using AR as a more enticing reward system.
-            <h3>Challenge</h3>
+            <h2>Challenge</h2>
             The most challenge aspect here is no one knew what should be made. It would be simple enough to show a 3D model instead of a 2D one; but what would that achieve? Why would this be more enticing? <br>
-            I ended up building ontop of one of the default experiences for ARKit to create Gather & Scatter, a completely different game mode that increase caretaker-child interactions through a treasure-map game. Caretaker-child interactions to establish shared experiences, like objects, were shown to be beneficial to children with ASD (citation needed; will link when I find it.) <br>
-            <h3>The Game</h3>
-            To play, the parent starts out placing 3D toys in their home ("scattering".) They can also just scan the house, and press the randomize button to automatically place the toys everywhere. <br>
-            Then, the child would then gather the toys, by finding all of them throughout the house ("gather"). The child can then also place the toys wherever they want in the house, and save those locations so they can find and look at their virtual toys later.
+            I ended up building ontop of one of the default experiences for ARKit to create Gather & Scatter, a completely different game mode that increase caretaker-child interactions through a treasure-map game. Caretaker-child interactions to establish shared experiences, like objects, were shown to be beneficial to children with ASD (citation needed; will link when I find it.)
         </div>
         <div class="section-row">
-            <div class="section-body caption">
-                <div class="section-picture">
-                    <video src="/videos/projects/guesswhat_PlacingDemo.MP4" alt-text="a video showing 3d models being placed in the real world on an iPhone." autoplay playsinline muted loop controls width="400">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <h3>Demo of placing the toys in specific places on the phone.</h3>
+            <!-- <div class="section-body caption">
+                
+            </div> -->
+            <div class="section-picture with-caption">
+                <video src="/videos/projects/guesswhat_PlacingDemo.MP4" alt-text="a video showing 3d models being placed in the real world on an iPhone." autoplay playsinline muted loop controls width="300">
+                    Your browser does not support the video tag.
+                </video>
+                <h3 class="caption">Demo of placing the toys in specific places through the phone.</h3>
             </div>
-            <div class="section-body caption">
-                <div class="section-picture">
-                    <video src="/videos/projects/guesswhat_ScatteringDemo.mp4" alt-text="a video showing 3d models being randomly scattered in the real world on an iPhone." autoplay playsinline muted loop controls width="400">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <h3>Demo of randomly scattering using the shuffle button after mapping the area.</h3>
+            <div class="section-body">
+                <h2>The Game</h2>
+                To play, the parent starts out placing 3D toys in their home ("scattering".) Placing is shown on the left. They can also just scan the house, and press the randomize button to automatically place the toys everywhere (shown on the right.)<br>
+                Then, the child could then gather the toys, by finding all of them throughout the house ("gather"). The child can then also place the toys wherever they want in the house, and save those locations so they can find and look at their virtual toys later. <br>
+                Due to time constraints, I was not able to finish the "gather" process, as the team had to shift focus to the next project.
+            </div>
+            <div class="section-picture with-caption">
+                <video src="/videos/projects/guesswhat_ScatteringDemo.mp4" alt-text="a video showing 3d models being randomly scattered in the real world on an iPhone." autoplay playsinline muted loop controls width="300">
+                    Your browser does not support the video tag.
+                </video>
+                <h3 class="caption">Demo of randomly scattering using the shuffle button after mapping the area.</h3>
+            </div>
+        </div>
+        
+        
+        <h1 class="section-title small">
+            <span class="section-title-text">Game Mode #2: Humpty Dumpty (Competitive)</span>
+            <img class="section-title-bg blur" src="/images/projects/guesswhat_figma.png" alt="Background video that is blurred out.">
+        </h1>
+        <div class="section-body">
+            <h2>Context</h2>
+            Humpty Dumpty is based on the term "Emotion Guessing Game" (EGG.) The idea was conceptualized by the lab in 2019, and was first implemented by another researcher; it would be a game that also acts as a data labeling tool. 
+        </div>
+        <div class="section-row">
+            <div class="section-picture">
+                <img src="/images/projects/guesswhat_child_old.png" alt="an iPhone screen showing 4 emojis, a placeholder for a gif, and instructions saying Choose the emotion that you see!">
+            </div>
+            <div class="section-picture">
+                <img src="/images/projects/guesswhat_parent_old.png" alt="an iPhone screen showing a check mark and an 'X', a placeholder for a gif, and instructions saying Confirm the emotion the child selected.">
             </div>
         </div>
         <div class="section-body">
-            <h2>Game Mode #2: Humpty Dumpty (Competitive) - Making Data Labeling Fun</h2>
-            <h3>Context</h3>
-            Humpty Dumpty is based on the term "Emotion Guessing Game" (EGG.) The idea was conceptualized by the lab in 2019, and was first implemented by another researcher; it would be a game that also acts as a data labeling tool. 
-            <h3>Challenge</h3>
-            The original setup: The child guesses at 10 emotions, then passes the phone to the parent. Then, the parent either confirms that the child guessed correctly, or fixes the child's guess with the correct emotion label for that gif. This felt clunky and space-inefficient in landscape mode, which is how we first received the game mode.
-            <h3>The Game</h3>
+            <h2>Challenge</h2>
+            The original setup: The child guesses at 10 emotions, then passes the phone to the parent. Then, the parent either confirms that the child guessed correctly, or fixes the child's guess with the correct emotion label for that gif. This felt clunky and space-inefficient in landscape mode, which is how we first received the game mode. In fact, how do we make data labeling fun?
+        </div>
+        <div class="section-picture with-caption">
+            <img src="/images/projects/guesswhat_figma.png" alt="A screenshot of 3 screen frames from a Figma prototype. They show a 1-player layout and 2 different 2-player layouts that involves gifs and emoji buttons.">
+            <h3 class="caption">Our Figma prototype to show the rest of the team.</h3>
+        </div>
+        <div class="section-body">
+            <h2>The Game</h2>
             The lead mobile developer and I sat down to prototype various ideas. We knew that we wanted to make it portrait, as we'll be using a specific Tik Tok challenge that involved emoting to the camera. We also wanted the experience to be more engaging. <br>
             We eventually came up with a competitive mode: the child and parent would rate the same 10 videos separately at the same time, sitting across from each other (like shown.) We were able to prototype it in a couple weeks, and started doing beta/feasability testing with current participants. With their input, we were able to fix many bugs and the lab gained valuable feedback on where to go from there.
+        </div>
+        <div class="section-row">
+            <div class="section-body" style="align-self: center;">
+                <h2>Final demo.</h2>
+            </div>
+
+            <div class="section-picture">
+                <video src="/videos/projects/guesswhat_HDCompDemo.mp4" alt="a video showing an iPhone screen split in half hamburger style. There are two sets of emotions, and 2 gifs playing, with the top being upside down." autoplay playsinline muted loop controls width="400">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
     </body>
 </html>

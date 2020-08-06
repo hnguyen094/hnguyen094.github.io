@@ -21,7 +21,8 @@ function toggleBody(elem, event = null) {
         showBody(elem);
     } else {
         const link = elem.getElementsByClassName("link")[0];
-        if (link) window.open(link.textContent, '_blank');
+        if (link && link.textContent[0] === '/') window.open(link.textContent, '_self');
+        else if (link) window.open(link.textContent, '_blank');
         hideBody(elem);
     }
 }
