@@ -236,6 +236,7 @@ a:hover, a:focus {
 
 .section-body.caption {
     padding: 1vw;
+    width: min-content;
 }
 
 .section-body:before, .section-picture:before {
