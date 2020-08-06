@@ -234,6 +234,10 @@ a:hover, a:focus {
     padding: 0;
 }
 
+.section-body.caption {
+    padding: 1vw;
+}
+
 .section-body:before, .section-picture:before {
     content: "";
     position: absolute;
