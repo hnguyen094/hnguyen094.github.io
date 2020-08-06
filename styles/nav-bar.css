@@ -190,9 +190,9 @@ a:hover, a:focus {
     align-self: center;
 }
 
-.section-picture > img {
-    border-start-end-radius: 5vw;
-    border-radius: 40px;
+.section-picture > img, .section-picture > video {
+    border-start-end-radius: 5vmax;
+    border-radius: 1vmax;
     max-width: 85vw;
     height: auto;
 }

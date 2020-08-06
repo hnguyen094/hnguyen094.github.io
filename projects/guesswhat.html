@@ -1,0 +1,110 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:site_name" content="Hung Nguyen"/>
+        <meta property="og:title" content="Guess What: A Wall Lab Project"/>
+        <meta property="og:description" content="Details on various features in Guess What"/>
+        <!-- <meta property="og:image" content="images/gallery_handtracking.jpg"> -->
+        <meta property="og:url" content="https://cs.stanford.edu/~hnguyen">
+        <meta property="og:type" content="about Guess What?"/>
+        <title>Game: Guess What?</title>
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon.ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon.ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon.ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon.ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon.ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon.ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon.ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon.ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon.ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico/favicon-32x32.png">
+        <link rel="icon" type="/image/png" sizes="96x96" href="/images/favicon.ico/favicon-96x96.png">
+        <link rel="icon" type="/image/png" sizes="16x16" href="/images/favicon.ico/favicon-16x16.png">
+        <link rel="manifest" href="/images/favicon.ico/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/images/favicon.ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Krub:wght@200;300;400;500&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="/styles/nav-bar.css">
+    </head>
+    <body>
+        <h1 class="section-title small">
+            <div class="text-overlay"></div>
+            <span class="section-title-text">Guess What?: A Wall Lab Project</span>
+            <img class="section-title-bg blur" src="/images/gallery/guesswhat.jpg" alt="A cloud with the letters GW and a question mark">
+        </h1>
+        <nav id="menu" w3-include-html="/nav-bar.html"></nav>
+        <script src="/scripts/nav-bar.js"></script>
+        <div class="section-row section-body">
+            <div class="section-picture">
+                <img src="/images/gallery/guesswhat.jpg" alt="A cloud with the letters GW and a question mark" width="300">
+            </div>
+            <div class="section-body" style="flex-grow: 1;">
+                <h2>The App</h2>
+                Guess What? is heads-up mobile game to help the <a class="external" href="https://wall-lab.stanford.edu/" target="_blank"><span style="white-space: nowrap;">[Wall Lab]</span></a> at Stanford learn more about autism. Specifically, users can use the game to teach their kids about emotion recognition, and participants can submit gameplay footage to be used for training machine learning models. These models will hopefully/eventually learn to recognize emotions in children, or even detect early signs of autism. 
+                <h3>
+                    I'll detail my responsibilities on this site. Find the official page 
+                    <a class="external" href="https://guesswhat.stanford.edu/" target="_blank">[here]</a>. 
+                </h3>
+            </div>
+        </div>
+        <div class="section-row">
+            <div class="section-body" style="flex-grow: 1;">
+                <h2>Role: Research Assistant / iOS Mobile Developer</h2>
+                <h3>Responsibilities</h3>
+                I was tasked with aiding the mobile developer on the iOS side to implement whatever we needed.
+                <h3>Accomplishments</h3>
+            I fixed 1 bug and added 1 released features to the game; I also tested 2 additional game modes to expand the capabilities of the app.
+            </div>
+            <div class="section-picture">
+                <img src="/images/projects/sumowoodo-squad.jpg" alt="The three people in the picture, photoshopped with the Pokemon Sudowoodo and Squirtle Squad sunglasses." width="600">
+            </div>
+        </div>
+        <div class="section-row">
+            <div class="section-body">
+                <h2>1 Bug</h2>
+                <h3>Context</h3>
+                If you've never played "Heads Up," it's a game you put on your phone on your forehead and you have to guess what is being displayed by clues that other people are giving you. If it's right, you flick it down; if you want to skip, you flip it up. 
+                <h3>Challenge/The Bug</h3>
+                The app was using accelerometer data to guess which direction; so, when someone flips it down slowly but then flips it back up quickly, it sometimes thinks that it was flicked up, not down.
+                <h3>Solution</h3>
+                I implemented the fix to instead use the device's gyroscope and instead checked the orientation of the phone; A tilt down, at any speed, will trigger the correct event. <br>
+                Bonus: It was also how Ellen's app worked, so everyone's on the same page on the game's mechanics.
+            </div>
+            <div class="section-body">
+                <h2>1 Feature</h2>
+                <h3>Context</h3>
+                The app's size previously scaled linearly with the number of images it held, so it's app store size often was huge.
+                <h3>Challenge</h3>
+                AWS Swift APIs were terribly documented, and there were already existing infrastructures to display the prompts (specifically with public buckets and Cognito.)
+                <h3>Solution</h3>
+                I was able to utilize the various AWS buckets that the lab was already using and incorporate it into the app. Now, users can dynamically download decks for the buckets as they play without seeing any difference in performance.
+            </div>
+        </div>
+        <div class="section-row">
+            <div class="section-body">
+                <h2>Game Mode #1: Gather & Scatter</h2>
+                <h3>Context</h3>
+                After each game, the child's reward is an animated gif of a cartoon character. While this is fun, the lab wanted to explore the possibilities of using AR as a more enticing reward system.
+                <h3>Challenge</h3>
+                The most challenge aspect here is no one knew what should be made. It would be simple enough to show a 3D model instead of a 2D one; but what would that achieve? Why would this be more enticing? <br>
+                I ended up building ontop of one of the default experiences for ARKit to create Gather & Scatter, a completely different game mode that increase caretaker-child interactions through a treasure-map game. Caretaker-child interactions to establish shared experiences, like objects, were shown to be beneficial to children with ASD (citation needed; will link when I find it.) <br>
+                <h3>The Game</h3>
+                To play, the parent starts out placing 3D toys in their home ("scattering".) They can also just scan the house, and press the randomize button to automatically place the toys everywhere. <br>
+                Then, the child would then gather the toys, by finding all of them throughout the house ("gather"). The child can then also place the toys wherever they want in the house, and save those locations so they can find and look at their virtual toys later.
+            </div>
+            <div class="section-picture">
+                <video src="/videos/projects/guesswhat_ScatteringDemo.mp4" alt-text="a video showing 3d models being randomly scattered in the real world on an iPhone." autoplay playsinline muted loop width="400">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="section-row">
+            <div class="section-body"></div>
+        </div>
+    </body>
+</html>
