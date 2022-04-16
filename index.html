@@ -49,6 +49,50 @@
 
         <section id="gallery-container">
             <div id="gallery">
+                <a role="note" id="inclusive-user-testing" onmouseover="initBody(this)" onclick="toggleBody(this)" onfocus="initBody(this)" onfocusout="hideBody(this)" onmouseout="hideBody(this)" onkeypress="toggleBody(this, event)" tabindex="0" class="gallery-item cs social-good">
+                    <span class="link">https://devpost.com/software/inclusive-user-testing-in-vr</span>
+                    <div class="text-overlay item-title"><div>Inclusive XR User Testing</div></div>
+                    <div class="text-overlay item-body"><div>
+                        Role: Software Engineer<br>
+                        -Integrated Google Speech-To-Text, Azure Text-To-Speech, and other systems for demo<br>
+                    </div></div>
+                    <div class="gallery-image">
+                        <img style="object-position: 30% 0%;" class="gallery-image-content" src="images/gallery/usertest.jpg" alt="A screenshot from the demo, with a feedback panel pulled up and ready for input next to a table with colored buckets">
+                        <div class="color-overlay color-title"></div>
+                        <div class="color-overlay color-body"><div class="corner-cut"></div></div>
+                    </div>
+                </a>
+                <a role="note" id="freelines" onmouseover="initBody(this)" onclick="toggleBody(this)" onfocus="initBody(this)" onfocusout="hideBody(this)" onmouseout="hideBody(this)" onkeypress="toggleBody(this, event)" tabindex="0" class="gallery-item me ee ongoing">
+                    <div class="text-overlay item-title"><div>Motorized Freelines</div></div>
+                    <div class="text-overlay item-body"><div>
+                        Role: Mechanical Engineer<br>
+                        -Designing a mechanical/electrical system to add motors to a small form factor skate<br>
+                    </div></div>
+                    <div class="text-overlay left-corner"><span>ongoing</span></div>
+                    <div class="text-overlay right-corner"><span>no link</span></div>
+                    <div class="gallery-image">
+                        <img class="gallery-image-content" src="images/gallery/freelines_1.jpg" alt="Freeline skates, with one side having a wooden riser.">
+                        <div class="color-overlay color-title"></div>
+                        <div class="color-overlay color-body"></div>
+                    </div>
+                </a>
+                <a id="trash-bin" onmouseover="initBody(this)" onclick="toggleBody(this)" onfocus="initBody(this)" onfocusout="hideBody(this)" onmouseout="hideBody(this)" onkeypress="toggleBody(this, event)" tabindex="0" class="gallery-item me">
+                    <span class="link">/projects/trashbin.html</span>
+                    <div class="text-overlay item-title"><div>Trash Bin: A 3D-Printed/Laser Cut Hackintosh Computer Case</div></div>
+                    <div class="text-overlay item-body"><div>
+                        Role: Product Designer<br>
+                        -Remixed the CAD models<br>
+                        -Printed & laser cut the case<br>
+                        -Installed a fully-featured macOS on the Hackintosh
+                    </div></div>
+                    <div class="text-overlay left-corner"><span>ongoing</span></div>
+                    <div class="gallery-image">
+                        <img style="object-position: 0% 60%;" class="gallery-image-content" src="images/gallery/trashbin.jpg" alt="A picture of the case: the top and side panel were laser cut, and the front was 3d printed.">
+                        <div class="color-overlay color-title"></div>
+                        <div class="color-overlay color-body"><div class="corner-cut"></div></div>
+                    </div>
+                </a>
+
                 <a role="note" id="vietnamese-stories" onmouseover="initBody(this)" onclick="toggleBody(this)" onfocus="initBody(this)" onfocusout="hideBody(this)" onmouseout="hideBody(this)" onkeypress="toggleBody(this, event)" tabindex="0" class="gallery-item cs art">
                     <span class="link">http://growingupviet.app/</span>
                     <div class="text-overlay item-title"><div>Growing Up Viet: Vietnamese Stories in America</div></div>
@@ -106,21 +150,7 @@
                         <div class="color-overlay color-body"><div class="corner-cut"></div></div>
                     </div>
                 </a>
-                <a id="trash-bin" onmouseover="initBody(this)" onclick="toggleBody(this)" onfocus="initBody(this)" onfocusout="hideBody(this)" onmouseout="hideBody(this)" onkeypress="toggleBody(this, event)" tabindex="0" class="gallery-item me">
-                    <span class="link">/projects/trashbin.html</span>
-                    <div class="text-overlay item-title"><div>Trash Bin: A 3D-Printed/Laser Cut Hackintosh Computer Case</div></div>
-                    <div class="text-overlay item-body"><div>
-                        Role: Product Designer<br>
-                        -Remixed the CAD models<br>
-                        -Printed & laser cut the case<br>
-                        -Installed a fully-featured macOS on the Hackintosh
-                    </div></div>
-                    <div class="gallery-image">
-                        <img style="object-position: 0% 60%;" class="gallery-image-content" src="images/gallery/trashbin.jpg" alt="A picture of the case: the top and side panel were laser cut, and the front was 3d printed.">
-                        <div class="color-overlay color-title"></div>
-                        <div class="color-overlay color-body"><div class="corner-cut"></div></div>
-                    </div>
-                </a>
+                
                 <a id="r-autota" onmouseover="initBody(this)" onclick="toggleBody(this)" onfocus="initBody(this)" onfocusout="hideBody(this)" onmouseout="hideBody(this)" onkeypress="toggleBody(this, event)" tabindex="0" class="gallery-item social-good cs">
                     <span class="link">https://github.com/willcrichton/r-autota</span>
                     <div class="text-overlay item-title"><div>AutoTA: Debugging Assistant for R</div></div>
@@ -197,6 +227,7 @@
                         Role: Software Developer<br>
                         -Utilizing Oculus Handtracking and ML for gestures-to-sentence mapping<br>
                     </div></div>
+                    <div class="text-overlay left-corner"><span>stale</span></div>
                     <div class="text-overlay right-corner"><span>no link</span></div>
                     <div class="gallery-image">
                         <img style="object-position: 50% 40%;" class="gallery-image-content" src="images/gallery/handtracking.jpg" alt="Two viewports showing two virtually tracked hands each, with one holding up a peace sign.">
@@ -204,20 +235,7 @@
                         <div class="color-overlay color-body"></div>
                     </div>
                 </a>
-                <a role="note" id="freelines" onmouseover="initBody(this)" onclick="toggleBody(this)" onfocus="initBody(this)" onfocusout="hideBody(this)" onmouseout="hideBody(this)" onkeypress="toggleBody(this, event)" tabindex="0" class="gallery-item me ee ongoing">
-                    <div class="text-overlay item-title"><div>Motorized Freelines</div></div>
-                    <div class="text-overlay item-body"><div>
-                        Role: Mechanical Engineer<br>
-                        -Designing a mechanical/electrical system to add motors to a small form factor skate<br>
-                    </div></div>
-                    <div class="text-overlay left-corner"><span>stale</span></div>
-                    <div class="text-overlay right-corner"><span>no link</span></div>
-                    <div class="gallery-image">
-                        <img class="gallery-image-content" src="images/gallery/freelines_1.jpg" alt="Freeline skates, with one side having a wooden riser.">
-                        <div class="color-overlay color-title"></div>
-                        <div class="color-overlay color-body"></div>
-                    </div>
-                </a>
+                
             </div>
         </section>
         <footer w3-include-html="footer.html"></footer>
