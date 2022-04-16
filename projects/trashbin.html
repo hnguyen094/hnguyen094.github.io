@@ -1,0 +1,105 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:site_name" content="Hung Nguyen"/>
+        <meta property="og:title" content="Guess What: A Wall Lab Project"/>
+        <meta property="og:description" content="Details on my PC (named Trash Bin) building adventures"/>
+        <meta property="og:url" content="https://cs.stanford.edu/~hnguyen">
+        <meta property="og:type" content="about Trash Bin, a PC"/>
+        <title>Trash Bin: DIY Computer Case</title>
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon.ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon.ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon.ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon.ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon.ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon.ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon.ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon.ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon.ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico/favicon-32x32.png">
+        <link rel="icon" type="/image/png" sizes="96x96" href="/images/favicon.ico/favicon-96x96.png">
+        <link rel="icon" type="/image/png" sizes="16x16" href="/images/favicon.ico/favicon-16x16.png">
+        <link rel="manifest" href="/images/favicon.ico/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/images/favicon.ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Krub:wght@200;300;400;500&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="/styles/nav-bar.css">
+    </head>
+    <body>
+        <h1 class="section-title">
+            <div class="text-overlay"></div>
+            <span class="section-title-text">Trash Bin: A DIY SFX Computer Case</span>
+            <img class="section-title-bg blur" src="/images/gallery/trashbin.jpg" alt="A white, black, and grey computer case">
+        </h1>
+        <nav id="menu" w3-include-html="/nav-bar.html"></nav>
+        <script src="/scripts/nav-bar.js"></script>
+        <div class="section-row">
+            <div class="section-body">
+                <h2>Motivation</h2>
+                I started this project in 2019, when small form factor (SFX) computer cases were expensive and inaccessible (and I was broke.) However, as a lover of technology and computers, I knew I had to build my own portable PC. <br>
+                Thus, the <b>Trash Bin</b> was born from the 
+                <a class="external" href="https://www.reddit.com/r/sffpc/comments/aubxxd/louqe_ghost_s1_3d_model/" target="_blank">[CAD files]</a> 
+                provided by the Louqe community of the Ghost S1.
+            </div>
+            <div class="section-picture">
+                <img src="/images/projects/trashbin/20210212_machines.jpg" alt="the current computer case made of metal" width="300">
+            </div>
+        </div>
+        <div class="section-row">
+            <div>
+                <div class="section-picture">
+                    <img style="object-fit:cover;" src="/images/projects/trashbin/20200215_melted.jpg" alt="some PLA that warped inside the computer case from heat" width="300">
+                </div>
+                <div class="section-picture">
+                    <img src="/images/projects/trashbin/20200214_lasercut.jpg" alt="a piece of the computer case on a laser cutting UI" width="300">
+                </div>
+                <div class="section-picture">
+                    <img src="/images/projects/trashbin/20201219_aluminum.jpg" alt="Computer with just the aluminum front and back on (no panels)" width="300">
+                </div>
+            </div>
+            <div class="section-body" style="flex-grow: 1;">
+                <h2>Materials Exloration</h2>
+                <h3>PLA Plastic</h3>
+                When working at Stanford's Tech Desk, I had access to free 3D printing. Intrigued by the idea of a a fully 3D-printed case, I foolishly built a computer case with thermoplastics with low melting temperatures. Parts were warped after a few weeks of use.
+                <h3>MDF</h3>
+                With access to a laser cutter through the Graduate School of Education, I began building more flat, structural parts out of MDF (medium density fiberboards). Despite being heavy, the core has held up the past 3 years with very slight bowing. The case was still only loosely held together by my hopes and dreams.
+                <h3>Acrylic</h3>
+                The top and 1 side panel was made out of acrylic to help keep the case...unique. It turns out, acrylic will crack and bow when exposed to computer heat exhaust.
+                <h3>Aluminum</h3>
+                After starting work, I was able to afford aluminum pieces. My goal: build a sturdy case that I can trust to travel with. So I got back to work in my sister's basement gluing and screwing metal together (because I didn't have welding tools.) I underestimated how difficult it'd be to work with metal. 
+            </div>
+        </div>
+        <div class="section-row">
+                <div class="section-body" style="flex-grow: 1;">
+                    <h2>PC Components</h2>
+                    <h3>Original</h3>
+                        <a class="external" href="https://pcpartpicker.com/b/McZRsY" target="_blank">[The components]</a>
+                        were chosen base on Hackintosh compatibility. I wanted to build sometihng from the ground up that would make running Mac on the machine as seamless as possible.
+                    <h3>Rev.1</h3>
+                        I swapped out the RX580 with an RX6900XT. I wanted to run VR, and was hopeful Apple will continue to put out AMD drivers for their "Cheese Grater" Mac Pro. In addition, I upgraded from the 650W PSU to the 1000W SFX-L one.
+                </div>
+                <div class="section-picture">
+                    <img src="/images/projects/trashbin/20191205_preassembly.jpg" alt="Computer parts connected but just sitting on short-fiber carpet underneath a desk" width="300">
+                </div>
+                <div class="section-picture">
+                    <img src="/images/projects/trashbin/20200211_inside.jpg" alt="Computer parts mounted inside the computer case" width="200">
+                </div>
+        </div>
+        <div class="section-row">
+            <div class="section-picture">
+                <img src="/images/projects/trashbin/20200214_dualtone.jpg" alt="side panel of the computer made from two distinct 3d printed PLA" width="400">
+            </div>
+            <div class="section-picture">
+                <img src="/images/projects/trashbin/20200216_tower.jpg" alt="The computer case standing up vertically in the corner of the desk" width="300">
+            </div>
+            <div class="section-picture">
+                <img src="/images/projects/trashbin/20200209_hackintosh.jpg" alt="Sidecar, Hand-Off, and AirDrop working with the Hackintosh. Showing both iPad and macOS both showing screens from the PC" width="400">
+            </div>
+        </div>
+    </body>
+</html>
