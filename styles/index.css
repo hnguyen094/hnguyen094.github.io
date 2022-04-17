@@ -8,11 +8,13 @@
 }
 
 #gallery {
+    --max-supported: 12;
+    
     display: grid;
     justify-content: center;
     z-index: 1;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, calc(0.66 * 25vw));
+    grid-template-rows: repeat(calc(var(--max-supported) / 4), calc(0.66 * 25vw));
     margin: auto;
 }
 
@@ -71,6 +73,10 @@ a.gallery-item div.color-overlay.color-body .corner-cut:before {
 
 }
 
+a.gallery-item.small div.text-overlay {
+    height: calc(0.66 * 12.5vw);
+}
+
 a.gallery-item div.text-overlay {
     /* position: absolute; */
     width: calc(80vw * 0.95 / 4);
@@ -115,12 +121,18 @@ a.gallery-item div.text-overlay.left-corner {
     background-color: transparent;
     justify-content: flex-start;
 }
+a.gallery-item.small div.text-overlay.left-corner {
+    align-self: start;
+}
 
 a.gallery-item div.text-overlay.right-corner {
     align-items: flex-start;
     background-image: none;
     background-color: transparent;
     justify-content: flex-end;
+}
+a.gallery-item.small div.text-overlay.right-corner {
+    align-self: start;
 }
 
 a.gallery-item div.text-overlay span {
@@ -136,7 +148,10 @@ a.gallery-item div.text-overlay span {
 @media only screen and (max-width: 1400px) {
     #gallery {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, calc(33.3vw * 0.66));
+        grid-template-rows: repeat(calc(var(--max-supported) / 3), calc(33.3vw * 0.66));
+    }
+    a.gallery-item.small div.text-overlay {
+        height: calc(0.66 * 16.6vw);
     }
     a.gallery-item div.text-overlay {
         width: calc(80vw * 0.95 / 3);
@@ -154,7 +169,10 @@ a.gallery-item div.text-overlay span {
 @media only screen and (max-width: 1000px) {
     #gallery {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, calc(50vw * 0.66));
+        grid-template-rows: repeat(calc(var(--max-supported) / 2), calc(50vw * 0.66));
+    }
+    a.gallery-item.small div.text-overlay {
+        height: calc(0.66 * 25vw);
     }
     a.gallery-item div.text-overlay {
         width: calc(80vw * 0.95 / 2);
@@ -172,7 +190,10 @@ a.gallery-item div.text-overlay span {
 @media only screen and (max-width: 650px) {
     #gallery {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(12, calc(100vw * 0.66));
+        grid-template-rows: repeat(calc(var(--max-supported) / 1), calc(100vw * 0.66));
+    }
+    a.gallery-item.small div.text-overlay {
+        height: calc(0.66 * 50vw);
     }
     a.gallery-item div.text-overlay {
         width: calc(80vw * 0.95);
