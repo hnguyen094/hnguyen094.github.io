@@ -9,6 +9,12 @@
 In this Stanford class project, I exposed the abstract syntax tree of the R application to the front end of the plugin. This AST is the compiler's understanding of the written code, and is used to explain to the user the components of the offending code statement and how they might be able to fix it.
 In addition, I designed and implemented the icons and UX of the application.
 
+<br />
+<br />
+<br />
+<br />
+<br />
+
 ---
 
 # [Fidelius](https://crypto.stanford.edu/fidelius/): Protecting Secrets from Compromised Browsers
@@ -16,12 +22,19 @@ In addition, I designed and implemented the icons and UX of the application.
 > Users regularly enter sensitive data, such as passwords, credit card numbers, or tax information, into the browser window. While modern browsers provide powerful client-side privacy measures to protect this data, none of these defenses prevent a browser compromised by malware from stealing it. Fidelius is a new architecture that uses trusted hardware enclaves integrated into the browser to enable protection of user secrets during web browsing sessions, even if the entire underlying browser and OS are fully controlled by a malicious attacker.  
 As part of this project, we develop the first open source system that provides a trusted path from input and output peripherals to a hardware enclave with no reliance on additional hypervisor security assumptions. These components may be of independent interest and useful to future projects.
 
-![diagram showing the trusted display](/images/gallery/fidelius.jpg)
 ![image of the hardware used](/images/gallery/fidelius_1.jpg)
+
+[diagram showing the trusted display](/images/gallery/fidelius.jpg)
 
 ## My Contributions
 
 In this Stanford research paper, I was a part of a 2-person mini-team that focused on enabling the protected data to be shown on a trusted display. We (Forest Fraser and I) implemented the solution by encrypting the necessary data in the Intel SGX enclave and transmitting it over Bluetooth to the display, where we then decrypt to show the user the sensitive data on a secure overlay.
+
+<br />
+<br />
+<br />
+<br />
+<br />
 
 ---
 
@@ -32,6 +45,12 @@ In this Stanford research paper, I was a part of a 2-person mini-team that focus
 ## My Contributions
 
 In this Reality Hack hackathon project, I worked on enabling the technologies necessary to allow for inclusive user testing for Unity projects. Specifically, I integrated Google's Speech-To-Text and Azure's Text-To-Speech as well as created the screenshot annotation systems in Unity. This allows for both voice-only or controller-only paths to give user testing feedback inside VR.
+
+<br />
+<br />
+<br />
+<br />
+<br />
 
 ---
 
@@ -85,7 +104,7 @@ Due to time constraints, I was not able to finish the "gather" process, as the t
 
 **Context**. Humpty Dumpty is based on the term "Emotion Guessing Game" (EGG.) The idea was conceptualized by the lab in 2019, and was first implemented by another researcher; it would be a game that also acts as a data labeling tool.
 
-![the child labeling the emotion in the image](/images/projects/guesswhat_child_old.png)  ![the parent identifying if the child's classification was correct](/images/projects/guesswhat_parent_old.png)
+[the child labeling the emotion in the image](/images/projects/guesswhat_child_old.png)  [the parent identifying if the child's classification was correct](/images/projects/guesswhat_parent_old.png)
 
 **Challenge**. The original setup: The child guesses at 10 emotions, then passes the phone to the parent. Then, the parent either confirms that the child guessed correctly, or fixes the child's guess with the correct emotion label for that gif. This felt clunky and space-inefficient in landscape mode, which is how we first received the game mode. In fact, how do we make data labeling fun?
 
@@ -96,11 +115,23 @@ We eventually came up with a competitive mode: the child and parent would rate t
 
 [Final Demo](/videos/projects/guesswhat_HDCompDemo.mp4)
 
+<br />
+<br />
+<br />
+<br />
+<br />
+
 ---
 
 # Oculus Hand-Tracking for Gesture & ASL Recognition
 
 This was a personal project to implement hand pose recognition using the Oculus SDK.
+
+<br />
+<br />
+<br />
+<br />
+<br />
 
 ---
 
@@ -114,3 +145,191 @@ So with this **audio-first, nonlinear walking simulator** of stories from Vietna
 # My contribution
 
 In this senior project, my partner Vy Mai and I did interviews and collected them in a React web application. I implemented the movement, spatial audio system, and cookie-based save state to allow for a game-like interface to allow the listener to experience the stories. Thought was put into the emotional beat of the listener throughout the experience.
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+---
+
+# [(Are You) Here](https://youtu.be/V9qXbP2Tl0A): VR Installation Artwork
+
+In this art project, I captured a tree trunk with photogrammetry and recreated it in VR. Then, I set up the virtual tree in the same space as the actual tree, creating a virtual-augmented reality frankenstein. The setup was used for a meditative experience where users can leave voice messages on the tree for others to hear.
+
+![close up of the photogrammetry tree](/images/gallery/areyouhere.jpg)
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+---
+
+# [The Clock Ticks For You](/storage/tctfy/play.html): Short Interactive Fiction About Death
+
+The write up is best read [here](https://medium.com/serious-games-377g/the-clock-ticks-and-ticks-again-db55c69798b). The ending statement:
+> Still, making this game has been a great learning experience for me. I have always wanted to design experiences to make users/players feel. I believe it’s the most important part of being human: to feel compassion and empathy, especially for strangers like the character in my story.
+
+![screenshot of the IF](/images/gallery/tctfy.jpg)
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+---
+
+# [Making Simple Sublime](/storage/simple-sublime-vr/): VR Art Installation Collab
+
+![screenshot of the model](/images/gallery/sublime.jpg)
+
+## My Contributions
+
+This was a collaboration with another artist, where I toured his 8-room installation and recreated it with the dimensions given. We also recorded all the audio from the installation and played it in the virtual copy.
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+---
+
+# [FamiliAR](https://www.youtube.com/watch?v=o0UHfR5vzJI): Mobile AR Escape Room
+
+Our team utilized ARKit in its early days to create a virtual reality through the mobile phone. We made an escape room where the players had to find clues around the room Nancy Drew-style before the story can proceed.
+
+![FamiliAR icon](/images/gallery/familiar.jpg)
+
+## My Contributions
+
+I worked on moving from Unreal to Unity, and implemented a 3D text popup overlay (tooltip) to give the user information when they did find objects in the virtual environment.
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+---
+
+# Motorized Freelines
+
+I designed a mechanical/electrical system to add hub motors onto mini freeline skates.
+
+![freeline image](/images/gallery/freelines_1.jpg)
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+---
+
+# Trash Bin: Just Another Hackintosh
+
+I designed CAD models in Fusion360 and printed/laser cut the case. I also installed a nearly fully-featured macOS for the Hackintosh.
+
+## Motivation
+
+I started this project in 2019, when small form factor (SFX) computer cases were expensive and inaccessible (and I was broke.) However, as a lover of technology and computers, I knew I had to build my own portable PC.
+Thus, the Trash Bin was born from the [CAD files](https://www.reddit.com/r/sffpc/comments/aubxxd/louqe_ghost_s1_3d_model/) provided by the Louqe community of the Ghost S1.
+
+![current build](/images/projects/trashbin/20210212_machines.jpg)
+
+## Materials Exloration
+
+**[PLA Plastic](/images/projects/trashbin/20200215_melted.jpg)**.  
+When working at Stanford's Tech Desk, I had access to free 3D printing. Intrigued by the idea of a a fully 3D-printed case, I foolishly built a computer case with thermoplastics with low melting temperatures. Parts were warped after a few weeks of use. Only the PSU bracket is still made of PLA.
+
+**[MDF](/images/projects/trashbin/20200214_lasercut.jpg)**.  
+With access to a laser cutter through the Graduate School of Education, I began building more flat, structural parts out of MDF (medium density fiberboards). Despite being heavy, the core has held up the past 3 years with very slight bowing. The case was still only loosely held together by my hopes and dreams. Only the core center piece is made of MDF.
+
+**Acrylic**.  
+The top and 1 side panel was made out of acrylic to help keep the case...unique. It turns out, acrylic will crack and bow when exposed to computer heat exhaust. The current case does not utilize acrylic anymore.
+
+**[Aluminum](/images/projects/trashbin/20201219_aluminum.jpg)**.  
+After starting work, I was able to afford aluminum pieces. My goal: build a sturdy case that I can trust to travel with. So I got back to work in my sister's basement gluing and screwing metal together (because I didn't have welding tools.) I underestimated how difficult it'd be to work with metal. The front, back, and edges of the current case is made of aluminum.
+
+## PC Components
+
+**Original (2019)**.  
+[The components] were chosen base on Hackintosh compatibility. I wanted to build sometihng from the ground up that would make running Mac on the machine as seamless as possible.
+- CPU: Intel Core i7-8700K
+- Mobo: AsRock Z390 Phantom Gaming ITX/ac
+- GPU: Sapphire Radeon RX580 8GB NITRO+ Video Card
+- PSU: EVGA SuperNOVA GM650 80+ Gold SFX
+
+![preassembled components](/images/projects/trashbin/20191205_preassembly.jpg)
+
+[assembled components](/images/projects/trashbin/20200211_inside.jpg)
+
+**Rev.1 (2021)**.  
+I wanted to run VR, and was hopeful Apple will continue to put out AMD drivers for their "Cheese Grater" Mac Pro. Upgrades were:
+- GPU: Sapphire Radeon RX6900XT 16GB NITRO+
+- PSU: Silverstone 1000 80+ Platinum SFX-L
+
+[dualtone 3d printed pieces](/images/projects/trashbin/20200214_dualtone.jpg)  
+[computer in standing mode](/images/projects/trashbin/20200216_tower.jpg)  
+[continuity features working](/images/projects/trashbin/20200209_hackintosh.jpg)  
+[computer in the dark with rgb](/images/projects/trashbin/20211129_inthedark.jpg)  
+[vr and pc setup](/images/projects/trashbin/20210909_setup.jpg)  
+[old pc case front](/images/projects/trashbin/20211127_front.jpg)  
+[old pc case side](/images/projects/trashbin/20211127_brokendual.jpg)  
+[old pc case back](/images/projects/trashbin/20211127_back.jpg)  
+[old pc case top](/images/projects/trashbin/20211127_top.jpg)  
+[old pc case](/images/gallery/trashbin.jpg)
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+---
+
+# [Sumowoodo](https://me210sumowoodo.weebly.com): Robot-sumo Mechatron
+
+## The Project
+
+The Sumowoodo Project is our final for Intro to Mechatronics (ME210) at Stanford. Each team is to build an autonomous robot, which will compete against two other robots. Each robot will be positioned in a sector of a circular playing field, sectioned off by walls. The objective is to push on these walls to claim a larger slice of the circle. The team occupying the largest slice of the circle when time runs out wins.
+
+![the diagram of the problem to solve](/images/projects/sumowoodo-pi-sumo.png)
+
+[teammates](/images/projects/sumowoodo-squad.jpg)
+
+## Responsibility
+
+I was tasked with designing the software architecture, and helped with both the mechanical and electrical implementations (drilling holes, building circuits, soldering, wiring, etc.)
+
+## The State Machine
+
+With any software engineering endeavor, clear and concise code is important for understanding and debugging. That's why we first made sure that our state machine is theoretically sound, base on a rough mechanical design before ever touching code.  
+Specifically, this gives 7 functional states (not including the start state/the black circle.)
+
+![code of the program](/images/projects/sumowoodo-code2.png)
+
+[state diagram of robot](/images/projects/sumowoodo-state-diag.png)
+
+## The Code
+
+We noticed that the incoming edges to a state always did the same function, so instead of 2 lists (for edges and nodes), we associate the functions directly with the state itself. This is important in microcontroller applications, where memory and processing power are limited.  
+So, the code consists of 2 main loops: one to switch state, and one to act on the switched state. Of course, everything is event-driven (simulated, not through actual interrupts), with custom classes to handle motors, sensors, and timers. That way, we would only need to edit the constants.cpp file while setting up.  
+Download the complete source code [here](/files/projects/sumowoodo-code.zip).
+
+## The Final Product
+
+![the final robot](/images/projects/sumowoodo.jpg)
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+---
