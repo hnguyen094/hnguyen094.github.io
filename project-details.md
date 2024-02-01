@@ -1,3 +1,25 @@
+# my ami: Modern Tamagotchi on Apple Platforms
+
+This project is in-progress. The plan is to create a virtual pet game that is updated to the modern day. Specifically, on the iOS side, it'd be able to leverage standard statistical models and machine learning to learn habits and behaviors in ways that current virtual pets do not. On the visionOS side, it'd be able to interact with objects in the environment, both visually and auditorily. Specifically, it'd utilize ML models like YOLO and Apple's Sound Classifier to use them as input to the previously mentioned learning models on the iOS side.
+
+This is inspired by ideas from Pokémon, specifically the emotions from the [Piplup Step music video](https://www.youtube.com/watch?v=bm0nLJuRNbw&pp=ygULcGlwbHVwIHN0ZXA%3D).
+
+## [See the Sounds](https://apps.apple.com/us/app/see-the-sounds/id6476731565)
+
+This is an application for Apple's MR headset (Apple Vision Pro). This is essentially just a demo that demonstrates how machine learning models can be used on AVP to create interesting experiences. Specifically, it was taken as a partial feature as a proof of concept that a virtual pet can hear (and understand) the environment it is in.
+
+## Technical Details
+
+This project completely uses Swift. Specifically, it uses SwiftUI for 2D rendering, RealityKit for 3D rendering, SwiftData for database backing, and The Composable Architecture (TCA) for app logic. Features utilizes MLCore (for Vision and Sound Analysis), AVAudio for audio routing, etc.
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+---
+
 # [AutoTA](https://github.com/willcrichton/r-autota): Debugging Assistant for R
 
 > AutoTA is an RStudio addin to help novice data scientists debug common R errors. Auto TA provides real-time, in-context support for common errors like object not found and unexpected string constant.
@@ -222,6 +244,8 @@ I worked on moving from Unreal to Unity, and implemented a 3D text popup overlay
 I designed a mechanical/electrical system to add hub motors onto mini freeline skates.
 
 ![freeline image](/images/gallery/freelines_1.jpg)
+
+[me using the electrified skate](/images/projects/freeline_skating.jpeg)
 
 <br />
 <br />
