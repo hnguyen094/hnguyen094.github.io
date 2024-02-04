@@ -6,7 +6,7 @@ This is inspired by ideas from Pokémon, specifically the emotions from the [Pip
 
 ## [See the Sounds](https://apps.apple.com/us/app/see-the-sounds/id6476731565)
 
-This is an application for Apple's MR headset (Apple Vision Pro). This is essentially just a demo that demonstrates how machine learning models can be used on AVP to create interesting experiences. Specifically, it was taken as a partial feature as a proof of concept that a virtual pet can hear (and understand) the environment it is in.
+This is an application for Apple's MR headset (Apple Vision Pro). This is essentially just a demo that demonstrates how machine learning models can be used on AVP to create interesting experiences. Specifically, it was taken as a partial feature as a proof of concept that a virtual pet can hear (and understand) the environment it is in. To get a sense of how this works, see this [demo video](https://youtu.be/42cqkCwPSmg) submitted to Apple for App Store approval.
 
 ## Technical Details
 
