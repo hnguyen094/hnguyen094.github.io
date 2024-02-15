@@ -8,6 +8,10 @@ This is inspired by ideas from Pokémon, specifically the emotions from the [Pip
 
 This is an application for Apple's MR headset (Apple Vision Pro). This is essentially just a demo that demonstrates how machine learning models can be used on AVP to create interesting experiences. Specifically, it was taken as a partial feature as a proof of concept that a virtual pet can hear (and understand) the environment it is in. To get a sense of how this works, see this [demo video](https://youtu.be/42cqkCwPSmg) submitted to Apple for App Store approval.
 
+## [take dimensions](https://apps.apple.com/us/app/take-dimensions/id6477896834)
+
+This is also another application for the AVP. This is a demo using Apple's provided scene understanding to replicate the base behavior of the measure app from iPhone. Specifically, it uses plane detection (with classification) and scene reconstruction, along with user input, to create measurements of the environment.
+
 ## Technical Details
 
 This project completely uses Swift. Specifically, it uses SwiftUI for 2D rendering, RealityKit for 3D rendering, SwiftData for database backing, and The Composable Architecture (TCA) for app logic. Features utilizes MLCore (for Vision and Sound Analysis), AVAudio for audio routing, etc.
