@@ -21,6 +21,12 @@ For example, a surgeon can operate on patient miles away and save their lives. A
 
 These days, when I'm not working full-time on my visionOS apps, you'll find me playing Overwatch 2 or watching TV. I occasionally do indoor bouldering/climbing and love to hike as long as I have good company.
 
+## Games (that inspire me)
+
+In no particular order: Overwatch, Inside, Florence, Hungry Hearts Diner, Pokemon, Parable of the Polygons, Half-Life: Alyx, RUMBLE VR, Deep Rock Galatic, Overcooked, Pokemon Adventures: Red Chapter, Neko Atsume: Kitty Collector, Travel Frog, Duet, Flappy Bird. 
+
+No Oxford commas because this is an incomplete list.
+
 ## Connect with Me!
 
 Email: [hnguyen@cs.stanford.edu](mailto:hnguyen@cs.stanford.edu)  LinkedIn: [hung-the-nguyen](https://www.linkedin.com/in/hung-the-nguyen/)  Github: [hnguyen094](https://github.com/hnguyen094)  Medium: [@hungnguyen094](https://medium.com/@hungnguyen094)  Twitter: [hungthewin](https://twitter.com/hungthewin)
