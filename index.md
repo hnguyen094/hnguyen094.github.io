@@ -1,6 +1,6 @@
 # Projects
 
-## Software Technical
+## Apps/Software 
 
 ### [extrastellar worlds](project-details.html#extrastellar-worlds): pseudo-procedural environments for visionOS 
 
@@ -16,7 +16,7 @@
 
 ### [Fidelius](project-details.html#fidelius-protecting-secrets-from-compromised-browsers): Protecting Secrets from Compromised Browsers
 
-## Game/Art
+## Art
 
 ### [Growing Up Viet](project-details.html#growing-up-viet-vietnamese-stories-in-america): Vietnamese Stories in America
 
@@ -28,7 +28,7 @@
 
 ### [FamiliAR](project-details.html#familiar-mobile-ar-escape-room): Mobile AR Escape Room
 
-## Other Engineering
+## Other 
 
 ### [Sumowoodo](project-details.html#sumowoodo-robot-sumo-mechatron): Robot-sumo Mechatron
 
