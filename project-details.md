@@ -167,7 +167,9 @@ We eventually came up with a competitive mode: the child and parent would rate t
 
 # Oculus Hand-Tracking for Gesture & ASL Recognition
 
-This was a personal project to implement hand pose recognition using the Oculus SDK.
+This was a personal project to implement hand pose recognition using the Oculus SDK. It utilizes thresholds for minimizing bone distance between the user's current hand pose and the intended saved pose.
+
+ASL is a much more complicated language than just hand poses of course. This project did not aim to tackle ASL in its entirety.
 
 <br />
 <br />
