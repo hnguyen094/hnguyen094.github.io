@@ -19,12 +19,14 @@ For example, a surgeon can operate on patient miles away and save their lives. A
 
 ## Hobbies
 
-**Climbing**. I spent countless hours at the playground when I was small, and the climbing gym felt like a natural progression. I also enjoy being outdoors and hiking with good company.
+**Climbing**. I spent countless hours at the playground when I was small, and the climbing gym felt like a natural progression. I also enjoy being outdoors and hiking with good company. 
 
 **Games**. In no particular order: Overwatch, Inside, Florence, Hungry Hearts Diner, Pokemon, Parable of the Polygons, Half-Life: Alyx, RUMBLE VR, Deep Rock Galatic, Overcooked, Pokemon Adventures: Red Chapter, Neko Atsume: Kitty Collector, Travel Frog, Duet. <br> 
 This is an incomplete list.
 
-**Making**. I am obsessed with DIY projects, and feel at home in woodshops, pottery studios, and makerspaces. Currently, one project involves designing my own 'cyberdeck' with custom PCBs in a Apple-retro form-factor.
+**Making**. I am obsessed with DIY projects, and feel at home in woodshops, pottery studios, and makerspaces. Currently, one project involves designing my own 'cyberdeck' with custom PCBs in a Apple-retro form-factor. 
+
+I also [sketch](https://www.instagram.com/hung.sketch) (because no time for full pieces) and do some photography with my [Playstation Vita](vita.html).
 
 ## Connect 
 
