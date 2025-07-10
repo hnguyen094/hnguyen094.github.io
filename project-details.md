@@ -46,8 +46,6 @@ This project completely uses Swift. Specifically, it uses SwiftUI for 2D renderi
 
 > AutoTA is an RStudio addin to help novice data scientists debug common R errors. Auto TA provides real-time, in-context support for common errors like object not found and unexpected string constant.
 
-![screenshot of AutoTA in action](https://camo.githubusercontent.com/6b56eb98d32e9aeb70acffe538ef6d3407dcdf25f5adee73a657600821b47708/68747470733a2f2f707265766965772e726564642e69742f67743039797935796f696a34312e706e673f77696474683d3335383426666f726d61743d706e67266175746f3d7765627026733d38653361643262366133386331646162323962393866326334343837343962313238643361363633)
-
 ## My Contributions
 
 In this Stanford class project, I exposed the abstract syntax tree of the R application to the front end of the plugin. This AST is the compiler's understanding of the written code, and is used to explain to the user the components of the offending code statement and how they might be able to fix it.
