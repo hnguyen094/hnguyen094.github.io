@@ -3,7 +3,7 @@ Software Engineer | London, UK (Flexible Relocation) | UK: +44 07919 507177  US:
 
 [hnguyen@cs.stanford.edu](mailto:hnguyen@cs.stanford.edu) | [cs.stanford.edu/~hnguyen](http://cs.stanford.edu/~hnguyen) | [linkedin.com/in/hung-the-nguyen](https://www.linkedin.com/in/hung-the-nguyen)
 # Summary
-Software engineer with expertise in using Swift and Unity C# to build well-designed, human-centered experiences with redable and scalable codebases.
+Software engineer with expertise in using Swift and Unity C# to build well-designed, human-centered experiences with readable and scalable codebases.
 Developed core UX libraries and backend integrations at an MIT Media Lab startup, worked with new immersive technologies at Apple, and improved documentation and processes across all roles.
 Fast learner committed to delivering intuitive and robust products to solve problems and delight users.
 
