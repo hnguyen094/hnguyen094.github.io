@@ -5,19 +5,24 @@ Software Engineer | London, UK (Flexible Relocation) | UK: +44 07919 507177  US:
 # Summary
 Software engineer with expertise in using Swift and Unity C# to build well-designed, human-centered experiences with readable and extendable codebases.
 Developed core UX libraries and backend integrations at an MIT Media Lab startup, worked with new immersive technologies at Apple, and improved documentation and processes across all roles.
-Committed to delivering intuitive and robust products to solve problems and improve lives.
+Committed to delivering intuitive and robust products to solve problems and delight users.
 
-# Work Experience 
+# Relevant Work Experience 
 
-## iOS/visionOS Software Engineer, *Self-Employed* <span style="float: right"> Remote | Jun 2023 – Present</span> 
-- Utilized on-device FCN classification models to predict user trends over 10+ feature variables
-- Implemented vision ML models (e.g. YOLOv8) and sound classifier with mobile RealityKit for real-time scene/context understanding 
-- Published multiple applications on the Vision Pro App Store using the TCA library for easy composition, clear state management with side effects, and straightforward testing 
-- Managed persistent data with SQLite through SwiftData and CloudKit infrastructure with simplified APIs in client-requested prototypes
-- Optimized custom-built shaders (RC shadergraphs and Metal) for Reality Composer environments
+## Independent iOS App Developer, *Self-Employed* <span style="float: right"> Remote | Jun 2023 – Present</span>
+- my ami (unreleased): A modern tamagotchi-like virtual pet, leveraging ML models and XR to personalize and bring it to life
+  - Utilized on-device FCN classification models to predict user actions over 10+ feature variables
+  - Implemented vision ML models (e.g. YOLOv8) and sound classifier with mobile RealityKit for real-time scene/context understanding
+- Extrastellar Worlds (released), Take Dimensions (released), See the Sounds (retired)
+  - Marketed and published each well-scoped application on the Vision Pro App Store within a few months of conception 
+  - Structured codebase using TCA library for easy composition, clear state management with side effects, and action-based testing 
+  - Optimized custom-built shaders (RC shadergraphs and Metal) to create full immersive environments for Apple Vision Pro
+- Other (freelance)
+  - Timely delivered updating requirements during a month-long rapid prototyping phase 
+  - Managed persistent data with SQLite through SwiftData and CloudKit infrastructure by designing simplified APIs
 
 ## VR/AR Software Engineer, *Three Space Lab* <span style="float: right"> Remote | Aug 2020 – Jun 2023</span> 
-- Integrated 3+ services (sometimes interop-ing native C++) into PC/standalone OpenXR C# Unity projects (e.g. Google Analytics, Zoom, Discord GameSDK)
+- Integrated 3+ services (sometimes C++ interop) into PC/standalone OpenXR C# Unity projects (e.g. Google Analytics, Zoom)
 - Developed 20+ networked (remote multi-user) 2D and 3D interactive systems/features (e.g. shared painting and teleportation)
 - Built Swagger wrapper client for Unity to manage cloud file sync in VR with integration tests with local versioned file caching
 - Trained 2 new employees with development tooling and procedures in an Agile environment with Jira/Linear and Notion
@@ -29,12 +34,7 @@ Committed to delivering intuitive and robust products to solve problems and impr
 
 ## Software Engineering Intern, *Apple Inc.* <span style="float: right"> Sunnyvale, CA | Jun 2019 – Sep 2019</span>
 - Designed and developed an internal SceneKit-ARKit visualization framework with new hardware
-- Optimized new 3D pose estimation CV algorithms across devices while visualizing the related telemetry, with some now fully implemented in visionOS
-
-## Software Engineering Intern, *OneWeb* <span style="float: right"> Hybrid - Los Altos, CA | Jun 2017 – Sep 2017</span>
-
-- Created and deployed a cross-platform AR attitude application for offline, low-power satellite antenna alignment 
-- Led weekly meetings and presentations; collaborated with other teams to deliver metrics on testing and verification 
+- Optimized new 3D pose estimation CV algorithms across devices, with some now fully implemented in visionOS
 
 # Other Experiences
 
@@ -45,9 +45,10 @@ Committed to delivering intuitive and robust products to solve problems and impr
 
 ## Electronics Workshop Instructor, *Stage One Education* <span style="float: right"> Boston, MA | Mar 2022 – Mar 2023</span>
 - Mentored secondary school students in Arduino/CAD workshops to build flying helicopters
+- Debugged code and hardware failures on-the-fly for students in time-constrained environments
 
 ## Cryptography Researcher, *Fidelius* <span style="float: right"> Stanford, CA | Mar 2018 – Jul 2018</span>
-- Implemented secure API to help transfer I/O data between trusted origin server and an Intel SGX enclave over Bluetooth
+- Implemented secure API interfacing with a large team to transfer I/O data between trusted origin server and an Intel SGX enclave over Bluetooth in malicious environments
 
 # Education
 

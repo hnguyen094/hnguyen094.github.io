@@ -1,4 +1,4 @@
-# [extrastellar worlds](https://apps.apple.com/us/app/extrastellar-worlds/id6744341114)
+# [Extrastellar Worlds](https://apps.apple.com/us/app/extrastellar-worlds/id6744341114)
 
 Pseudo-procedural environments with a Sci-Fi theme. It mostly made in Reality Composer Pro's shadergraph, meaning all of the geometries and surfaces are mathematically calculated in the fragment(pixel) shader, including planetary bodies, directional lighting, and reflective surfaces. 
 
