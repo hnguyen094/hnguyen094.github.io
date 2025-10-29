@@ -1,5 +1,5 @@
 # Hung Nguyen
-Software Engineer | London, UK (Flexible Relocation) | UK: +44 07919 507177  US: +1 (832) 361-0190 
+Software Engineer | Houston, TX (Flexible Relocation) | +1 (832) 361-0190 
 
 [hnguyen@cs.stanford.edu](mailto:hnguyen@cs.stanford.edu) | [cs.stanford.edu/~hnguyen](http://cs.stanford.edu/~hnguyen) | [linkedin.com/in/hung-the-nguyen](https://www.linkedin.com/in/hung-the-nguyen)
 # Summary
