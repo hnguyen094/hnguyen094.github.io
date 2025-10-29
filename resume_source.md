@@ -1,5 +1,5 @@
 # Hung Nguyen
-Software Engineer | Houston, TX (Flexible Relocation) | +1 (832) 361-0190 
+Software Engineer | USA. Open to Relocation | +1 (832) 361-0190 
 
 [hnguyen@cs.stanford.edu](mailto:hnguyen@cs.stanford.edu) | [cs.stanford.edu/~hnguyen](http://cs.stanford.edu/~hnguyen) | [linkedin.com/in/hung-the-nguyen](https://www.linkedin.com/in/hung-the-nguyen)
 # Summary
@@ -43,12 +43,12 @@ Fast learner committed to delivering intuitive and robust products to solve prob
 - Worked with the A11y and differently-abled XR community for needfinding 
 - Won XR Reality Hack's XR for Inclusion award; invited and presented for the XR Access community 
 
-## Electronics Workshop Instructor, *Stage One Education* <span style="float: right"> Boston, MA | Mar 2022 – Mar 2023</span>
-- Mentored secondary school students in Arduino/CAD workshops to build flying helicopters
-- Debugged code and hardware failures on-the-fly for students in time-constrained environments
-
 ## Cryptography Researcher, *Fidelius* <span style="float: right"> Stanford, CA | Mar 2018 – Jul 2018</span>
 - Implemented secure API interfacing with a large team to transfer I/O data between trusted origin server and an Intel SGX enclave over Bluetooth in malicious environments
+
+# Skills
+- **Languages:** Swift, C#, Python, C, HTML5/CSS, Javascript/Typescript, C++, Rust, OCaml
+- **Tools/Frameworks:** git/GitHub, TCA, SwiftUI, ARKit/RealityKit, OpenXR, Google Cloud (GCP), AWS, CloudKit, Swagger/OpenAPI, Google Analytics, Notion/Confluence, Jira/Linear, Figma, Affinity Designer, Shapr3D, Fusion360, Blender
 
 # Education
 
