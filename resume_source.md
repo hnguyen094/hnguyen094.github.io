@@ -45,6 +45,7 @@ Fast learner committed to delivering intuitive and robust products to solve prob
 
 ## Cryptography Researcher, *Fidelius* <span style="float: right"> Stanford, CA | Mar 2018 – Jul 2018</span>
 - Implemented secure API interfacing with a large team to transfer I/O data between trusted origin server and an Intel SGX enclave over Bluetooth in malicious environments
+- **Publication:** S. Eskandarian *et al. (including Hung T. Nguyen)*, "Fidelius: Protecting User Secrets from Compromised Browsers," *2019 IEEE Symposium on Security and Privacy (SP)*, San Francisco, CA, USA, 2019, pp. 264-280, doi: 10.1109/SP.2019.00036.
 
 # Skills
 - **Languages:** Swift, C#, Python, C, HTML5/CSS, Javascript/Typescript, C++, Rust, OCaml
