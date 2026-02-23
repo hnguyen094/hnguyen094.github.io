@@ -7,16 +7,14 @@ Software engineer with expertise in using Swift and Unity C# to build well-desig
 Developed core UX libraries and backend integrations at an MIT Media Lab startup, worked with new immersive technologies at Apple, and improved documentation and processes across all roles.
 Fast learner committed to delivering intuitive and robust products to solve problems and delight users.
 
-# Relevant Work Experience 
+# Relevant Work Experience
 
 ## Independent iOS App Developer, *Self-Employed* <span style="float: right"> Remote | Jun 2023 – Present</span>
-- my ami (unreleased): A modern tamagotchi-like virtual pet, leveraging ML models and XR to personalize and bring it to life
-  - Utilized on-device FCN classification models to predict user actions over 10+ feature variables
-  - Implemented vision ML models (e.g. YOLOv8) and sound classifier with mobile RealityKit for real-time scene/context understanding
-- Extrastellar Worlds (released), Take Dimensions (released), See the Sounds (retired)
-  - Marketed and published each well-scoped application on the Vision Pro App Store within a few months of conception 
+- Extrastellar Worlds (released), Take Dimensions (released), See the Sounds (retired); my ami (unreleased)
+  - Marketed and published well-scoped applications on the Vision Pro App Store within a few months of conception
   - Structured codebase using TCA library for easy composition, clear state management with side effects, and action-based testing 
   - Optimized custom-built shaders (RC shadergraphs and Metal) to create full immersive environments for Apple Vision Pro
+  - Implemented vision ML models (e.g. YOLOv8) and sound classifier with mobile RealityKit for real-time scene/context understanding
 - Other (freelance)
   - Timely delivered updating requirements during a month-long rapid prototyping phase 
   - Managed persistent data with SQLite through SwiftData and CloudKit infrastructure by designing simplified APIs
@@ -58,3 +56,5 @@ Fast learner committed to delivering intuitive and robust products to solve prob
 Web Programming Fundamentals, Programming Languages
 - **Design Courses:** Design for Accessibility, VR: The Possibility and Peril of Immersive Art, Designing Serious Games,
 Intro to Mechatronics, Beyond Bits and Atoms (EdTech)
+
+## <span style="display: block;margin: 0 auto;width: fit-content;">References Available Upon Request</span>
