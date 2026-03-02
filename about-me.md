@@ -9,7 +9,7 @@ Some of my inspirations include my previous professors [Christina Wodtke](https:
 
 ## Where am I? Since when?
 
-I quit my full-time job at [Three Space Lab](https://threespacelab.com/) and moved to London, UK in late 2023 to explore what it's like to live in many different cities. In 2025, I'm exploring opportunities anywhere in the UK and the US. 
+I quit my full-time job at [Three Space Lab](https://threespacelab.com/) and moved to London, UK in late 2023 to explore interesting ideas on the iOS and visionOS platform.
 
 ## Why do I do what I do?
 

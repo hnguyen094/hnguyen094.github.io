@@ -9,13 +9,11 @@ Fast learner committed to delivering intuitive and robust products to solve prob
 
 # Relevant Work Experience
 
-## Independent iOS App Developer, *Self-Employed* <span style="float: right"> Remote | Jun 2023 – Present</span>
-- Extrastellar Worlds (released), Take Dimensions (released), See the Sounds (retired); my ami (unreleased)
-  - Marketed and published well-scoped applications on the App Store within a few months of conception
+## Founding iOS Engineer, *Stealth Startup* <span style="float: right"> London | Jun 2023 – Nov 2025</span>
+- Extrastellar Worlds (App Store), Take Dimensions (App Store), See the Sounds (delisted)
   - Structured codebase using TCA library for easy composition, clear state management with side effects, and action-based testing 
   - Optimized custom-built shaders (RC shadergraphs and Metal) to create full immersive environments
   - Implemented vision ML models (e.g. YOLOv8) and sound classifier from camera frames for real-time scene/context understanding
-- Other (freelance)
   - Timely delivered updating requirements during a month-long rapid prototyping phase 
   - Managed persistent data with SQLite through SwiftData and CloudKit infrastructure by designing simplified APIs
 
