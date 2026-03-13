@@ -4,8 +4,6 @@
 
 ### [extrastellar worlds](project-details.html#extrastellar-worlds): pseudo-procedural environments for visionOS 
 
-### [my ami](project-details.html#my-ami-modern-tamagotchi-on-apple-platforms): Modern Tamagotchi on Apple Platforms
-
 ### [Inclusive XR Testing](project-details.html#inclusive-xr-testing)
 
 ### [Guess What?](project-details.html#guess-what-heads-up-game-for-emotion-recognition): Heads Up Game for Emotion Recognition
